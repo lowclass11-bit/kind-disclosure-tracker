@@ -212,7 +212,14 @@ def parse_earnings(rows: Rows) -> dict:
 
 # ---------------------------------------------------------------- capex
 def parse_capex(rows: Rows, subtype: str) -> dict:
-    rows = strip_amendment(rows)
+    body = strip_amendment(rows)
+    result = _parse_capex(body, subtype)
+    if result["metrics"]["amount"] is None and body is not rows:
+        result = _parse_capex(rows, subtype)  # 본문 경계 인식 실패 시 전체에서 재시도
+    return result
+
+
+def _parse_capex(rows: Rows, subtype: str) -> dict:
     if subtype == "신규시설투자":
         amount = pick_num(rows, r"투자금액", which="first")
         ratio = pick_num(rows, r"자기자본대비", which="first")
@@ -243,7 +250,7 @@ def parse_capex(rows: Rows, subtype: str) -> dict:
             "end": pick_text(rows, r"^종료일"),
         }
     m.update({"amount": amount, "ratio": ratio, "ratio_base": base_label})
-    summary = f"{eok(amount)}"
+    summary = eok(amount) if amount is not None else "금액 미기재(공시유보·첨부정정 등)"
     if ratio is not None:
         summary += f" ({base_label} 대비 {ratio:,.1f}%)"
     if m.get("counterparty"):

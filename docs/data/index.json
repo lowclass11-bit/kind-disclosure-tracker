@@ -1,0 +1,136 @@
+{
+ "updated_at": "2026-09-25T11:44:46+09:00",
+ "latest": "2026-09-23",
+ "days": [
+  {
+   "date": "2026-09-23",
+   "source": "DART",
+   "collected_at": "2026-09-25T11:43:39+09:00",
+   "total_disclosures": 412,
+   "counts": {
+    "capex": 15,
+    "stake": 136
+   },
+   "signals": {
+    "capex": 15,
+    "stake": 62
+   }
+  },
+  {
+   "date": "2026-09-22",
+   "source": "DART",
+   "collected_at": "2026-09-25T11:43:47+09:00",
+   "total_disclosures": 358,
+   "counts": {
+    "capex": 28,
+    "stake": 96,
+    "earnings": 1
+   },
+   "signals": {
+    "capex": 28,
+    "stake": 59,
+    "earnings": 1
+   }
+  },
+  {
+   "date": "2026-09-21",
+   "source": "DART",
+   "collected_at": "2026-09-25T11:43:56+09:00",
+   "total_disclosures": 339,
+   "counts": {
+    "capex": 20,
+    "earnings": 1,
+    "stake": 80
+   },
+   "signals": {
+    "capex": 20,
+    "earnings": 1,
+    "stake": 51
+   }
+  },
+  {
+   "date": "2026-09-18",
+   "source": "DART",
+   "collected_at": "2026-09-25T11:44:07+09:00",
+   "total_disclosures": 437,
+   "counts": {
+    "stake": 128,
+    "capex": 28
+   },
+   "signals": {
+    "stake": 54,
+    "capex": 28
+   }
+  },
+  {
+   "date": "2026-09-17",
+   "source": "DART",
+   "collected_at": "2026-09-25T11:44:14+09:00",
+   "total_disclosures": 334,
+   "counts": {
+    "capex": 8,
+    "stake": 87
+   },
+   "signals": {
+    "capex": 8,
+    "stake": 50
+   }
+  },
+  {
+   "date": "2026-09-16",
+   "source": "DART",
+   "collected_at": "2026-09-25T11:44:22+09:00",
+   "total_disclosures": 339,
+   "counts": {
+    "stake": 116,
+    "capex": 11
+   },
+   "signals": {
+    "stake": 71,
+    "capex": 11
+   }
+  },
+  {
+   "date": "2026-09-15",
+   "source": "DART",
+   "collected_at": "2026-09-25T11:44:29+09:00",
+   "total_disclosures": 348,
+   "counts": {
+    "capex": 35,
+    "stake": 77
+   },
+   "signals": {
+    "capex": 35,
+    "stake": 51
+   }
+  },
+  {
+   "date": "2026-09-14",
+   "source": "DART",
+   "collected_at": "2026-09-25T11:44:36+09:00",
+   "total_disclosures": 386,
+   "counts": {
+    "stake": 116,
+    "capex": 18
+   },
+   "signals": {
+    "stake": 52,
+    "capex": 18
+   }
+  },
+  {
+   "date": "2026-09-11",
+   "source": "DART",
+   "collected_at": "2026-09-25T11:44:46+09:00",
+   "total_disclosures": 425,
+   "counts": {
+    "capex": 27,
+    "stake": 108
+   },
+   "signals": {
+    "capex": 27,
+    "stake": 46
+   }
+  }
+ ]
+}

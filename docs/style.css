@@ -197,3 +197,13 @@ input[type=search], #watchInput { min-width: 240px; flex: 1 1 240px; max-width: 
   .top { flex-wrap: wrap; }
   .tbl th:nth-child(2), .tbl td:nth-child(2) { display: none; }
 }
+
+/* 모바일: 히스토리 표를 카드형으로 */
+@media (max-width: 560px) {
+  .tbl thead { display: none; }
+  .tbl tr { display: block; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+  .tbl td { display: inline; border: 0; padding: 0 4px 0 0; }
+  .tbl td:nth-child(5), .tbl td:nth-child(6) { display: block; padding-top: 4px; }
+  .tbl td:first-child br { display: none; }
+  .tbl th:nth-child(2), .tbl td:nth-child(2) { display: inline; }
+}
