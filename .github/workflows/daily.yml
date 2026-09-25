@@ -13,6 +13,10 @@ on:
         description: "최근 N일 소급 수집 (0이면 사용 안 함)"
         required: false
         default: "0"
+      telegram_test:
+        description: "텔레그램 연결 테스트 메시지만 보내기"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -35,7 +39,15 @@ jobs:
 
       - run: pip install -r requirements.txt
 
+      - name: Telegram test
+        if: ${{ github.event.inputs.telegram_test == 'true' }}
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python -m scraper.notify --test
+
       - name: Collect disclosures
+        if: ${{ github.event.inputs.telegram_test != 'true' }}
         env:
           INPUT_DATE: ${{ github.event.inputs.date }}
           INPUT_BACKFILL: ${{ github.event.inputs.backfill }}
@@ -47,6 +59,16 @@ jobs:
           else
             python -m scraper.collect
           fi
+
+      - name: Telegram daily summary
+        # 소급 수집·특정일 수집 때는 보내지 않는다
+        if: ${{ github.event.inputs.telegram_test != 'true' && !github.event.inputs.date && (github.event.inputs.backfill == '' || github.event.inputs.backfill == '0' || github.event_name == 'schedule') }}
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          WATCHLIST: ${{ vars.WATCHLIST }}
+        continue-on-error: true  # 알림 실패로 데이터 커밋이 막히지 않게
+        run: python -m scraper.notify
 
       - name: Commit data
         run: |
