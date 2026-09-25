@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KIND 공시 트래커</title>
+<meta name="description" content="실적 개선 · 시설투자 · 대주주 지분 매입 공시를 매일 추적">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%232563eb'/><path d='M8 22l5-6 4 3 7-9' stroke='white' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <span class="logo" aria-hidden="true"></span>
+    <div>
+      <h1>KIND 공시 트래커</h1>
+      <p class="meta" id="meta">불러오는 중…</p>
+    </div>
+  </div>
+  <div class="top-actions">
+    <button id="notifyBtn" class="btn ghost" type="button">🔔 알림 켜기</button>
+  </div>
+</header>
+
+<div id="banner" class="banner" hidden>
+  <span id="bannerText"></span>
+  <button id="bannerOk" class="btn small" type="button">확인</button>
+</div>
+
+<nav class="tabs" role="tablist">
+  <button role="tab" data-tab="today" class="on">오늘의 공시</button>
+  <button role="tab" data-tab="overlap">중복 시그널</button>
+  <button role="tab" data-tab="history">히스토리</button>
+  <button role="tab" data-tab="watch">관심종목 <span id="watchCount" class="count"></span></button>
+</nav>
+
+<section class="filters">
+  <div class="seg" id="marketSeg">
+    <button data-v="ALL" class="on">전체</button>
+    <button data-v="KOSPI">코스피</button>
+    <button data-v="KOSDAQ">코스닥</button>
+  </div>
+  <label class="chk"><input type="checkbox" id="signalOnly" checked> 상승·매수만</label>
+  <label class="chk"><input type="checkbox" id="showAmended" checked> 정정공시 포함</label>
+</section>
+
+<main>
+  <!-- 오늘 -->
+  <section id="tab-today" class="panel">
+    <div class="row-head">
+      <label>기준일 <select id="daySel"></select></label>
+      <span class="muted" id="daySource"></span>
+    </div>
+    <div class="kpis" id="kpis"></div>
+    <div class="cols" id="todayCols"></div>
+  </section>
+
+  <!-- 중복 시그널 -->
+  <section id="tab-overlap" class="panel" hidden>
+    <div class="row-head">
+      <label>최근 <select id="overlapWin">
+        <option value="5">5 거래일</option>
+        <option value="10" selected>10 거래일</option>
+        <option value="20">20 거래일</option>
+        <option value="60">60 거래일</option>
+      </select></label>
+      <span class="muted">두 개 이상 카테고리(실적↑ · 시설투자 · 지분매입)에 동시에 걸린 종목</span>
+    </div>
+    <div id="overlapList"></div>
+  </section>
+
+  <!-- 히스토리 -->
+  <section id="tab-history" class="panel" hidden>
+    <div class="row-head wrap">
+      <input id="q" type="search" placeholder="종목명·공시명·제출인 검색">
+      <select id="hCat">
+        <option value="">전체 카테고리</option>
+        <option value="earnings">실적 변화</option>
+        <option value="capex">시설투자·공급계약</option>
+        <option value="stake">지분 매입</option>
+      </select>
+      <input id="hFrom" type="date"> ~ <input id="hTo" type="date">
+      <button id="csvBtn" class="btn ghost small" type="button">CSV 저장</button>
+    </div>
+    <p class="muted" id="hCount"></p>
+    <div class="table-wrap"><table class="tbl" id="hTable">
+      <thead><tr><th>일자</th><th>시장</th><th>종목</th><th>구분</th><th>공시</th><th>핵심 내용</th></tr></thead>
+      <tbody></tbody>
+    </table></div>
+    <button id="moreBtn" class="btn ghost" type="button" hidden>더 보기</button>
+  </section>
+
+  <!-- 관심종목 -->
+  <section id="tab-watch" class="panel" hidden>
+    <form id="watchForm" class="row-head wrap">
+      <input id="watchInput" list="corpList" placeholder="종목명 추가 (예: 삼성전자)" autocomplete="off">
+      <datalist id="corpList"></datalist>
+      <button class="btn" type="submit">추가</button>
+      <span class="muted">카드의 ☆를 눌러도 추가됩니다. 이 브라우저에 저장됩니다.</span>
+    </form>
+    <div id="watchChips" class="chips"></div>
+    <div id="watchList"></div>
+  </section>
+</main>
+
+<footer class="foot">
+  데이터: KIND(한국거래소) 우선 · 접속 불가 시 DART(금융감독원) 대체 · 매 영업일 18:50 KST 자동 수집 ·
+  투자 판단의 책임은 본인에게 있습니다.
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

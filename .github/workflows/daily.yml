@@ -1,0 +1,61 @@
+name: daily-collect
+
+on:
+  schedule:
+    # 평일 18:50 KST (09:50 UTC). GitHub 스케줄은 수 분~수십 분 지연될 수 있어 19시 전후 반영.
+    - cron: "50 9 * * 1-5"
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "특정일 수집 (YYYY-MM-DD, 비우면 오늘)"
+        required: false
+      backfill:
+        description: "최근 N일 소급 수집 (0이면 사용 안 함)"
+        required: false
+        default: "0"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-collect
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Collect disclosures
+        env:
+          INPUT_DATE: ${{ github.event.inputs.date }}
+          INPUT_BACKFILL: ${{ github.event.inputs.backfill }}
+        run: |
+          if [ -n "$INPUT_DATE" ]; then
+            python -m scraper.collect --date "$INPUT_DATE"
+          elif [ -n "$INPUT_BACKFILL" ] && [ "$INPUT_BACKFILL" != "0" ]; then
+            python -m scraper.collect --backfill "$INPUT_BACKFILL"
+          else
+            python -m scraper.collect
+          fi
+
+      - name: Commit data
+        run: |
+          git config user.name "kind-tracker-bot"
+          git config user.email "kind-tracker-bot@users.noreply.github.com"
+          git add docs/data
+          if git diff --cached --quiet; then
+            echo "no changes"
+          else
+            git commit -m "data: $(TZ=Asia/Seoul date +'%Y-%m-%d %H:%M') KST 수집"
+            git push
+          fi
