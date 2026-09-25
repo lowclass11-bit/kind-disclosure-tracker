@@ -109,7 +109,7 @@ def main(argv=None) -> int:
     token, chat_id = os.getenv("TELEGRAM_BOT_TOKEN"), os.getenv("TELEGRAM_CHAT_ID")
     if not (token and chat_id) and not args.dry_run:
         print("[notify] TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID 미설정 - 알림 건너뜀")
-        return 0
+        return 1 if args.test else 0  # 연결 테스트는 설정 누락을 실패로 알린다
 
     if args.test:
         send(token, chat_id, "✅ KIND 공시 트래커 텔레그램 연결 테스트입니다.\n"
