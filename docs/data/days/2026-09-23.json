@@ -1,8 +1,8 @@
 {
  "date": "2026-09-23",
  "source": "KIND",
- "collected_at": "2026-09-25T23:50:42+09:00",
- "total_disclosures": 473,
+ "collected_at": "2026-09-29T02:50:49+09:00",
+ "total_disclosures": 475,
  "items": [
   {
    "id": "20260923000749",
@@ -773,11 +773,19 @@
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000593",
    "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260923000593",
-   "metrics": {},
+   "metrics": {
+    "reasons": [],
+    "ratio_prev": null,
+    "ratio_cur": null,
+    "ratio_delta": null,
+    "relation": "",
+    "reason_text": "",
+    "simple": false
+   },
    "direction": null,
    "signal": false,
-   "summary": "본문 파싱 실패 - 원문 확인",
-   "parsed": false
+   "summary": "",
+   "parsed": true
   },
   {
    "id": "20260923000592",
@@ -795,11 +803,16 @@
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000592",
    "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260923000592",
-   "metrics": {},
+   "metrics": {
+    "reasons": [],
+    "shares_delta": null,
+    "ratio_delta": null,
+    "relation": ""
+   },
    "direction": null,
    "signal": false,
-   "summary": "본문 파싱 실패 - 원문 확인",
-   "parsed": false
+   "summary": "",
+   "parsed": true
   },
   {
    "id": "20260923000591",
@@ -817,11 +830,19 @@
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000591",
    "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260923000591",
-   "metrics": {},
+   "metrics": {
+    "reasons": [],
+    "ratio_prev": null,
+    "ratio_cur": null,
+    "ratio_delta": null,
+    "relation": "",
+    "reason_text": "",
+    "simple": false
+   },
    "direction": null,
    "signal": false,
-   "summary": "본문 파싱 실패 - 원문 확인",
-   "parsed": false
+   "summary": "",
+   "parsed": true
   },
   {
    "id": "20260923000585",
@@ -1041,11 +1062,16 @@
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000564",
    "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260923000564",
-   "metrics": {},
+   "metrics": {
+    "reasons": [],
+    "shares_delta": null,
+    "ratio_delta": null,
+    "relation": ""
+   },
    "direction": null,
    "signal": false,
-   "summary": "본문 파싱 실패 - 원문 확인",
-   "parsed": false
+   "summary": "",
+   "parsed": true
   },
   {
    "id": "20260923000560",
@@ -1120,11 +1146,15 @@
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000553",
    "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260923000553",
-   "metrics": {},
+   "metrics": {
+    "reasons": [],
+    "shares_delta": null,
+    "ratio_delta": null
+   },
    "direction": null,
    "signal": false,
-   "summary": "본문 파싱 실패 - 원문 확인",
-   "parsed": false
+   "summary": "",
+   "parsed": true
   },
   {
    "id": "20260923000552",
@@ -1973,11 +2003,16 @@
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000430",
    "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260923000430",
-   "metrics": {},
+   "metrics": {
+    "reasons": [],
+    "shares_delta": null,
+    "ratio_delta": null,
+    "relation": ""
+   },
    "direction": null,
    "signal": false,
-   "summary": "본문 파싱 실패 - 원문 확인",
-   "parsed": false
+   "summary": "",
+   "parsed": true
   },
   {
    "id": "20260923000425",
@@ -2022,11 +2057,16 @@
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000406",
    "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260923000406",
-   "metrics": {},
+   "metrics": {
+    "reasons": [],
+    "shares_delta": null,
+    "ratio_delta": null,
+    "relation": ""
+   },
    "direction": null,
    "signal": false,
-   "summary": "본문 파싱 실패 - 원문 확인",
-   "parsed": false
+   "summary": "",
+   "parsed": true
   },
   {
    "id": "20260923000405",
@@ -2044,11 +2084,19 @@
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000405",
    "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260923000405",
-   "metrics": {},
+   "metrics": {
+    "reasons": [],
+    "ratio_prev": null,
+    "ratio_cur": null,
+    "ratio_delta": null,
+    "relation": "",
+    "reason_text": "",
+    "simple": false
+   },
    "direction": null,
    "signal": false,
-   "summary": "본문 파싱 실패 - 원문 확인",
-   "parsed": false
+   "summary": "",
+   "parsed": true
   },
   {
    "id": "20260923000386",
@@ -2398,11 +2446,19 @@
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000365",
    "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260923000365",
-   "metrics": {},
+   "metrics": {
+    "reasons": [],
+    "ratio_prev": null,
+    "ratio_cur": null,
+    "ratio_delta": null,
+    "relation": "",
+    "reason_text": "",
+    "simple": false
+   },
    "direction": null,
    "signal": false,
-   "summary": "본문 파싱 실패 - 원문 확인",
-   "parsed": false
+   "summary": "",
+   "parsed": true
   },
   {
    "id": "20260923000361",
@@ -2776,11 +2832,19 @@
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000238",
    "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260923000238",
-   "metrics": {},
+   "metrics": {
+    "reasons": [],
+    "ratio_prev": null,
+    "ratio_cur": null,
+    "ratio_delta": null,
+    "relation": "",
+    "reason_text": "",
+    "simple": false
+   },
    "direction": null,
    "signal": false,
-   "summary": "본문 파싱 실패 - 원문 확인",
-   "parsed": false
+   "summary": "",
+   "parsed": true
   },
   {
    "id": "20260923000234",
@@ -2798,11 +2862,19 @@
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000234",
    "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260923000234",
-   "metrics": {},
+   "metrics": {
+    "reasons": [],
+    "ratio_prev": null,
+    "ratio_cur": null,
+    "ratio_delta": null,
+    "relation": "",
+    "reason_text": "",
+    "simple": false
+   },
    "direction": null,
    "signal": false,
-   "summary": "본문 파싱 실패 - 원문 확인",
-   "parsed": false
+   "summary": "",
+   "parsed": true
   },
   {
    "id": "20260923000231",
@@ -3431,11 +3503,16 @@
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000141",
    "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260923000141",
-   "metrics": {},
+   "metrics": {
+    "reasons": [],
+    "shares_delta": null,
+    "ratio_delta": null,
+    "relation": ""
+   },
    "direction": null,
    "signal": false,
-   "summary": "본문 파싱 실패 - 원문 확인",
-   "parsed": false
+   "summary": "",
+   "parsed": true
   },
   {
    "id": "20260923000138",
@@ -3453,11 +3530,16 @@
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000138",
    "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260923000138",
-   "metrics": {},
+   "metrics": {
+    "reasons": [],
+    "shares_delta": null,
+    "ratio_delta": null,
+    "relation": ""
+   },
    "direction": null,
    "signal": false,
-   "summary": "본문 파싱 실패 - 원문 확인",
-   "parsed": false
+   "summary": "",
+   "parsed": true
   },
   {
    "id": "20260923000132",
