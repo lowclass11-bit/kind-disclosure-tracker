@@ -2971,11 +2971,19 @@
   "subsidiary": false,
   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000208",
   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260923000208",
-  "metrics": {},
+  "metrics": {
+   "reasons": [],
+   "ratio_prev": null,
+   "ratio_cur": null,
+   "ratio_delta": null,
+   "relation": "",
+   "reason_text": "",
+   "simple": true
+  },
   "direction": null,
   "signal": false,
-  "summary": "본문 파싱 실패 - 원문 확인",
-  "parsed": false
+  "summary": "",
+  "parsed": true
  },
  {
   "id": "20260923000206",
@@ -3552,11 +3560,16 @@
   "subsidiary": false,
   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000132",
   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260923000132",
-  "metrics": {},
+  "metrics": {
+   "reasons": [],
+   "shares_delta": null,
+   "ratio_delta": null,
+   "relation": ""
+  },
   "direction": null,
   "signal": false,
-  "summary": "본문 파싱 실패 - 원문 확인",
-  "parsed": false
+  "summary": "",
+  "parsed": true
  },
  {
   "id": "20260923000121",
