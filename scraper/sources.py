@@ -181,13 +181,16 @@ def fetch_dart(session: requests.Session, date: str) -> list[ListItem]:
     return items
 
 
-def fetch_list(session: requests.Session, date: str) -> tuple[list[ListItem], str]:
-    """KIND 우선, 실패 시 DART. (목록, 사용한 소스명) 반환."""
+def fetch_lists(session: requests.Session, date: str) -> tuple[list[ListItem], list[ListItem] | None]:
+    """(DART 목록, KIND 목록 또는 None). KIND는 해외 IP 차단 등으로 실패할 수 있다.
+
+    KIND 접수번호와 DART 접수번호는 서로 다른 번호다. 본문 수치는 DART 뷰어에서만 읽을 수
+    있으므로 DART 목록이 기준이 되고, KIND 목록은 짝을 지어 KIND 원문 링크를 붙이는 데 쓴다.
+    """
+    kind: list[ListItem] | None
     try:
-        items = fetch_kind(session, date)
-        if items:
-            return items, "KIND"
-        print(f"[list] KIND returned 0 rows for {date}, trying DART")
-    except Exception as e:  # noqa: BLE001 - 어떤 실패든 DART로 대체
-        print(f"[list] KIND failed ({e.__class__.__name__}: {e}); falling back to DART")
-    return fetch_dart(session, date), "DART"
+        kind = fetch_kind(session, date)
+    except Exception as e:  # noqa: BLE001 - KIND 실패는 치명적이지 않다
+        print(f"[list] KIND unavailable ({e.__class__.__name__}: {e})")
+        kind = None
+    return fetch_dart(session, date), kind

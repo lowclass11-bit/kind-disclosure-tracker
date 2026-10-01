@@ -84,3 +84,23 @@ def test_block_holding():
     r = parse_stake(rows, "대량보유(5%)", "주식등의대량보유상황보고서(일반)")
     assert r["direction"] == "buy" and r["signal"]
     assert abs(r["metrics"]["ratio_delta"] - 0.09) < 1e-9
+
+
+def test_match_kind_pairs_by_corp_type_and_filer():
+    from scraper.collect import match_kind
+    from scraper.sources import ListItem
+
+    dart = [
+        {"corp": "LG에너지솔루션", "subtype": "공급계약", "filer": "LG에너지솔루션", "time": "09:01"},
+        {"corp": "아이디스", "subtype": "임원·주요주주", "filer": "김영달", "time": "11:30"},
+        {"corp": "아이디스", "subtype": "임원·주요주주", "filer": "홍길동", "time": "11:31"},
+    ]
+    kind = [
+        ListItem("20261001000157", "2026-10-01", "11:31", "KOSDAQ", "아이디스", "임원ㆍ주요주주특정증권등소유상황보고서", "홍길동"),
+        ListItem("20261001000119", "2026-10-01", "09:00", "KOSPI", "LG에너지솔루션", "단일판매ㆍ공급계약체결", "LG에너지솔루션"),
+        ListItem("20261001000200", "2026-10-01", "12:00", "KOSPI", "삼성전자", "단일판매ㆍ공급계약체결", "삼성전자"),
+    ]
+    left = match_kind(dart, kind)
+    assert dart[0]["kind_id"] == "20261001000119"
+    assert dart[2]["kind_id"] == "20261001000157" and "kind_id" not in dart[1]
+    assert [k.corp for k in left] == ["삼성전자"]

@@ -380,6 +380,8 @@ def parse_stake(rows: Rows, subtype: str, title: str) -> dict:
 # ---------------------------------------------------------------- entry
 def parse(session: requests.Session, item: dict) -> dict:
     rows = fetch_rows(session, item["id"])
+    if not rows:
+        raise RuntimeError("DART 본문을 찾지 못함")
     cat, sub = item["category"], item["subtype"]
     if cat == EARNINGS:
         return parse_earnings(rows)

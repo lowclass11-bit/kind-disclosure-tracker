@@ -73,7 +73,7 @@
       <div class="title">${esc(it.title)}${it.filer && it.filer !== it.corp ? ` · 제출: ${esc(it.filer)}` : ""}</div>
       <div class="summary">${dir} ${esc(it.summary || "")}</div>
       ${detailLine(it)}
-      <div class="links"><a href="${it.url}" target="_blank" rel="noopener">DART 원문</a><a href="${it.kind_url}" target="_blank" rel="noopener">KIND 원문</a></div>
+      <div class="links">${it.url ? `<a href="${it.url}" target="_blank" rel="noopener">DART 원문</a>` : ""}${it.kind_url ? `<a href="${it.kind_url}" target="_blank" rel="noopener">KIND 원문</a>` : ""}</div>
     </article>`;
   }
 
@@ -156,7 +156,7 @@
           <span class="muted">${r.list.length}건</span>
         </div>
         <ul>${r.list.sort((a, b) => b.date.localeCompare(a.date)).map((it) =>
-          `<li><span class="muted num">${it.date.slice(5)}</span> <span class="tag cat-${it.category}">${esc(it.subtype)}</span> ${esc(it.summary)} <a href="${it.url}" target="_blank" rel="noopener">원문</a></li>`).join("")}</ul>
+          `<li><span class="muted num">${it.date.slice(5)}</span> <span class="tag cat-${it.category}">${esc(it.subtype)}</span> ${esc(it.summary)} <a href="${it.url || it.kind_url}" target="_blank" rel="noopener">원문</a></li>`).join("")}</ul>
       </div>`;
     }).join("") : `<div class="empty">최근 ${win} 거래일 동안 2개 이상 카테고리에 걸린 종목이 없습니다.</div>`;
   }
@@ -180,7 +180,7 @@
       <td><span class="tag ${it.market}">${it.market === "KOSPI" ? "코스피" : "코스닥"}</span></td>
       <td><button class="star ${state.watch.has(it.corp) ? "on" : ""}" data-star="${esc(it.corp)}">${state.watch.has(it.corp) ? "★" : "☆"}</button> <b>${esc(it.corp)}</b></td>
       <td><span class="tag cat-${it.category}">${esc(it.subtype)}</span>${it.amended ? ' <span class="tag amend">정정</span>' : ""}</td>
-      <td><a href="${it.url}" target="_blank" rel="noopener">${esc(it.title)}</a></td>
+      <td><a href="${it.url || it.kind_url}" target="_blank" rel="noopener">${esc(it.title)}</a></td>
       <td>${it.direction ? `<span class="dir ${it.direction}">${DIR_LABEL[it.direction] || ""}</span> ` : ""}${esc(it.summary)}</td>
     </tr>`).join("") || `<tr><td colspan="6" class="muted">검색 결과 없음</td></tr>`;
     $("#moreBtn").hidden = rows.length <= state.histLimit;

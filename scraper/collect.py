@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 from concurrent.futures import ThreadPoolExecutor
 from datetime import date, datetime, timedelta, timezone
@@ -15,7 +16,7 @@ from pathlib import Path
 
 from .classify import classify
 from .details import parse
-from .sources import fetch_list, make_session
+from .sources import ListItem, fetch_lists, make_session
 
 KST = timezone(timedelta(hours=9))
 ROOT = Path(__file__).resolve().parent.parent
@@ -36,10 +37,43 @@ def _dump(path: Path, obj) -> None:
     path.write_text(json.dumps(obj, ensure_ascii=False, indent=1), encoding="utf-8")
 
 
+def _key(text: str) -> str:
+    return re.sub(r"[\s\[\]()ㆍ·.,㈜]|\(주\)|주식회사", "", text)
+
+
+def match_kind(dart_items: list[dict], kind: list[ListItem]) -> list[ListItem]:
+    """KIND 공시를 같은 회사·같은 유형·같은 제출인의 DART 공시와 짝짓는다. 짝 없는 KIND 공시를 반환."""
+    pool = [k for k in kind if classify(k.title)]
+    # 1차: 제출인까지 같은 것끼리, 2차: 남은 것끼리 시각이 가까운 순
+    for same_filer in (True, False):
+        for it in dart_items:
+            if "kind_id" in it:
+                continue
+            cands = [k for k in pool if _key(k.corp) == _key(it["corp"])
+                     and classify(k.title)["subtype"] == it["subtype"]
+                     and (not same_filer or _key(k.filer) == _key(it["filer"]))]
+            if not cands:
+                continue
+            k = min(cands, key=lambda k: abs(_minutes(k.time) - _minutes(it["time"])))
+            pool.remove(k)
+            it["kind_id"] = k.id
+            it["kind_url"] = f"https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno={k.id}"
+    return pool
+
+
+def _minutes(hhmm: str) -> int:
+    try:
+        h, m = hhmm.split(":")[:2]
+        return int(h) * 60 + int(m)
+    except ValueError:
+        return 0
+
+
 def collect_day(session, date: str) -> dict | None:
-    listing, source = fetch_list(session, date)
-    print(f"[{date}] {len(listing)} KOSPI/KOSDAQ disclosures via {source}")
-    if not listing:
+    listing, kind = fetch_lists(session, date)
+    source = "KIND+DART" if kind else "DART"
+    print(f"[{date}] DART {len(listing)} / KIND {len(kind) if kind is not None else 'n/a'} KOSPI/KOSDAQ disclosures")
+    if not listing and not kind:
         return None
 
     cached = {it["id"]: it for it in _load(DAYS / f"{date}.json", {}).get("items", [])}
@@ -50,11 +84,19 @@ def collect_day(session, date: str) -> dict | None:
             continue
         item = {**li.to_dict(), **cls}
         item["url"] = f"https://dart.fss.or.kr/dsaf001/main.do?rcpNo={li.id}"
-        item["kind_url"] = f"https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno={li.id}"
         old = cached.get(li.id)
         if old and old.get("parsed"):
             item.update({k: old[k] for k in ("metrics", "direction", "signal", "summary", "parsed")})
         items.append(item)
+
+    pending = []
+    if kind:
+        for k in match_kind(items, kind):
+            # KIND에는 있지만 DART 목록에 아직 없는 공시: 다음 수집 때 다시 짝을 찾는다
+            pending.append({**k.to_dict(), **classify(k.title), "id": f"K{k.id}", "kind_id": k.id,
+                            "url": "", "kind_url": f"https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno={k.id}",
+                            "metrics": {}, "direction": None, "signal": False, "parsed": False,
+                            "summary": "DART 등록 대기 - 다음 수집 때 수치 반영"})
 
     def enrich(item: dict) -> None:
         if item.get("parsed"):
@@ -70,13 +112,14 @@ def collect_day(session, date: str) -> dict | None:
 
     with ThreadPoolExecutor(max_workers=WORKERS) as pool:
         list(pool.map(enrich, items))
+    items += pending
 
     items.sort(key=lambda x: (x["time"], x["id"]), reverse=True)
     day = {
         "date": date,
         "source": source,
         "collected_at": datetime.now(KST).isoformat(timespec="seconds"),
-        "total_disclosures": len(listing),
+        "total_disclosures": len(listing) or len(kind or []),
         "items": items,
     }
     _dump(DAYS / f"{date}.json", day)
