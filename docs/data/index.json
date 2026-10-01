@@ -1,15 +1,15 @@
 {
- "updated_at": "2026-10-01T12:14:36+09:00",
+ "updated_at": "2026-10-01T12:15:02+09:00",
  "latest": "2026-10-01",
  "days": [
   {
    "date": "2026-10-01",
-   "source": "DART",
-   "collected_at": "2026-10-01T12:14:36+09:00",
+   "source": "KIND+DART",
+   "collected_at": "2026-10-01T12:15:02+09:00",
    "total_disclosures": 79,
    "counts": {
     "capex": 11,
-    "stake": 7,
+    "stake": 8,
     "earnings": 2
    },
    "signals": {

@@ -1,7 +1,7 @@
 {
  "date": "2026-10-01",
- "source": "DART",
- "collected_at": "2026-10-01T12:14:36+09:00",
+ "source": "KIND+DART",
+ "collected_at": "2026-10-01T12:15:02+09:00",
  "total_disclosures": 79,
  "items": [
   {
@@ -31,7 +31,9 @@
    "direction": "up",
    "signal": true,
    "summary": "20억 (매출액 대비 10.4%) · 주식회사 디아이씨",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261001000148",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261001000148"
   },
   {
    "id": "20261001000129",
@@ -59,7 +61,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+) · +8,398주 · +0.07%p",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261001000157",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261001000157"
   },
   {
    "id": "20261001000100",
@@ -93,7 +97,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+), 장내매도(-) · +0.33%p · → 68.57% · 매수 약 58억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261001000145",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261001000145"
   },
   {
    "id": "20261001000097",
@@ -122,7 +128,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+) · +55,200주 · +0.26%p · 매수 약 8.3억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261001000142",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261001000142"
   },
   {
    "id": "20261001800119",
@@ -151,7 +159,9 @@
    "direction": "up",
    "signal": true,
    "summary": "1.28조 (매출액 대비 3.8%) · Hanwha Q CELLS USA Corp",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261001000119",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261001000119"
   },
   {
    "id": "20261001000062",
@@ -175,7 +185,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "자사주 50억 · 주주가치 제고",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261001000108",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261001000108"
   },
   {
    "id": "20261001900122",
@@ -204,7 +216,9 @@
    "direction": "up",
    "signal": true,
    "summary": "49억 (매출액 대비 61.7%) · (주)대웅제약",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261001000122",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261001000122"
   },
   {
    "id": "20261001000082",
@@ -232,7 +246,9 @@
    "direction": "sell",
    "signal": false,
    "summary": "증여(-) · -500,000주 · -1.93%p",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261001000124",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261001000124"
   },
   {
    "id": "20261001800084",
@@ -261,7 +277,9 @@
    "direction": "up",
    "signal": true,
    "summary": "1,812억 (매출액 대비 3.6%) · LS ELECTRIC AMERICA Inc.",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261001000084",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261001000084"
   },
   {
    "id": "20261001000068",
@@ -294,7 +312,9 @@
    "direction": "sell",
    "signal": false,
    "summary": "증여(-), 장내매수(+) · -1.83%p · → 54.33% · 매수 약 0.8억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261001000112",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261001000112"
   },
   {
    "id": "20261001800079",
@@ -323,7 +343,9 @@
    "direction": "up",
    "signal": true,
    "summary": "1,812억 (매출액 대비 3.6%) · LS ELECTRIC AMERICA Inc.",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261001000079",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261001000079"
   },
   {
    "id": "20261001900080",
@@ -352,7 +374,9 @@
    "direction": "up",
    "signal": true,
    "summary": "금액 미기재(공시유보·첨부정정 등) · 주식회사 모빌린트",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261001000080",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261001000080"
   },
   {
    "id": "20261001800062",
@@ -381,7 +405,9 @@
    "direction": "up",
    "signal": true,
    "summary": "3,451억 (매출액 대비 28.0%) · 남산 4-7 재개발정비사업조합",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261001000062",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261001000062"
   },
   {
    "id": "20261001800060",
@@ -410,7 +436,9 @@
    "direction": "up",
    "signal": true,
    "summary": "230억 (매출액 대비 7.9%) · 자이씨앤에이(주)",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261001000060",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261001000060"
   },
   {
    "id": "20261001800054",
@@ -439,7 +467,9 @@
    "direction": "up",
    "signal": true,
    "summary": "153억 (매출액 대비 3.5%) · 삼성전자(주) (Samsung Electronics Co., Ltd.)",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261001000054",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261001000054"
   },
   {
    "id": "20261001000014",
@@ -468,7 +498,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+) · +5,000주 · +0.01%p · 매수 약 0.3억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261001000059",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261001000059"
   },
   {
    "id": "20261001800034",
@@ -497,7 +529,9 @@
    "direction": "up",
    "signal": true,
    "summary": "8,380억 (매출액 대비 4.9%) · VIETNAM NATIONAL INDUSTRY - ENERGY GROUP (PVN)",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261001000034",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261001000034"
   },
   {
    "id": "20261001800028",
@@ -526,7 +560,9 @@
    "direction": "up",
    "signal": true,
    "summary": "719억 (매출액 대비 5.6%) · 포스코플로우 주식회사 (POSCO FLOW CO.,LTD.)",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261001000028",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261001000028"
   },
   {
    "id": "20261001900004",
@@ -575,7 +611,9 @@
    "direction": "up",
    "signal": true,
    "summary": "매출 +33.9% · 영업익 +36.1% · 순익 +45.2%",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261001000004",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261001000004"
   },
   {
    "id": "20261001900003",
@@ -624,7 +662,32 @@
    "direction": "up",
    "signal": true,
    "summary": "매출 +25.2% · 영업익 +34.0% · 순익 +36.4%",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261001000003",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261001000003"
+  },
+  {
+   "id": "K20260930001321",
+   "date": "2026-10-01",
+   "time": "07:30",
+   "market": "KOSDAQ",
+   "corp": "수성웹툰",
+   "title": "주식등의대량보유상황보고서(약식)",
+   "filer": "지와이헬스케어2호투자조합",
+   "corp_code": "08418",
+   "category": "stake",
+   "subtype": "대량보유(5%)",
+   "amended": false,
+   "amend_tag": "",
+   "subsidiary": false,
+   "kind_id": "20260930001321",
+   "url": "",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260930001321",
+   "metrics": {},
+   "direction": null,
+   "signal": false,
+   "parsed": false,
+   "summary": "DART 등록 대기 - 다음 수집 때 수치 반영"
   }
  ]
 }
