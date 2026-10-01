@@ -10,7 +10,7 @@ import argparse
 import json
 import sys
 from concurrent.futures import ThreadPoolExecutor
-from datetime import datetime, timedelta, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 from .classify import classify
@@ -122,11 +122,16 @@ def main(argv=None) -> int:
         dates = [(today - timedelta(days=i)).isoformat() for i in range(args.backfill)]
         dates = [d for d in dates if datetime.fromisoformat(d).weekday() < 5]
     else:
-        # 오늘 + 직전 수집일(장 마감 후 늦게 올라온 공시 반영)
-        dates = [today.isoformat()]
+        # 직전 수집일부터 오늘까지의 평일 전부. 스케줄이 밀리거나 빠진 날도 메운다.
+        # 직전 수집일은 장 마감 후 늦게 올라온 공시 반영을 위해 다시 확인한다.
         prev = _load(DATA / "index.json", {}).get("latest")
-        if prev and prev != dates[0]:
-            dates.append(prev)
+        start = max(date.fromisoformat(prev), today - timedelta(days=14)) if prev else today
+        dates = []
+        d = today
+        while d >= start:
+            if d.weekday() < 5:
+                dates.append(d.isoformat())
+            d -= timedelta(days=1)
 
     for d in dates:
         collect_day(session, d)

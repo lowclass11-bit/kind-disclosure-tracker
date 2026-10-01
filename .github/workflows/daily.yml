@@ -2,8 +2,12 @@ name: daily-collect
 
 on:
   schedule:
-    # 평일 18:50 KST (09:50 UTC). GitHub 스케줄은 수 분~수십 분 지연될 수 있어 19시 전후 반영.
-    - cron: "50 9 * * 1-5"
+    # 평일 18:50 KST 기준. GitHub 무료 스케줄은 몇 시간씩 밀리거나 건너뛰는 일이 있어
+    # 여러 번 걸어 둔다. 수집은 빠진 날을 메우고, 텔레그램은 하루 한 번만 보낸다.
+    - cron: "50 9 * * 1-5"    # 18:50 KST
+    - cron: "17 10 * * 1-5"   # 19:17 KST
+    - cron: "43 10 * * 1-5"   # 19:43 KST
+    - cron: "13 11 * * 1-5"   # 20:13 KST
   workflow_dispatch:
     inputs:
       date:
@@ -31,6 +35,8 @@ jobs:
     timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main  # 앞선 실행이 커밋한 최신 데이터·발송 기록에서 시작
 
       - uses: actions/setup-python@v5
         with:
@@ -79,5 +85,6 @@ jobs:
             echo "no changes"
           else
             git commit -m "data: $(TZ=Asia/Seoul date +'%Y-%m-%d %H:%M') KST 수집"
+            git pull --rebase origin main
             git push
           fi

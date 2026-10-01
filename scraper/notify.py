@@ -87,12 +87,12 @@ def split(text: str) -> list[str]:
     return chunks
 
 
-def send(token: str, chat_id: str, text: str) -> None:
+def send(token: str, chat_id: str, text: str, silent: bool = False) -> None:
     for chunk in split(text):
         r = requests.post(
             f"https://api.telegram.org/bot{token}/sendMessage",
             json={"chat_id": chat_id, "text": chunk, "parse_mode": "HTML",
-                  "disable_web_page_preview": True},
+                  "disable_web_page_preview": True, "disable_notification": silent},
             timeout=30,
         )
         if not r.ok:
@@ -103,7 +103,6 @@ def main(argv=None) -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--test", action="store_true")
     ap.add_argument("--dry-run", action="store_true", help="발송하지 않고 메시지만 출력")
-    ap.add_argument("--date", help="기준일 지정 (기본: 오늘 KST)")
     args = ap.parse_args(argv)
 
     token, chat_id = os.getenv("TELEGRAM_BOT_TOKEN"), os.getenv("TELEGRAM_CHAT_ID")
@@ -118,36 +117,50 @@ def main(argv=None) -> int:
         return 0
 
     index = _load(DATA / "index.json", {})
-    latest = index.get("latest")
-    today = args.date or datetime.now(KST).date().isoformat()
-    if latest != today:
-        print(f"[notify] 오늘({today}) 수집된 공시 없음(휴장일 등) - 발송 안 함")
+    now = datetime.now(KST)
+    today = now.date().isoformat()
+    # 장 마감 전(18시 이전)의 오늘 데이터는 아직 덜 찬 상태라 다음 실행으로 미룬다
+    days = [d["date"] for d in index.get("days", [])
+            if d["date"] < today or (d["date"] == today and now.hour >= 18)]
+    if not days:
+        print("[notify] 수집된 데이터 없음")
         return 0
 
     first_run = not STATE.exists()
-    state = _load(STATE, {"sent_ids": []})
+    state = _load(STATE, {"sent_ids": [], "last_date": ""})
     sent = set(state["sent_ids"])
-    # 직전 거래일 장 마감 후 늦게 올라온 공시도 포함. 첫 발송은 당일 건만.
-    recent_dates = {d["date"] for d in index["days"][:1 if first_run else 2]}
-    items = [it for it in _load(DATA / "all.json", [])
-             if it["date"] in recent_dates and it.get("signal") and it["id"] not in sent]
-    watch = {w.strip() for w in os.getenv("WATCHLIST", "").split(",") if w.strip()}
+    all_items = _load(DATA / "all.json", [])
+    recent = set(days[:5])
+    if first_run:
+        # 첫 발송: 최근 3거래일만 보내고 그 이전 건은 보낸 것으로 처리
+        sent |= {it["id"] for it in all_items if it["date"] in recent and it["date"] not in days[:3]}
+        recent = set(days[:3])
+    items = [it for it in all_items
+             if it["date"] in recent and it.get("signal") and it["id"] not in sent]
+    # 하루 한 번: 새 거래일이 생겼을 때만 보낸다. 늦게 올라온 공시는 다음 날 요약에 포함.
+    if days[0] <= state.get("last_date", ""):
+        print(f"[notify] {days[0]} 요약은 이미 발송됨 - 건너뜀")
+        return 0
 
+    covered = sorted({it["date"] for it in items}) or [days[0]]
+    label = covered[0] if len(covered) == 1 else f"{covered[0][5:]}~{covered[-1][5:]}"
+    watch = {w.strip() for w in os.getenv("WATCHLIST", "").split(",") if w.strip()}
     if items:
-        text = build_message(today, items, watch)
+        text = build_message(label, items, watch)
     else:
-        text = f"<b>📊 {today} 공시 요약</b>\n오늘은 새 상승·매수 시그널 공시가 없습니다."
+        text = f"<b>📊 {days[0]} 공시 요약</b>\n새 상승·매수 시그널 공시가 없습니다."
 
     if args.dry_run:
         print(text)
         return 0
-    send(token, chat_id, text)
-    print(f"[notify] sent {len(items)} items")
-    state["sent_ids"] = (state["sent_ids"] + [it["id"] for it in items])[-5000:]
+    hour = now.hour
+    send(token, chat_id, text, silent=hour >= 23 or hour < 7)  # 심야 지연 발송은 무음
+    print(f"[notify] sent {len(items)} items ({label})")
+    state["sent_ids"] = (sorted(sent) + [it["id"] for it in items])[-5000:]
+    state["last_date"] = days[0]
     state["last_sent_at"] = datetime.now(KST).isoformat(timespec="seconds")
     _dump(STATE, state)
     return 0
-
 
 if __name__ == "__main__":
     sys.exit(main())
