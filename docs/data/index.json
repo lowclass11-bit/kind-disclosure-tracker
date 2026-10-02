@@ -1,11 +1,25 @@
 {
- "updated_at": "2026-10-02T02:21:36+09:00",
- "latest": "2026-10-01",
+ "updated_at": "2026-10-03T02:07:48+09:00",
+ "latest": "2026-10-02",
  "days": [
+  {
+   "date": "2026-10-02",
+   "source": "KIND+DART",
+   "collected_at": "2026-10-03T02:07:36+09:00",
+   "total_disclosures": 602,
+   "counts": {
+    "stake": 289,
+    "capex": 18
+   },
+   "signals": {
+    "stake": 119,
+    "capex": 17
+   }
+  },
   {
    "date": "2026-10-01",
    "source": "KIND+DART",
-   "collected_at": "2026-10-02T02:21:36+09:00",
+   "collected_at": "2026-10-03T02:07:48+09:00",
    "total_disclosures": 400,
    "counts": {
     "stake": 100,
