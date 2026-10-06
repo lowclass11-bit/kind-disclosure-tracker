@@ -1,7 +1,7 @@
 {
  "date": "2026-10-02",
  "source": "KIND+DART",
- "collected_at": "2026-10-06T04:18:24+09:00",
+ "collected_at": "2026-10-07T01:58:32+09:00",
  "total_disclosures": 602,
  "items": [
   {
@@ -7293,8 +7293,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261002000197",
-   "kind_id": "20261002000374",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261002000374",
    "metrics": {
     "reasons": [],
     "ratio_prev": 9.77,
@@ -7307,7 +7305,9 @@
    "direction": "sell",
    "signal": false,
    "summary": "-1.01%p · → 8.76%",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261002000374",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261002000374"
   },
   {
    "id": "20261002000193",
@@ -9262,8 +9262,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261002000071",
-   "kind_id": "20261002000217",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261002000217",
    "metrics": {
     "reasons": [
      "수증(+)"
@@ -9275,7 +9273,9 @@
    "direction": "buy",
    "signal": false,
    "summary": "수증(+) · +874,167주 · +4.04%p",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261002000217",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261002000217"
   },
   {
    "id": "20261002000068",
@@ -9515,8 +9515,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261001000615",
-   "kind_id": "20261001000736",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261001000736",
    "metrics": {
     "reasons": [
      "기타(-)",
@@ -9530,7 +9528,9 @@
    "direction": "sell",
    "signal": false,
    "summary": "기타(-), CB인수(+) · -7주 · -0.01%p · 매수 약 5.2억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261001000736",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261001000736"
   },
   {
    "id": "20261001000614",
@@ -9611,8 +9611,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261001000612",
-   "kind_id": "20261001000733",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261001000733",
    "metrics": {
     "reasons": [
      "기타(-)",
@@ -9630,7 +9628,9 @@
    "direction": "sell",
    "signal": false,
    "summary": "기타(-), 콜옵션권리행사에따른CB취득(+) · -2.59%p · → 39.20% · 매수 약 511억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261001000733",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261001000733"
   }
  ]
 }
