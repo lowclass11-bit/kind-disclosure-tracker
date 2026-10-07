@@ -3028,8 +3028,6 @@
   "amend_tag": "",
   "subsidiary": false,
   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261007800288",
-  "kind_id": "20261007000288",
-  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261007000288",
   "metrics": {
    "reasons": [
     "장내매수(+)"
@@ -3040,7 +3038,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +6,000주 · +0.03%p",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261007000288",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261007000288"
  },
  {
   "id": "20261007000242",
@@ -3125,8 +3125,6 @@
   "amend_tag": "기재정정",
   "subsidiary": false,
   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261007900269",
-  "kind_id": "20261007000269",
-  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261007000269",
   "metrics": {
    "name": "광양항 자동화부두 컨테이너 크레인(DTQC) 공사",
    "counterparty": "에이치디현대삼호",
@@ -3139,7 +3137,9 @@
   "direction": "up",
   "signal": true,
   "summary": "209억 (매출액 대비 9.4%) · 에이치디현대삼호",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261007000269",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261007000269"
  },
  {
   "id": "20261007900260",
