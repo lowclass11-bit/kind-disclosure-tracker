@@ -1,7 +1,7 @@
 {
  "date": "2026-10-06",
  "source": "KIND+DART",
- "collected_at": "2026-10-07T02:10:20+09:00",
+ "collected_at": "2026-10-08T02:12:04+09:00",
  "total_disclosures": 409,
  "items": [
   {
@@ -3713,8 +3713,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261006000206",
-   "kind_id": "20261006000245",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261006000245",
    "metrics": {
     "reasons": [
      "장내매도(-)",
@@ -3728,7 +3726,9 @@
    "direction": "sell",
    "signal": false,
    "summary": "장내매도(-), 장내매수(+) · -686,532주 · -3.18%p · 매수 약 425억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261006000245",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261006000245"
   },
   {
    "id": "20261006800240",
@@ -3745,8 +3745,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261006800240",
-   "kind_id": "20261006000240",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261006000240",
    "metrics": {
     "reasons": [
      "장내매수(+)",
@@ -3758,7 +3756,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+), 장내매도(-) · +7,249주 · +0.01%p",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261006000240",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261006000240"
   },
   {
    "id": "20261006000203",
@@ -4168,8 +4168,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261006000169",
-   "kind_id": "20261006000223",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261006000223",
    "metrics": {
     "reasons": [
      "장내매수(+)",
@@ -4183,7 +4181,9 @@
    "direction": "sell",
    "signal": false,
    "summary": "장내매수(+), 장내매도(-) · -111,725주 · -0.21%p · 매수 약 418억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261006000223",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261006000223"
   },
   {
    "id": "20261006000167",
