@@ -1,11 +1,11 @@
 {
- "updated_at": "2026-10-16T00:19:57+09:00",
+ "updated_at": "2026-10-16T00:34:44+09:00",
  "latest": "2026-10-15",
  "days": [
   {
    "date": "2026-10-15",
    "source": "KIND+DART",
-   "collected_at": "2026-10-16T00:19:57+09:00",
+   "collected_at": "2026-10-16T00:34:44+09:00",
    "total_disclosures": 414,
    "counts": {
     "capex": 50,
