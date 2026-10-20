@@ -1,11 +1,53 @@
 {
- "updated_at": "2026-10-16T00:34:44+09:00",
- "latest": "2026-10-15",
+ "updated_at": "2026-10-21T00:41:22+09:00",
+ "latest": "2026-10-20",
  "days": [
+  {
+   "date": "2026-10-20",
+   "source": "KIND+DART",
+   "collected_at": "2026-10-21T00:29:01+09:00",
+   "total_disclosures": 324,
+   "counts": {
+    "capex": 16,
+    "stake": 87
+   },
+   "signals": {
+    "capex": 15,
+    "stake": 48
+   }
+  },
+  {
+   "date": "2026-10-19",
+   "source": "KIND+DART",
+   "collected_at": "2026-10-21T00:35:55+09:00",
+   "total_disclosures": 373,
+   "counts": {
+    "capex": 22,
+    "stake": 111
+   },
+   "signals": {
+    "capex": 20,
+    "stake": 60
+   }
+  },
+  {
+   "date": "2026-10-16",
+   "source": "KIND+DART",
+   "collected_at": "2026-10-21T00:41:10+09:00",
+   "total_disclosures": 421,
+   "counts": {
+    "stake": 103,
+    "capex": 16
+   },
+   "signals": {
+    "stake": 50,
+    "capex": 14
+   }
+  },
   {
    "date": "2026-10-15",
    "source": "KIND+DART",
-   "collected_at": "2026-10-16T00:34:44+09:00",
+   "collected_at": "2026-10-21T00:41:22+09:00",
    "total_disclosures": 414,
    "counts": {
     "capex": 50,
