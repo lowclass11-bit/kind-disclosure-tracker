@@ -1,7 +1,7 @@
 {
  "date": "2026-10-22",
  "source": "KIND+DART",
- "collected_at": "2026-10-23T00:17:22+09:00",
+ "collected_at": "2026-10-23T00:39:32+09:00",
  "total_disclosures": 398,
  "items": [
   {
@@ -474,8 +474,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000466",
-   "kind_id": "20261022000661",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261022000661",
    "metrics": {
     "reasons": [
      "장내매수(+)"
@@ -488,7 +486,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+) · +1,450주 · +0.00%p · 매수 약 0.1억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261022000661",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261022000661"
   },
   {
    "id": "20261022000459",
@@ -505,8 +505,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000459",
-   "kind_id": "20261022000651",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261022000651",
    "metrics": {
     "reasons": [
      "장내매수(+)",
@@ -525,7 +523,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+), 장내매도(-) · +1.23%p · → 23.41% · 매수 약 5.3억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261022000651",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261022000651"
   },
   {
    "id": "20261022000457",
@@ -636,8 +636,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000446",
-   "kind_id": "20261022000627",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261022000627",
    "metrics": {
     "reasons": [
      "장내매수(+)"
@@ -650,7 +648,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+) · -2,185,420주 · -4.89%p · 매수 약 0.0억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261022000627",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261022000627"
   },
   {
    "id": "20261022000443",
@@ -667,8 +667,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000443",
-   "kind_id": "20261022000620",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261022000620",
    "metrics": {
     "reasons": [],
     "ratio_prev": 26.97,
@@ -681,7 +679,9 @@
    "direction": "flat",
    "signal": false,
    "summary": "+0.00%p · → 26.97%",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261022000620",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261022000620"
   },
   {
    "id": "20261022000440",
@@ -1814,8 +1814,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022800444",
-   "kind_id": "20261022000444",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261022000444",
    "metrics": {
     "reasons": [
      "장내매수(+)"
@@ -1826,7 +1824,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+) · +91,840주 · +0.74%p",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261022000444",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261022000444"
   },
   {
    "id": "20261022000332",
@@ -1910,8 +1910,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000289",
-   "kind_id": "20261022000369",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261022000369",
    "metrics": {
     "amount": 5001000000.0,
     "shares": 225778.0,
@@ -1921,7 +1919,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "자사주 50억 · 주가 안정 및 주주가치 제고",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261022000369",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261022000369"
   },
   {
    "id": "20261022000313",
@@ -2030,8 +2030,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000299",
-   "kind_id": "20261022000382",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261022000382",
    "metrics": {
     "reasons": [],
     "ratio_prev": 47.89,
@@ -2044,7 +2042,9 @@
    "direction": "flat",
    "signal": false,
    "summary": "+0.00%p · → 47.89%",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261022000382",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261022000382"
   },
   {
    "id": "20261022000277",
@@ -2576,8 +2576,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000135",
-   "kind_id": "20261022000239",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261022000239",
    "metrics": {
     "reasons": [
      "장내매수(+)"
@@ -2590,7 +2588,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+) · +400주 · +0.01%p · 매수 약 0.4억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261022000239",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261022000239"
   },
   {
    "id": "20261022800219",
@@ -3188,8 +3188,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000016",
-   "kind_id": "20261022000107",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261022000107",
    "metrics": {
     "reasons": [
      "기타(+)"
@@ -3201,7 +3199,9 @@
    "direction": "buy",
    "signal": false,
    "summary": "기타(+) · +7,185주 · +0.00%p",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261022000107",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261022000107"
   },
   {
    "id": "20261022000015",
