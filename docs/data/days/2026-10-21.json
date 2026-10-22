@@ -1,7 +1,7 @@
 {
  "date": "2026-10-21",
  "source": "KIND+DART",
- "collected_at": "2026-10-22T00:56:06+09:00",
+ "collected_at": "2026-10-22T23:47:56+09:00",
  "total_disclosures": 383,
  "items": [
   {
@@ -3678,8 +3678,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261021000108",
-   "kind_id": "20261021000165",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261021000165",
    "metrics": {
     "reasons": [
      "신규보고(+)",
@@ -3692,7 +3690,9 @@
    "direction": "buy",
    "signal": false,
    "summary": "신규보고(+), 신규주요주주(+) · +1,340,105주 · +10.10%p",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261021000165",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261021000165"
   },
   {
    "id": "20261021000107",
@@ -3961,8 +3961,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261021000088",
-   "kind_id": "20261021000136",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261021000136",
    "metrics": {
     "reasons": [],
     "ratio_prev": 28.91,
@@ -3975,7 +3973,9 @@
    "direction": "flat",
    "signal": false,
    "summary": "+0.00%p · → 28.91%",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261021000136",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261021000136"
   },
   {
    "id": "20261021000087",
