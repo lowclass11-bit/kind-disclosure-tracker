@@ -1,7 +1,7 @@
 {
  "date": "2026-10-26",
  "source": "KIND+DART",
- "collected_at": "2026-10-27T01:48:03+09:00",
+ "collected_at": "2026-10-27T01:59:40+09:00",
  "total_disclosures": 374,
  "items": [
   {
@@ -555,8 +555,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026000331",
-   "kind_id": "20261026000649",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261026000649",
    "metrics": {
     "reasons": [
      "기타(+)"
@@ -568,7 +566,9 @@
    "direction": "buy",
    "signal": false,
    "summary": "기타(+) · +3주 · +0.00%p",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261026000649",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261026000649"
   },
   {
    "id": "20261026000329",
@@ -678,8 +678,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026800632",
-   "kind_id": "20261026000632",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261026000632",
    "metrics": {
     "reasons": [
      "장내매수(+)"
@@ -690,7 +688,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+) · +36,000주 · +0.26%p",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261026000632",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261026000632"
   },
   {
    "id": "20261026000320",
@@ -1452,8 +1452,6 @@
    "amend_tag": "기재정정",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026800529",
-   "kind_id": "20261026000529",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261026000529",
    "metrics": {
     "name": "영광 야월 해상풍력 발전소 설계 구매 시공 (EPC) 계약",
     "counterparty": "㈜야월해상풍력",
@@ -1466,7 +1464,9 @@
    "direction": "up",
    "signal": true,
    "summary": "5,750억 (매출액 대비 3.5%) · ㈜야월해상풍력",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261026000529",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261026000529"
   },
   {
    "id": "20261026000273",
@@ -2198,8 +2198,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026800408",
-   "kind_id": "20261026000408",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261026000408",
    "metrics": {
     "reasons": [
      "장내매수(+)"
@@ -2210,7 +2208,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+) · +245,000주 · +0.07%p",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261026000408",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261026000408"
   },
   {
    "id": "20261026800404",
@@ -2227,8 +2227,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026800404",
-   "kind_id": "20261026000404",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261026000404",
    "metrics": {
     "reasons": [
      "기타(-)",
@@ -2241,7 +2239,9 @@
    "direction": "sell",
    "signal": false,
    "summary": "기타(-), 기타(+) · -1,644주 · +0.00%p",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261026000404",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261026000404"
   },
   {
    "id": "20261026900397",
@@ -2258,8 +2258,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026900397",
-   "kind_id": "20261026000397",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261026000397",
    "metrics": {
     "kind": "본사 이전에 따른 연계시설 건축",
     "purpose": "본사 이전에 따른 연계시설 구축 및 통합 운영기반 확보",
@@ -2272,7 +2270,9 @@
    "direction": "up",
    "signal": true,
    "summary": "211억 (자기자본 대비 43.2%)",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261026000397",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261026000397"
   },
   {
    "id": "20261026000187",
@@ -2825,8 +2825,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026800269",
-   "kind_id": "20261026000269",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261026000269",
    "metrics": {
     "reasons": [
      "장내매수(+)"
@@ -2837,7 +2835,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+) · +2,004주 · +0.00%p",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261026000269",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261026000269"
   },
   {
    "id": "20261026000118",
@@ -2884,8 +2884,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026000117",
-   "kind_id": "20261026000258",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261026000258",
    "metrics": {
     "reasons": [
      "장내매수(+)"
@@ -2901,7 +2899,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+) · +0.00%p · → 14.98% · 매수 약 0.2억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261026000258",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261026000258"
   },
   {
    "id": "20261026000109",
@@ -2980,8 +2980,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026000084",
-   "kind_id": "20261026000213",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261026000213",
    "metrics": {
     "amount": 100000137600.0,
     "shares": 514404.0,
@@ -2991,7 +2989,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "자사주 1,000억 · 주가 안정 및 주주가치 제고",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261026000213",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261026000213"
   },
   {
    "id": "20261026000086",
