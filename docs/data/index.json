@@ -1,11 +1,11 @@
 {
- "updated_at": "2026-10-30T02:05:03+09:00",
+ "updated_at": "2026-10-30T02:24:37+09:00",
  "latest": "2026-10-29",
  "days": [
   {
    "date": "2026-10-29",
    "source": "KIND+DART",
-   "collected_at": "2026-10-30T02:05:03+09:00",
+   "collected_at": "2026-10-30T02:24:37+09:00",
    "total_disclosures": 515,
    "counts": {
     "stake": 108,

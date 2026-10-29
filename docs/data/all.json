@@ -2644,8 +2644,6 @@
   "amend_tag": "",
   "subsidiary": false,
   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029000412",
-  "kind_id": "20261029000464",
-  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261029000464",
   "metrics": {
    "reasons": [],
    "ratio_prev": 35.1,
@@ -2658,7 +2656,9 @@
   "direction": "flat",
   "signal": false,
   "summary": "+0.00%p · → 35.10%",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261029000464",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261029000464"
  },
  {
   "id": "20261029800376",
@@ -3331,8 +3331,6 @@
   "amend_tag": "",
   "subsidiary": false,
   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029000282",
-  "kind_id": "20261029000290",
-  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261029000290",
   "metrics": {
    "reasons": [
     "신규상장(+)"
@@ -3344,7 +3342,9 @@
   "direction": "buy",
   "signal": false,
   "summary": "신규상장(+) · +512,610주 · +1.88%p",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261029000290",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261029000290"
  },
  {
   "id": "20261029900280",
@@ -3361,8 +3361,6 @@
   "amend_tag": "",
   "subsidiary": false,
   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029900280",
-  "kind_id": "20261029000280",
-  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261029000280",
   "metrics": {
    "name": "창원대 극한지역 모사 50HP 복합 챔버",
    "counterparty": "LG전자 주식회사",
@@ -3375,7 +3373,9 @@
   "direction": "up",
   "signal": true,
   "summary": "31억 (매출액 대비 10.8%) · LG전자 주식회사",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261029000280",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261029000280"
  },
  {
   "id": "20261029900251",
@@ -3962,8 +3962,6 @@
   "amend_tag": "",
   "subsidiary": false,
   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029000137",
-  "kind_id": "20261029000168",
-  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261029000168",
   "metrics": {
    "reasons": [
     "장내매수(+)"
@@ -3979,7 +3977,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +0.48%p · → 70.44% · 매수 약 73억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261029000168",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261029000168"
  },
  {
   "id": "20261029000125",
