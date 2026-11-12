@@ -1,12 +1,99 @@
 {
- "updated_at": "2026-11-05T03:36:56+09:00",
- "latest": "2026-11-04",
+ "updated_at": "2026-11-13T03:34:01+09:00",
+ "latest": "2026-11-12",
  "days": [
+  {
+   "date": "2026-11-12",
+   "source": "KIND+DART",
+   "collected_at": "2026-11-13T02:53:02+09:00",
+   "total_disclosures": 692,
+   "counts": {
+    "earnings": 2,
+    "stake": 124,
+    "capex": 22
+   },
+   "signals": {
+    "stake": 68,
+    "capex": 16,
+    "earnings": 1
+   }
+  },
+  {
+   "date": "2026-11-11",
+   "source": "KIND+DART",
+   "collected_at": "2026-11-13T02:57:46+09:00",
+   "total_disclosures": 424,
+   "counts": {
+    "stake": 83,
+    "capex": 13
+   },
+   "signals": {
+    "stake": 49,
+    "capex": 10
+   }
+  },
+  {
+   "date": "2026-11-10",
+   "source": "KIND+DART",
+   "collected_at": "2026-11-13T03:06:00+09:00",
+   "total_disclosures": 438,
+   "counts": {
+    "capex": 18,
+    "stake": 142
+   },
+   "signals": {
+    "capex": 15,
+    "stake": 63
+   }
+  },
+  {
+   "date": "2026-11-09",
+   "source": "KIND+DART",
+   "collected_at": "2026-11-13T03:12:58+09:00",
+   "total_disclosures": 411,
+   "counts": {
+    "stake": 1303,
+    "capex": 283,
+    "earnings": 55
+   },
+   "signals": {
+    "stake": 60,
+    "capex": 10
+   }
+  },
+  {
+   "date": "2026-11-06",
+   "source": "KIND+DART",
+   "collected_at": "2026-11-13T03:22:21+09:00",
+   "total_disclosures": 473,
+   "counts": {
+    "capex": 26,
+    "stake": 166
+   },
+   "signals": {
+    "capex": 25,
+    "stake": 61
+   }
+  },
+  {
+   "date": "2026-11-05",
+   "source": "KIND+DART",
+   "collected_at": "2026-11-13T03:33:49+09:00",
+   "total_disclosures": 516,
+   "counts": {
+    "stake": 208,
+    "capex": 14
+   },
+   "signals": {
+    "stake": 73,
+    "capex": 12
+   }
+  },
   {
    "date": "2026-11-04",
    "source": "KIND+DART",
-   "collected_at": "2026-11-05T03:36:56+09:00",
-   "total_disclosures": 361,
+   "collected_at": "2026-11-13T03:34:01+09:00",
+   "total_disclosures": 360,
    "counts": {
     "stake": 86,
     "capex": 11,
