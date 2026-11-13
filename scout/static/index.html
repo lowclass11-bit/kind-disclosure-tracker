@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>종목 발굴 프로그램</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <h1>종목 발굴 프로그램</h1>
+  <span class="status" id="status"><i class="dot"></i><span id="statusText">대기</span></span>
+  <ol class="steps" id="steps"></ol>
+  <button class="ghost" id="btnSettings">설정</button>
+</header>
+
+<main class="cols">
+  <section class="pane" id="paneLeft">
+    <div class="pane-head"><h2>진행</h2><span class="muted" id="dataDate"></span></div>
+    <div class="row">
+      <button class="primary" id="btnCollect">① 자료 받기</button>
+      <select id="style" title="투자 스타일"></select>
+    </div>
+    <p class="hint" id="collectHint">한국·미국 약 950종목의 시세, 수급, 공시, 추정치, 뉴스를 받습니다. 처음에는 3~5분 걸립니다.</p>
+    <h3>자료 출처</h3>
+    <ul class="sources" id="sources"><li class="muted">아직 받은 자료가 없습니다.</li></ul>
+    <h3>거시 환경</h3>
+    <ul class="macro" id="macro"><li class="muted">자료를 받으면 표시됩니다.</li></ul>
+    <h3>작업 기록</h3>
+    <ul class="log" id="log"></ul>
+  </section>
+
+  <section class="pane" id="paneMid">
+    <div class="pane-head">
+      <h2>후보</h2>
+      <div class="tabs" id="tabs" role="tablist"></div>
+    </div>
+    <div class="row">
+      <input type="search" id="search" placeholder="종목·업종 이름으로 찾기">
+      <select id="sort" title="정렬">
+        <option value="score">종합 점수순</option>
+        <option value="confirm">근거가 겹친 순</option>
+        <option value="quiet">소외도순</option>
+        <option value="smart">스마트머니순</option>
+        <option value="rev">실적 추정순</option>
+        <option value="cat">촉매순</option>
+      </select>
+    </div>
+    <p class="hint" id="listHint"></p>
+    <div class="cards" id="cards"></div>
+    <form class="pick" id="pick">
+      <div class="pick-name"><span class="muted">선택한 대상</span> <b id="pickName">없음</b></div>
+      <div class="row">
+        <input type="text" id="note" placeholder="추가 지시나 메모 (예: 반론을 더 강하게, 수출 지표 위주로)" maxlength="1000">
+        <label class="check" title="Claude API 키가 있어야 합니다"><input type="checkbox" id="useAi"> AI 해석</label>
+        <button class="primary" type="submit">만들기</button>
+      </div>
+    </form>
+  </section>
+
+  <section class="pane" id="paneRight">
+    <div class="pane-head"><h2>작업실</h2></div>
+    <div class="tabs wrap" id="workTabs" role="tablist"></div>
+    <p class="hint" id="workMeta">왼쪽에서 자료를 받고, 가운데에서 후보를 고르면 여기에 문서가 만들어집니다.</p>
+    <article class="doc" id="doc"></article>
+    <div class="row" id="docActions" hidden>
+      <a class="btn" id="dlMd">내려받기 .md</a>
+      <a class="btn" id="dlDocx">내려받기 .docx</a>
+      <button class="btn" id="btnCopy" type="button">복사</button>
+      <button class="btn" id="btnWatch" type="button">추적표에 추가</button>
+    </div>
+    <h3>지금까지 만든 문서</h3>
+    <ul class="files" id="files"></ul>
+  </section>
+</main>
+
+<dialog id="settings">
+  <form method="dialog" id="settingsForm">
+    <h2>설정</h2>
+    <p class="hint">키는 이 PC의 <code>scout/data/config.json</code>에만 저장됩니다. 비워 두면 그 자료만 건너뜁니다.</p>
+    <label>Claude API 키 <span class="muted">— AI 해석 (console.anthropic.com)</span>
+      <input name="anthropic_key" type="password" autocomplete="off"></label>
+    <label>DART 인증키 <span class="muted">— 분기 재무 (opendart.fss.or.kr → 인증키 신청)</span>
+      <input name="dart_key" type="password" autocomplete="off"></label>
+    <label>FRED API 키 <span class="muted">— 미국 재고·주문·주택 지표 (fred.stlouisfed.org → My Account → API Keys)</span>
+      <input name="fred_key" type="password" autocomplete="off"></label>
+    <label>공공데이터포털 키 <span class="muted">— 관세청 품목별 수출 (data.go.kr → '관세청_품목별 수출입실적' 활용신청)</span>
+      <input name="datago_key" type="password" autocomplete="off"></label>
+    <label>SEC 접속용 연락처 이메일 <span class="muted">— SEC가 자동 접속에 요구하는 값</span>
+      <input name="sec_contact" type="email" autocomplete="off" placeholder="본인 이메일"></label>
+    <div class="row end">
+      <button class="btn" value="cancel">닫기</button>
+      <button class="primary" value="save">저장</button>
+    </div>
+  </form>
+</dialog>
+
+<div class="toast" id="toast" role="status" hidden></div>
+<script src="app.js"></script>
+</body>
+</html>
