@@ -168,7 +168,8 @@ def bear(item: dict, data: dict) -> str:
 
 def memo(item: dict, data: dict) -> str:
     strong = [PILLARS[k] for k in ("smart", "rev", "cat") if item["pillars"][k] >= 25]
-    one = (f"시장 대비 6개월 {_pct(item.get('rel_6m'))}로 소외된 상태에서 "
+    versus = f"베타({item['beta']:.2f})를 감안한 시장 대비" if item.get("beta") else "시장 대비"
+    one = (f"{versus} 6개월 {_pct(item.get('rel_6m'))}로 소외된 상태에서 "
            f"{'·'.join(strong) if strong else '뚜렷한 추가 근거 없이'} "
            f"{'신호가 겹친다' if len(strong) >= 2 else '신호가 있다' if strong else '싸기만 하다'}.")
     out = [f"# 투자 메모 — {_title(item)}", f"작성 {data['date']} · 스타일 {data['style_label']} · 6개월 관점", "",

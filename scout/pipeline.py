@@ -118,7 +118,7 @@ def collect() -> None:
     for s, h in zip(stocks, hist):
         if not h:
             continue
-        s["m"] = prices.metrics(h, bench.get(s["market"]))
+        s["m"] = prices.metrics(h, bench.get(s["market"]), use_beta=s["market"] == "US")
         if s["market"] == "US" and h["name"]:
             s["name"] = h["name"]
         q, hot, why = prices.quiet_score(s["m"])
@@ -134,7 +134,7 @@ def collect() -> None:
         pool = sorted((s for s in stocks if s["market"] == market and not s["hot"]), key=lambda s: -s["quiet"])
         return pool[:n]
 
-    kr_short, us_short = shortlist("KR", 140), shortlist("US", 110)
+    kr_short, us_short = shortlist("KR", 140), shortlist("US", 220)
     say(f"상세 조사 대상: 한국 {len(kr_short)} · 미국 {len(us_short)}")
 
     # ③ 스마트머니
@@ -366,6 +366,21 @@ def _total(p: dict, style: dict) -> float:
     return round(sum(p[k] * w[k] for k in w), 1)
 
 
+def _confirm_bar(stocks: list[dict]) -> dict[str, dict[str, float]]:
+    """근거 축을 '있다'고 보는 기준 점수. 한국은 25점 고정.
+
+    미국은 받을 수 있는 자료 종류가 적어(외국인·기관 일별 수급, 공시 트래커가 없음) 같은 잣대로 재면
+    거의 걸리지 않는다. 그래서 미국 종목끼리 비교해 상위 30%에 드는 점수를 기준으로 삼는다(15~25점 사이).
+    """
+    bar = {"KR": {k: 25.0 for k in ("smart", "rev", "cat")}, "US": {}}
+    us = [s for s in stocks if s["market"] == "US" and not s["hot"]]
+    for k in ("smart", "rev", "cat"):
+        vals = sorted(s["pillars"][k] for s in us)
+        p70 = vals[int(len(vals) * 0.7)] if vals else 25.0
+        bar["US"][k] = min(25.0, max(15.0, p70))
+    return bar
+
+
 def _score(stocks: list[dict], style: dict) -> None:
     for s in stocks:
         p = {"quiet": min(100, s["quiet"] + sum(e["pts"] for e in s["ev"] if e["p"] == "quiet"))}
@@ -373,10 +388,18 @@ def _score(stocks: list[dict], style: dict) -> None:
             p[k] = round(max(0, min(100, sum(e["pts"] for e in s["ev"] if e["p"] == k))), 1)
         p["quiet"] = round(p["quiet"], 1)
         s["pillars"], s["score"] = p, _total(p, style)
-        confirm = sum(1 for k in ("smart", "rev", "cat") if p[k] >= 25)
+    bar = _confirm_bar(stocks)
+    for s in stocks:
+        p = s["pillars"]
+        confirm = sum(1 for k in ("smart", "rev", "cat") if p[k] >= bar[s["market"]][k])
         s["confirm"] = confirm
         # 후보 조건: 뜨겁지 않고, 충분히 소외됐고, 소외 외에 근거 축이 하나 이상 있어야 한다
         s["candidate"] = (not s["hot"]) and (not s.get("too_small")) and p["quiet"] >= 40 and confirm >= 1
+    # 순위는 시장별로 따로 매긴다 (한국과 미국을 한 줄로 세우지 않는다)
+    for market in ("KR", "US"):
+        cands = sorted((s for s in stocks if s["market"] == market and s["candidate"]), key=lambda s: -s["score"])
+        for i, s in enumerate(cands, 1):
+            s["rank"], s["rank_of"] = i, len(cands)
 
 
 def _sectors(stocks: list[dict], extra: dict[str, list[dict]], style: dict) -> list[dict]:
@@ -423,7 +446,7 @@ def _slim(s: dict) -> dict:
         "score": s.get("score", 0), "pillars": s.get("pillars", {}), "confirm": s.get("confirm", 0),
         "ret_1m": m.get("ret_1m"), "ret_6m": m.get("ret_6m"), "rel_6m": m.get("rel_6m"),
         "pos52": round(m["pos52"], 3), "from_hi": round(m["from_hi"], 3), "lo52": round(m["lo52"], 2),
-        "below_200": m["price"] < m["ma200"], "per": s.get("per"), "pbr": s.get("pbr"),
+        "below_200": m["price"] < m["ma200"], "beta": m.get("beta"), "rank": s.get("rank"), "rank_of": s.get("rank_of"), "per": s.get("per"), "pbr": s.get("pbr"),
         "fwd_pe": s.get("fwd_pe"), "next_earnings": s.get("next_earnings"), "news_count": s.get("news_count"),
         "ev": sorted(s["ev"], key=lambda e: -e["pts"]),
     }

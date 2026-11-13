@@ -18,7 +18,7 @@ from . import config, pipeline, store, writer
 OUT = config.REPO / "docs" / "scout" / "data"
 ITEMS = OUT / "items"
 DOC_KINDS = ("memo", "script")   # 메모에 시나리오·반론이 모두 들어 있다
-TOP_STOCKS, TOP_SECTORS = 50, 15
+TOP_KR, TOP_US, TOP_SECTORS = 40, 25, 16
 
 
 def item_key(item_id: str) -> str:
@@ -28,9 +28,9 @@ def item_key(item_id: str) -> str:
 def _stock(s: dict, full: bool) -> dict:
     keep = ("id", "kind", "market", "ticker", "name", "sector", "sector_id", "exchange", "mcap", "url", "price",
             "hot", "candidate", "score", "pillars", "confirm", "ret_1m", "ret_6m", "rel_6m", "pos52", "from_hi",
-            "below_200", "per", "pbr", "fwd_pe", "next_earnings")
+            "below_200", "per", "pbr", "fwd_pe", "next_earnings", "beta", "rank", "rank_of", "lo52")
     out = {k: s.get(k) for k in keep}
-    out["ev"] = s["ev"][:8] if full else s["ev"][:2]
+    out["ev"] = s["ev"][:8] if full else s["ev"][:4]
     return out
 
 
@@ -90,8 +90,9 @@ def main() -> int:
 
     stocks = data["stocks"]
     cands = [s for s in stocks if s.get("candidate")]
-    detail = sorted(cands, key=lambda s: -s["score"])[:TOP_STOCKS]
-    detail_sec = [x for x in data["sectors"] if x.get("candidate")][:TOP_SECTORS]
+    detail = [s for s in cands if s["rank"] <= (TOP_KR if s["market"] == "KR" else TOP_US)]
+    sec_c = [x for x in data["sectors"] if x.get("candidate")]
+    detail_sec = [x for m in ("KR", "US") for x in [y for y in sec_c if y["market"] == m][:TOP_SECTORS // 2]]
 
     # 문서: 상위 후보만 미리 만들어 둔다 (사실 카드는 화면이 근거 목록으로 직접 그린다)
     keep_files = set()
@@ -131,8 +132,10 @@ def main() -> int:
                                                       key=lambda s: -(s.get("rel_6m") or 0))[:80]],
         "stats": {"universe": len(stocks), "candidates": len(cands), "hot": sum(s["hot"] for s in stocks),
                   "kr": sum(s["market"] == "KR" for s in stocks), "us": sum(s["market"] == "US" for s in stocks),
-                  "ai_memos": ai_done},
+                  "hot_kr": sum(s["hot"] and s["market"] == "KR" for s in stocks),
+                  "hot_us": sum(s["hot"] and s["market"] == "US" for s in stocks), "ai_memos": ai_done},
         "track": track_record(data),
+        "prices": {s["id"]: s["price"] for s in stocks},     # 추적표(브라우저 저장)의 현재가 계산용
     }
     config.write_json(OUT / "dashboard.json", board)
     config.write_json(OUT / "briefing.json", {"date": data["date"], "text": store.briefing(data)})

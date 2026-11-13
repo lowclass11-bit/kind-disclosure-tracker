@@ -37,7 +37,22 @@ def _stdev_ret(c: list[float]) -> float:
     return statistics.pstdev(r) if len(r) > 2 else 0.0
 
 
-def metrics(h: dict, bench: dict | None) -> dict:
+def beta(h: dict, bench: dict, days: int = 252) -> float | None:
+    """최근 1년 일간 수익률로 본 시장 민감도. 시장이 1% 움직일 때 이 종목이 평균 몇 % 움직였는지."""
+    ref = {t // 86400: c for t, c in zip(bench["t"], bench["c"])}
+    pairs = [(c, ref[t // 86400]) for t, c in zip(h["t"], h["c"]) if t // 86400 in ref][-days - 1:]
+    if len(pairs) < 120:
+        return None
+    rs = [(pairs[i][0] / pairs[i - 1][0] - 1, pairs[i][1] / pairs[i - 1][1] - 1) for i in range(1, len(pairs))]
+    ms, mb = statistics.fmean(x for x, _ in rs), statistics.fmean(y for _, y in rs)
+    var = sum((y - mb) ** 2 for _, y in rs)
+    if var == 0:
+        return None
+    return max(0.3, min(2.5, sum((x - ms) * (y - mb) for x, y in rs) / var))
+
+
+def metrics(h: dict, bench: dict | None, use_beta: bool = False) -> dict:
+    """use_beta면 '시장 대비'를 단순 차이가 아니라 베타를 감안한 초과수익(수익률 − 베타×시장)으로 잰다."""
     c, v = h["c"], h["v"]
     year = c[-252:]
     hi, lo = max(year), min(year)
@@ -55,9 +70,12 @@ def metrics(h: dict, bench: dict | None) -> dict:
     m["vola_ratio"] = s20 / s250 if s250 else 1.0
     if bench:
         b = bench["c"]
+        bt = beta(h, bench) if use_beta else None
+        if bt is not None:
+            m["beta"] = round(bt, 2)
         for k, d in (("1m", 21), ("3m", 63), ("6m", 126)):
             own, ref = m[f"ret_{k}"], _ret(b, d)
-            m[f"rel_{k}"] = own - ref if own is not None and ref is not None else None
+            m[f"rel_{k}"] = own - (bt or 1.0) * ref if own is not None and ref is not None else None
     return m
 
 
@@ -79,7 +97,8 @@ def quiet_score(m: dict) -> tuple[float, bool, list[str]]:
     turn = (50 if rel1 > 0 else 0) + (50 if m["price"] >= m["ma50"] else 0)  # 바닥 다지기
     score = 0.35 * a + 0.25 * b + 0.15 * c + 0.10 * d + 0.15 * turn
     hot = rel6 > 0.25 or (m.get("ret_3m") or 0) > 0.40 or m["pos52"] > 0.90
-    why = [f"6개월 수익률 {pct(m.get('ret_6m'))} (시장 대비 {pct(rel6, sign=True)})",
+    versus = f"베타 {m['beta']:.2f} 감안 시 시장 대비" if m.get("beta") else "시장 대비"
+    why = [f"6개월 수익률 {pct(m.get('ret_6m'))} ({versus} {pct(rel6, sign=True)})",
            f"52주 범위의 {m['pos52'] * 100:.0f}% 위치 (고점 대비 {pct(m['from_hi'])})"]
     if m["vol_ratio"] < 0.8:
         why.append(f"최근 20일 거래량이 1년 평균의 {m['vol_ratio'] * 100:.0f}%로 줄어듦")
