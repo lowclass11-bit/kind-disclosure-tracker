@@ -210,7 +210,7 @@ def collect() -> None:
             _attach(kr_short[:80], res)
             JOB.src("DART 정기보고서 재무", sum(len(r or []) for r in res), note="상위 80종목 조회")
     else:
-        JOB.src("DART 정기보고서 재무", None, "키 필요", "설정에서 DART 키 입력")
+        JOB.src("DART 정기보고서 재무", None, "키 필요", "PC: 설정 화면 / 온라인: 저장소 Secrets의 DART_API_KEY")
 
     export_rows = []
     if cfg["datago_key"]:
@@ -218,14 +218,14 @@ def collect() -> None:
         if export_rows:
             JOB.src("관세청 품목별 수출", len(export_rows))
     else:
-        JOB.src("관세청 품목별 수출", None, "키 필요", "설정에서 공공데이터포털 키 입력")
+        JOB.src("관세청 품목별 수출", None, "키 필요", "PC: 설정 화면 / 온라인: 저장소 Secrets의 DATAGO_API_KEY")
 
     # ⑤ 촉매·거시
     JOB.step = 4
     regime = _guard("거시 시세", lambda: macro.regime(cfg["fred_key"], say), {"tags": [], "labels": [], "rows": []})
     JOB.src("거시 지표(금리·원자재·환율)", len(regime["rows"]))
     if not cfg["fred_key"]:
-        JOB.src("FRED 경제지표", None, "키 필요", "설정에서 FRED 키 입력")
+        JOB.src("FRED 경제지표", None, "키 필요", "PC: 설정 화면 / 온라인: 저장소 Secrets의 FRED_API_KEY")
     active = set(regime["tags"])
     for s in stocks:
         hit = [t for t in s.get("macro", []) if t in active]
