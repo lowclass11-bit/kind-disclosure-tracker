@@ -34,8 +34,10 @@ jobs:
       - name: Skip if already published today
         id: check
         run: |
+          # 오늘 장 마감·공시 수집 이후(20시 이후)에 만든 자료가 이미 있을 때만 건너뛴다.
+          # 낮에 수동으로 돌린 자료(장중 시세)는 저녁 정기 실행이 덮어쓴다.
           today=$(TZ=Asia/Seoul date +%F)
-          if [ "${{ github.event_name }}" = "schedule" ] && grep -q "\"date\": \"$today\"" docs/scout/data/dashboard.json 2>/dev/null; then
+          if [ "${{ github.event_name }}" = "schedule" ] && grep -Eq "\"generated_at\": \"${today}T(2[0-3])" docs/scout/data/dashboard.json 2>/dev/null; then
             echo "skip=true" >> "$GITHUB_OUTPUT"
           fi
 
