@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>발굴 지도</title>
+<meta name="description" content="지금은 잠잠하지만 근거가 쌓이는 업종·종목을 매일 찾습니다">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%235b4be0'/><circle cx='21' cy='11' r='4' fill='white'/><rect x='19.5' y='14' width='3' height='10' rx='1.5' fill='white' opacity='.5'/><circle cx='11' cy='20' r='2.5' fill='white' opacity='.6'/></svg>">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>발굴 지도</h1>
+    <span class="muted" id="asof">불러오는 중…</span>
+    <nav class="tabs" id="tabs" aria-label="보기 전환">
+      <a href="#kr" data-v="kr">한국</a>
+      <a href="#us" data-v="us">미국</a>
+      <a href="#sectors" data-v="sectors">업종별</a>
+      <a href="#briefing" data-v="briefing">브리핑</a>
+      <a href="#watch" data-v="watch">추적표</a>
+      <a href="#excluded" data-v="excluded">제외됨</a>
+    </nav>
+  </header>
+  <main id="view"><p class="muted">자료를 불러오는 중입니다…</p></main>
+  <footer class="foot">
+    <details id="about"><summary>자료 출처와 읽는 법</summary><div id="aboutBody"></div></details>
+    <p>공개 자료를 기계적으로 모아 정리한 조사 도구이며 매수·매도 권유가 아닙니다. 점수는 "더 조사해 볼 만한 순서"일 뿐 수익을 예측하지 않고, 과거 수익률로 검증한 값도 아닙니다.
+      <a href="../">← KIND 공시 트래커</a></p>
+  </footer>
+</div>
+<dialog id="docDlg" aria-labelledby="docTitle">
+  <div class="dlg-head"><b id="docTitle"></b>
+    <span class="dlg-tabs" id="docTabs"></span>
+    <button type="button" id="docCopy">복사</button><button type="button" id="docClose" aria-label="닫기">닫기</button></div>
+  <article class="doc" id="docBody"></article>
+</dialog>
+<div class="toast" id="toast" role="status" hidden></div>
+<script src="app.js"></script>
+</body>
+</html>

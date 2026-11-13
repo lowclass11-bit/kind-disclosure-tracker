@@ -27,6 +27,24 @@ python -m scout          # 브라우저가 http://127.0.0.1:8765 로 열립니�
 3. 아래 입력칸에 추가 지시를 쓰고 **AI 해석**을 켠 뒤 **만들기**를 누르면 Claude가 같은 근거로 서술형 문서를 씁니다(키 필요).
 4. **추적표에 추가** — 발굴한 날의 가격을 기록합니다. 6개월 뒤 시장 대비 수익률로 내 발굴이 맞았는지 대조합니다.
 
+## 온라인 대시보드 (GitHub Pages)
+
+`https://<계정명>.github.io/kind-disclosure-tracker/scout/` — 설치 없이 휴대폰에서도 열립니다.
+
+- **자동 갱신**: `.github/workflows/scout.yml`이 평일 20:47 KST(예비 22:23)에 `python -m scout.publish`를 돌려
+  `docs/scout/data/`에 결과를 저장합니다. 공시 트래커 수집이 끝난 뒤입니다. 수동 실행은 Actions → scout-dashboard → Run workflow.
+- **화면**: 한국 / 미국 지도(소외도 × 근거, 근거가 강할수록 긴 기둥) · 업종별(업종 → 종목) · 브리핑 · 추적표 · 제외됨.
+- **한국과 미국은 따로 봅니다**: 순위와 발굴 구역을 시장별로 매깁니다. 미국 종목의 소외도는 S&P 500 대비
+  베타를 감안한 수익률(수익률 − 베타 × 시장 수익률)로 잽니다. 미국은 받을 수 있는 자료 종류가 적어,
+  "근거 축이 있다"는 기준도 미국 종목 중 상위 30% 점수(15~25점)로 잡습니다.
+- **API 키**: 저장소 Settings → Secrets and variables → Actions → **Secrets**에 넣습니다(모두 선택 사항).
+  `DART_API_KEY`, `FRED_API_KEY`, `DATAGO_API_KEY`, `ANTHROPIC_API_KEY`
+- **Variables**(선택): `SEC_CONTACT`(SEC 접속용 이메일), `SCOUT_STYLE`(`balanced`·`aggressive`·`conservative`),
+  `SCOUT_AI_TOP`(AI 메모를 쓸 상위 종목 수, 기본 3 — Claude 키가 있을 때만)
+- 투자 메모·대본은 시장별 상위 후보(한국 40, 미국 25)와 상위 업종에만 미리 만들어 둡니다.
+- 추적표는 브라우저(localStorage)에 저장되어 기기마다 따로입니다.
+- 저장소가 Public이므로 대시보드도 주소를 아는 누구나 볼 수 있습니다.
+
 ## 발굴 방법 (4개 축, 각 0~100점)
 
 | 축 | 무엇을 보나 | 자료 |

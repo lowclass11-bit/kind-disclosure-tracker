@@ -2,19 +2,22 @@
 from __future__ import annotations
 
 import json
+import os
 import threading
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 REPO = ROOT.parent
-DATA = ROOT / "data"
-CACHE = DATA / "cache"
+# 경로는 환경변수로 바꿀 수 있다 (GitHub Actions에서 쓰는 값은 .github/workflows/scout.yml 참고)
+DATA = Path(os.environ.get("SCOUT_DATA") or ROOT / "data")         # 최신 결과·설정·만든 문서
+STATE = Path(os.environ.get("SCOUT_STATE") or DATA)                # 실행 사이에 이어지는 기록
+CACHE = Path(os.environ.get("SCOUT_CACHE") or DATA / "cache")
 OUTPUTS = DATA / "outputs"
-HISTORY = DATA / "history"
+HISTORY = STATE / "history"
 STATIC = ROOT / "static"
 TRACKER_ALL = REPO / "docs" / "data" / "all.json"
 
-for _d in (DATA, CACHE, OUTPUTS, HISTORY):
+for _d in (DATA, STATE, CACHE, OUTPUTS, HISTORY):
     _d.mkdir(parents=True, exist_ok=True)
 
 CONFIG_FILE = DATA / "config.json"
@@ -47,6 +50,10 @@ STYLES = {
     },
 }
 
+# 환경변수에 키가 있으면 설정 파일보다 우선한다 (GitHub Actions Secrets용)
+ENV_KEYS = {"anthropic_key": "ANTHROPIC_API_KEY", "dart_key": "DART_API_KEY", "fred_key": "FRED_API_KEY",
+            "datago_key": "DATAGO_API_KEY", "sec_contact": "SEC_CONTACT", "style": "SCOUT_STYLE"}
+
 _lock = threading.Lock()
 
 
@@ -57,6 +64,9 @@ def load() -> dict:
             cfg.update(json.loads(CONFIG_FILE.read_text(encoding="utf-8")))
         except (OSError, ValueError):
             pass
+    for key, env in ENV_KEYS.items():
+        if os.environ.get(env, "").strip():
+            cfg[key] = os.environ[env].strip()
     if cfg.get("style") not in STYLES:
         cfg["style"] = "balanced"
     return cfg
