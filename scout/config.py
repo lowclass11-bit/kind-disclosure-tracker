@@ -34,7 +34,7 @@ DEFAULTS = {
     "ai_model": "claude-opus-5-5",
 }
 
-# 투자 스타일: 시총 하한(한국 억원 / 미국 억달러), 업종당 종목 수, 4개 축 가중치
+# 투자 스타일: 시총 하한(한국 억원 / 미국 억달러), 4개 축 가중치. per_sector는 더 이상 쓰지 않는다(전체 대상)
 STYLES = {
     "balanced": {
         "label": "균형형", "kr_mcap": 2000, "us_mcap": 20, "per_sector": 12,
