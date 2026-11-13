@@ -106,7 +106,8 @@ def collect() -> None:
     JOB.step = 0
     kr = _guard("네이버 증권 업종", lambda: universe.build_kr(style, say), [])
     JOB.src("네이버 증권 업종", len(kr)) if kr else None
-    us = universe.build_us(say)
+    us = _guard("나스닥 전체 종목 목록", lambda: universe.build_us(style, say), [])
+    JOB.src("나스닥 전체 종목 목록", len(us)) if us else None
     stocks = kr + us
 
     # ② 가격·소외 필터
@@ -134,7 +135,7 @@ def collect() -> None:
         pool = sorted((s for s in stocks if s["market"] == market and not s["hot"]), key=lambda s: -s["quiet"])
         return pool[:n]
 
-    kr_short, us_short = shortlist("KR", 140), shortlist("US", 220)
+    kr_short, us_short = shortlist("KR", 200), shortlist("US", 300)
     say(f"상세 조사 대상: 한국 {len(kr_short)} · 미국 {len(us_short)}")
 
     # ③ 스마트머니
