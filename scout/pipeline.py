@@ -13,7 +13,7 @@ from .sources_kr import ev
 
 PILLARS = {"quiet": "소외도", "smart": "스마트머니", "rev": "실적 추정", "cat": "촉매"}
 LATEST = config.DATA / "latest.json"
-CNS_HISTORY = config.DATA / "consensus_history.json"
+CNS_HISTORY = config.STATE / "consensus_history.json"
 
 STEPS = ["유니버스", "가격·소외 필터", "스마트머니", "실적 추정", "촉매·거시", "점수 계산"]
 
@@ -30,8 +30,11 @@ class Job:
         self.sources: dict[str, dict] = {}
         self.error = ""
         self.started = 0.0
+        self.echo = False      # 명령줄 실행(publish)에서는 진행 상황을 화면에도 찍는다
 
     def say(self, text: str) -> None:
+        if self.echo:
+            print(f"[scout] {text}", flush=True)
         with self.lock:
             self.log.append({"t": dt.datetime.now().strftime("%H:%M:%S"), "m": text})
             self.log = self.log[-200:]
@@ -109,6 +112,7 @@ def collect() -> None:
     # ② 가격·소외 필터
     JOB.step = 1
     bench = {m: _guard(f"벤치마크 {s}", lambda s=s: prices.history(s), None) for m, s in prices.BENCH.items()}
+    bench_close = {m: round(h["c"][-1], 2) for m, h in bench.items() if h}
     hist = net.pmap(lambda s: prices.history(s["yahoo"]), stocks, workers=8, on_done=_progress("가격"))
     alive = []
     for s, h in zip(stocks, hist):
@@ -282,11 +286,11 @@ def collect() -> None:
         "style": cfg["style"], "style_label": style["label"], "weights": style["w"],
         "macro": regime, "sectors": sorted(sectors, key=lambda x: -x["score"]),
         "stocks": [_slim(s) for s in sorted(stocks, key=lambda s: -s.get("score", 0))],
-        "sources": JOB.snapshot()["sources"],
+        "sources": JOB.snapshot()["sources"], "bench": bench_close,
     }
     config.write_json(LATEST, result)
     config.write_json(config.HISTORY / f"{today}.json", {
-        "date": today,
+        "date": today, "bench": bench_close,
         "sectors": {x["id"]: {"name": x["name"], "market": x["market"], "score": x["score"], "pillars": x["pillars"]}
                     for x in sectors},
         "stocks": {s["id"]: {"name": s["name"], "score": s["score"], "price": s["m"]["price"], "sector": s["sector"]}

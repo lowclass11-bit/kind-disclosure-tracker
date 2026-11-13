@@ -1,0 +1,70 @@
+name: scout-dashboard
+
+# 종목 발굴 대시보드 자료(docs/scout/data/)를 평일마다 새로 만든다.
+# 공시 트래커(daily-collect)가 18:50~20:13 KST에 공시를 모은 뒤에 돌도록 시간을 잡았다.
+on:
+  schedule:
+    - cron: "47 11 * * 1-5"   # 20:47 KST
+    - cron: "23 13 * * 1-5"   # 22:23 KST (앞 실행이 밀리거나 빠졌을 때 대비)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: scout-dashboard
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - run: pip install -r scout/requirements.txt
+
+      - name: Skip if already published today
+        id: check
+        run: |
+          today=$(TZ=Asia/Seoul date +%F)
+          if [ "${{ github.event_name }}" = "schedule" ] && grep -q "\"date\": \"$today\"" docs/scout/data/dashboard.json 2>/dev/null; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Collect and publish
+        if: steps.check.outputs.skip != 'true'
+        env:
+          TZ: Asia/Seoul
+          SCOUT_DATA: ${{ runner.temp }}/scout
+          SCOUT_CACHE: ${{ runner.temp }}/scout-cache
+          SCOUT_STATE: docs/scout/data/state
+          SCOUT_STYLE: ${{ vars.SCOUT_STYLE }}
+          SCOUT_AI_TOP: ${{ vars.SCOUT_AI_TOP }}
+          SEC_CONTACT: ${{ vars.SEC_CONTACT }}
+          DART_API_KEY: ${{ secrets.DART_API_KEY }}
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+          DATAGO_API_KEY: ${{ secrets.DATAGO_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python -m scout.publish
+
+      - name: Commit data
+        if: steps.check.outputs.skip != 'true'
+        run: |
+          git config user.name "scout-bot"
+          git config user.email "scout-bot@users.noreply.github.com"
+          git add docs/scout/data
+          if git diff --cached --quiet; then
+            echo "no changes"
+          else
+            git commit -m "scout: $(TZ=Asia/Seoul date +'%Y-%m-%d %H:%M') KST 발굴 자료"
+            git pull --rebase origin main
+            git push
+          fi
