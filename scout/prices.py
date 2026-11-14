@@ -86,8 +86,8 @@ def _lin(x: float, lo: float, hi: float) -> float:
     return max(0.0, min(100.0, (x - lo) / (hi - lo) * 100))
 
 
-def quiet_score(m: dict) -> tuple[float, bool, list[str]]:
-    """소외도 0~100, 이미 뜨거운지 여부, 근거 문장."""
+def quiet_score(m: dict) -> tuple[float, bool, list[str], dict]:
+    """소외도 0~100, 이미 뜨거운지 여부, 근거 문장, 계산 내역(화면에 그대로 보여 준다)."""
     rel6 = m.get("rel_6m") if m.get("rel_6m") is not None else (m.get("ret_6m") or 0)
     rel1 = m.get("rel_1m") or 0
     a = _lin(rel6, 0.20, -0.30)               # 6개월 시장 대비 부진할수록
@@ -106,7 +106,15 @@ def quiet_score(m: dict) -> tuple[float, bool, list[str]]:
         why.append("최근 1개월은 시장보다 강하고 50일선 위 — 바닥을 다지는 모습")
     elif m["price"] < m["ma200"] and rel1 < 0:
         why.append("200일선 아래에서 최근 1개월도 약세 — 아직 하락 추세")
-    return round(score, 1), hot, why
+    parts = {
+        "rel6": round(rel6, 4), "a": round(a, 1),                       # 가중치 35%
+        "pos52": round(m["pos52"], 3), "b": round(b, 1),                 # 25%
+        "vol": round(m["vol_ratio"], 3), "c": round(c, 1),               # 15%
+        "vola": round(m["vola_ratio"], 3), "d": round(d, 1),             # 10%
+        "rel1_up": rel1 > 0, "above50": m["price"] >= m["ma50"], "turn": turn,  # 15%
+        "beta": m.get("beta"), "base": round(score, 1),
+    }
+    return round(score, 1), hot, why, parts
 
 
 def pct(x, sign: bool = False) -> str:

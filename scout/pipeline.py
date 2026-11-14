@@ -123,8 +123,8 @@ def collect() -> None:
         s["m"] = prices.metrics(h, bench.get(s["market"]), use_beta=s["market"] == "US")
         if s["market"] == "US" and h["name"]:
             s["name"] = h["name"]
-        q, hot, why = prices.quiet_score(s["m"])
-        s["quiet"], s["hot"] = q, hot
+        q, hot, why, parts = prices.quiet_score(s["m"])
+        s["quiet"], s["hot"], s["quiet_parts"] = q, hot, parts
         s["ev"] = [ev("quiet", w, "Yahoo Finance 시세", s["url"], pts=0) for w in why]
         alive.append(s)
     stocks = alive
@@ -268,7 +268,7 @@ def collect() -> None:
 
     # ⑥ 점수
     JOB.step = 5
-    _score(stocks, style)
+    bar = _score(stocks, style)
     sectors = _sectors(stocks, sector_extra, style)
     top_sectors = sorted(sectors, key=lambda x: -x["score"])[:16]
     res = net.pmap(lambda x: macro.news(f"{x['name']} 업황 전망" if x["market"] == "KR"
@@ -289,6 +289,7 @@ def collect() -> None:
         "macro": regime, "sectors": sorted(sectors, key=lambda x: -x["score"]),
         "stocks": [_slim(s) for s in sorted(stocks, key=lambda s: -s.get("score", 0))],
         "sources": JOB.snapshot()["sources"], "bench": bench_close,
+        "bar": {m: {k: round(v, 1) for k, v in b.items()} for m, b in bar.items()},
     }
     config.write_json(LATEST, result)
     config.write_json(config.HISTORY / f"{today}.json", {
@@ -383,7 +384,7 @@ def _confirm_bar(stocks: list[dict]) -> dict[str, dict[str, float]]:
     return bar
 
 
-def _score(stocks: list[dict], style: dict) -> None:
+def _score(stocks: list[dict], style: dict) -> dict:
     for s in stocks:
         p = {"quiet": min(100, s["quiet"] + sum(e["pts"] for e in s["ev"] if e["p"] == "quiet"))}
         for k in ("smart", "rev", "cat"):
@@ -405,6 +406,7 @@ def _score(stocks: list[dict], style: dict) -> None:
         cands = sorted((s for s in stocks if s["market"] == market and s["candidate"]), key=lambda s: -s["score"])
         for i, s in enumerate(cands, 1):
             s["rank"], s["rank_of"] = i, len(cands)
+    return bar
 
 
 def _sectors(stocks: list[dict], extra: dict[str, list[dict]], style: dict) -> list[dict]:
@@ -454,6 +456,8 @@ def _slim(s: dict) -> dict:
         "below_200": m["price"] < m["ma200"], "beta": m.get("beta"), "rank": s.get("rank"), "rank_of": s.get("rank_of"), "per": s.get("per"), "pbr": s.get("pbr"),
         "fwd_pe": s.get("fwd_pe"), "next_earnings": s.get("next_earnings"), "news_count": s.get("news_count"),
         "ev": sorted(s["ev"], key=lambda e: -e["pts"]),
+        "quiet_parts": s.get("quiet_parts"), "quiet_base": s.get("quiet"),
+        "core": {k: round(v, 1) for k, v in (s.get("core") or {}).items()},
     }
 
 

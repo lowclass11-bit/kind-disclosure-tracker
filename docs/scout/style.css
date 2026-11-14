@@ -132,3 +132,33 @@ dialog .doc { padding: 6px 18px 20px; }
   .card { padding: 14px; }
 }
 @media (prefers-reduced-motion: no-preference) { .row, .tabs a { transition: border-color .15s, background .15s; } }
+
+/* 근거 전체 보기 */
+details.g { margin-top: 12px; border-top: 1px solid var(--line); padding-top: 10px; }
+details.g > summary { list-style: none; cursor: pointer; display: block; }
+details.g > summary::-webkit-details-marker { display: none; }
+details.g > summary .t { display: flex; justify-content: space-between; font-size: 13.5px; font-weight: 600; }
+details.g > summary .t::before { content: "▸"; color: var(--mute); margin-right: 6px; }
+details.g[open] > summary .t::before { content: "▾"; }
+details.g > summary .t > span { margin-left: auto; color: var(--mute); font-weight: 500; font-variant-numeric: tabular-nums; }
+details.g > summary .bar { display: block; height: 10px; border-radius: 5px; background: var(--line); margin: 5px 0 4px; overflow: hidden; }
+details.g > summary .bar b { display: block; height: 100%; border-radius: 5px; background: var(--acc); }
+.evs-all { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 6px; }
+.evs-all .ev { display: grid; grid-template-columns: 52px minmax(0, 1fr); gap: 8px; font-size: 13px; color: var(--body); align-items: start; }
+.evs-all .pts { font-weight: 700; font-variant-numeric: tabular-nums; text-align: right; color: var(--acc); }
+.evs-all .neg .pts { color: var(--warn); }
+.evs-all .zero .pts { color: var(--mute); font-weight: 500; font-size: 11.5px; padding-top: 1px; }
+.evs-all .body { overflow-wrap: anywhere; }
+.evs-all small { display: block; color: var(--mute); font-size: 11.5px; margin-top: 1px; }
+.chip { display: inline-block; font-size: 11px; color: var(--mute); border: 1px solid var(--line); border-radius: 999px; padding: 0 7px; white-space: nowrap; }
+.sumline { font-size: 12.5px; color: var(--body); margin: 8px 0 0; }
+.sumline b { color: var(--ink); }
+.judge { font-size: 12.5px; margin: 4px 0 0; color: var(--mute); }
+.judge.ok { color: var(--acc); font-weight: 600; }
+.formula { margin-top: 8px; font-size: 12.5px; color: var(--body); background: var(--zone); border-radius: 8px; padding: 6px 10px; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+.calc { margin-top: 8px; font-size: 12.5px; }
+.calc th, .calc td { padding: 5px 6px; }
+.calc td small { display: block; color: var(--mute); font-size: 11px; }
+.calc tr.sum td { font-weight: 700; border-bottom: 0; }
+.calc td:nth-child(2) { white-space: normal; text-align: left; }
+.calc th:nth-child(2) { text-align: left; }

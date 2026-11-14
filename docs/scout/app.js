@@ -130,26 +130,67 @@ function stockMap(list, { selId, labelIds, focus } = {}) {
 }
 
 // ---------------------------------------------------------------- 종목 패널
-function evFor(s, k) {
-  const e = s.ev.find((x) => x.p === k && x.pts > 0) || (k === "quiet" ? s.ev.find((x) => x.p === k) : null);
-  if (e) {
-    const u = safeUrl(e.url);
-    return esc(e.t) + (u ? ` <a href="${esc(u)}" target="_blank" rel="noopener noreferrer">원문 ↗</a>` : "");
-  }
-  return k === "quiet" ? `6개월 수익률 ${pct(s.ret_6m)}, 52주 범위의 ${Math.round(s.pos52 * 100)}% 위치` : "확인된 근거 없음";
+const MACRO_EV = "거시 환경이 유리";
+const SHORT = { quiet: "소외도", smart: "수급", rev: "실적", cat: "계기" };
+const fmtPts = (v) => (v > 0 ? "+" : v < 0 ? "−" : "±") + Math.abs(Math.round(v * 10) / 10);
+function evLine(e, { common = false } = {}) {
+  const u = safeUrl(e.url);
+  const meta = [esc(e.src), e.d ? esc(e.d) : ""].filter(Boolean).join(" · ");
+  const cls = e.pts < 0 ? "neg" : e.pts > 0 ? "pos" : "zero";
+  return `<li class="ev ${cls}"><span class="pts">${e.pts === 0 ? "설명" : fmtPts(e.pts)}</span><span class="body">${esc(e.t)}${common ? ' <span class="chip">업종 공통 · 근거 판정 제외</span>' : ""}<small>${meta}${u ? ` · <a href="${esc(u)}" target="_blank" rel="noopener noreferrer">원문 ↗</a>` : ""}</small></span></li>`;
 }
+
+/** 소외도: 가격 지표로 계산한 기본 점수의 내역 + 가점 근거 */
+function quietDetail(s) {
+  const q = s.quiet_parts, evs = s.ev.filter((e) => e.p === "quiet");
+  let h = "";
+  if (q) {
+    const turnTxt = [q.rel1_up ? "최근 1개월 시장보다 강함" : "최근 1개월 시장보다 약함", q.above50 ? "50일선 위" : "50일선 아래"].join(", ");
+    const rows = [
+      ["6개월 시장 대비 수익률", `${pct(q.rel6, 1)}${q.beta ? ` (베타 ${q.beta.toFixed(2)} 감안)` : ""}`, q.a, 35, "+20%면 0점, −30%면 100점"],
+      ["52주 범위 안의 위치", `${Math.round(q.pos52 * 100)}% (0%=1년 최저가)`, q.b, 25, "90%면 0점, 10%면 100점"],
+      ["최근 20일 거래량 ÷ 1년 평균", `${Math.round(q.vol * 100)}%`, q.c, 15, "130%면 0점, 60%면 100점"],
+      ["최근 변동성 ÷ 1년 평균", `${Math.round(q.vola * 100)}%`, q.d, 10, "130%면 0점, 60%면 100점"],
+      ["바닥 다지기", turnTxt, q.turn, 15, "두 조건 각 50점"],
+    ];
+    h += `<div class="tbl-wrap"><table class="calc"><tr><th>항목</th><th>값</th><th>점수</th><th>비중</th><th>기여</th></tr>${rows.map(([n, v, sc, w, rule]) =>
+      `<tr><td>${n}<small>${rule}</small></td><td>${esc(v)}</td><td>${Math.round(sc)}</td><td>${w}%</td><td>${(sc * w / 100).toFixed(1)}</td></tr>`).join("")}
+      <tr class="sum"><td colspan="4">가격 지표로 계산한 기본 점수</td><td>${(s.quiet_base ?? q.base).toFixed(1)}</td></tr></table></div>`;
+  }
+  const extra = evs.filter((e) => e.pts !== 0);
+  if (extra.length) h += `<ul class="evs-all">${extra.map((e) => evLine(e)).join("")}</ul>`;
+  const notes = evs.filter((e) => e.pts === 0);
+  if (notes.length) h += `<ul class="evs-all">${notes.map((e) => evLine(e)).join("")}</ul>`;
+  h += `<p class="sumline">기본 ${(s.quiet_base ?? 0).toFixed(1)}${extra.length ? " + 가점 " + extra.reduce((n, e) => n + e.pts, 0).toFixed(1) : ""} = <b>${Math.round(s.pillars.quiet)}점</b> (100점 상한)</p>`;
+  return h;
+}
+
+/** 스마트머니·실적·촉매: 근거 하나하나의 점수 합계 */
+function axisDetail(s, k) {
+  const evs = s.ev.filter((e) => e.p === k);
+  if (!evs.length) return '<p class="sumline muted">확인된 근거가 없어 0점입니다.</p>';
+  const total = evs.reduce((n, e) => n + e.pts, 0);
+  let h = `<ul class="evs-all">${evs.map((e) => evLine(e, { common: e.t.startsWith(MACRO_EV) })).join("")}</ul>`;
+  h += `<p class="sumline">합계 ${total.toFixed(1)} → <b>${Math.round(s.pillars[k])}점</b>${total > 100 ? " (100점 상한)" : total < 0 ? " (0점 하한)" : ""}</p>`;
+  const bar = (D.bar && D.bar[s.market] && D.bar[s.market][k]) ?? 25, core = s.core ? s.core[k] : null;
+  if (core != null) {
+    const ok = core >= bar;
+    h += `<p class="judge ${ok ? "ok" : ""}">${ok ? "✓ 근거 있음" : "✗ 근거로 치지 않음"} · 종목 고유 근거 ${core.toFixed(1)}점 ${ok ? "≥" : "<"} 기준 ${bar}점${core !== total ? " (업종 공통 거시 가점 제외)" : ""}</p>`;
+  }
+  return h;
+}
+
 function panel(s) {
   if (!s) return '<p class="empty">지도에서 점을 누르거나 아래 목록에서 종목을 고르세요.</p>';
   const watching = store.get().some((w) => w.id === s.id);
-  const neg = s.ev.filter((e) => e.pts < 0);
   const url = safeUrl(s.url);
+  const w = D.weights || { quiet: 0.3, smart: 0.25, rev: 0.25, cat: 0.2 };
+  const has = Q.slice(1).filter(([k]) => s.core && s.core[k] >= ((D.bar && D.bar[s.market] && D.bar[s.market][k]) ?? 25)).map(([, t]) => t);
   let h = `<div class="who"><div><h2>${esc(s.name)}</h2><small>${esc(s.ticker)} · ${esc(s.sector)} · 6개월 ${pct(s.ret_6m)}</small></div><div class="score" title="종합 점수">${Math.round(s.score)}</div></div>`;
   h += `<p class="rankline">${MK[s.market]} 후보 ${s.rank_of}개 중 ${s.rank}위 · 한국과 미국은 따로 순위를 매깁니다</p>`;
-  h += Q.map(([k, t]) => `<div class="g"><div class="t">${t}<span>${Math.round(s.pillars[k])}</span></div><div class="bar"><b style="width:${Math.max(0, Math.min(100, s.pillars[k]))}%"></b></div><p>${evFor(s, k)}</p></div>`).join("");
-  if (s.beta != null) {
-    h += `<div class="note">베타 ${s.beta.toFixed(2)} — 미국 시장(S&amp;P 500)이 1% 움직일 때 평균 ${s.beta.toFixed(1)}% 움직인 종목입니다. 이를 감안해도 6개월간 시장보다 ${pct(s.rel_6m)} ${s.rel_6m < 0 ? "뒤처졌습니다" : "앞섰습니다"}.</div>`;
-  }
-  for (const e of neg) h += `<div class="note warn">${esc(e.t)}</div>`;
+  h += `<div class="formula">종합 ${s.score.toFixed(1)} = ${Q.map(([k]) => `${SHORT[k]} ${Math.round(s.pillars[k])}×${Math.round(w[k] * 100)}%`).join(" + ")}</div>`;
+  h += `<p class="rankline">근거가 겹친 축 ${s.confirm}개${has.length ? ": " + has.join(", ") : ""} · 근거 ${s.ev.filter((e) => e.pts !== 0).length}건</p>`;
+  h += Q.map(([k, t], i) => `<details class="g"${i < 2 || s.pillars[k] > 0 ? " open" : ""}><summary><span class="t">${t}<span>${Math.round(s.pillars[k])}</span></span><span class="bar"><b style="width:${Math.max(0, Math.min(100, s.pillars[k]))}%"></b></span></summary>${k === "quiet" ? quietDetail(s) : axisDetail(s, k)}</details>`).join("");
   if (s.below_200 && (s.ret_1m || 0) < 0) h += '<div class="note warn">주의 · 아직 하락 추세입니다 (200일선 아래, 최근 1개월도 약세)</div>';
   h += '<div class="btns">';
   if (s.doc) h += `<button type="button" class="primary" data-doc="${esc(s.id)}">투자 메모 · 반론 보기</button>`;
@@ -240,7 +281,10 @@ function renderSectors() {
         <div class="rows" style="margin-top:12px">${secs.slice(0, 8).map((x, i) => `<button type="button" class="row${x === pick ? " on" : ""}" data-sec="${esc(x.id)}"><span class="rk">${i + 1}</span><span class="nm"><b>${esc(x.name)}</b><small>후보 ${count[x.id]}개</small></span><span class="n">${Math.round(x.score)}</span><p>${esc(x.leaders.slice(0, 3).map((l) => l.name).join(" · "))}</p></button>`).join("")}</div></section>
       <section class="card"><h2>② ${esc(pick.name)} 안에서 종목을 고릅니다</h2><p class="sub">진한 점이 이 업종의 후보 · 종합 ${Math.round(pick.score)}점</p>
         ${map2.svg}
-        <ul class="doc" style="font-size:13.5px;margin:10px 0 0">${pick.ev.slice(0, 4).map((e) => `<li>${esc(e.t)}</li>`).join("")}</ul>
+        <details class="g sec-ev" open><summary><span class="t">이 업종의 근거 ${pick.ev.length}건</span></summary>
+          <p class="sumline muted">업종 점수 = 소외도는 구성 종목 중앙값, 나머지 축은 구성 종목 상위 절반의 평균에 아래 업종 근거의 점수를 더한 값입니다.</p>
+          <ul class="evs-all">${pick.ev.map((e) => evLine(e)).join("")}</ul>
+          <p class="sumline">${Q.map(([k, t]) => `${t} <b>${Math.round(pick.pillars[k])}</b>`).join(" · ")}</p></details>
         ${pick.doc ? `<div class="btns"><button type="button" class="primary" data-doc="${esc(pick.id)}">업종 메모 보기</button></div>` : ""}
         <div class="rows" style="margin-top:12px">${mine.map((s) => rowHtml(s, s.rank, null)).join("")}</div></section>
     </div>`;
