@@ -162,3 +162,14 @@ details.g > summary .bar b { display: block; height: 100%; border-radius: 5px; b
 .calc tr.sum td { font-weight: 700; border-bottom: 0; }
 .calc td:nth-child(2) { white-space: normal; text-align: left; }
 .calc th:nth-child(2) { text-align: left; }
+
+/* 근거 추세 */
+.trend { margin-top: 10px; font-size: 13px; color: var(--body); border: 1px solid var(--line); border-radius: 10px; padding: 8px 12px; }
+.trend b:first-child { margin-right: 6px; }
+.trend small { color: var(--mute); }
+.trend .pos { color: var(--acc); font-weight: 600; } .trend .neg { color: var(--warn); font-weight: 600; }
+.trend.up { border-color: var(--acc); background: var(--zone); }
+.trend.up .d { color: var(--acc); } .trend.down .d { color: var(--warn); }
+.tb { font-size: 11px; font-weight: 800; margin-left: 6px; padding: 0 6px; border-radius: 999px; white-space: nowrap; vertical-align: 1px; }
+.tb.up { color: var(--acc-ink); background: var(--acc); }
+.tb.down { color: var(--warn); border: 1px solid var(--warn); }

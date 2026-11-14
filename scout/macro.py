@@ -5,6 +5,7 @@
 from __future__ import annotations
 
 import datetime as dt
+import re
 import email.utils
 import xml.etree.ElementTree as ET
 from urllib.parse import quote
@@ -161,6 +162,23 @@ def news(query: str, lang: str, days: int = 30) -> list[dict]:
     return out
 
 
+# 제목에 이런 말이 있으면 촉매 단어가 있어도 근거로 치지 않는다 (예: "풀가동에도 적자 낸 ○○")
+NEGATIVE_KR = ("적자", "부진", "하락", "급락", "감소", "쇼크", "우려", "리콜", "소송", "제재", "철회", "취소", "연기",
+               "하향", "손실", "둔화", "악화", "위기", "중단", "감산", "경고", "불발", "무산", "차질", "결함", "적신호",
+               "매도", "횡령", "배임", "상폐", "상장폐지", "감사의견", "유상증자")
+NEGATIVE_EN = ("miss", "misses", "cut", "cuts", "downgrade", "lawsuit", "sued", "probe", "recall", "plunge", "plunges",
+               "slump", "falls", "drops", "tumbles", "sinks", "warning", "warns", "weak", "loss", "losses", "delay",
+               "delayed", "halt", "layoff", "layoffs", "bankruptcy", "investigation", "decline", "sell-off", "selloff",
+               "downgraded", "short seller", "fraud", "lowers guidance", "slashes")
+
+
+def is_negative(title: str) -> bool:
+    low = title.lower()
+    if any(w in title for w in NEGATIVE_KR):
+        return True
+    return any(re.search(r"\b" + re.escape(w) + r"\b", low) for w in NEGATIVE_EN)
+
+
 def news_evidence(items: list[dict], label: str, must: tuple[str, ...] = ()) -> tuple[list[dict], int]:
     """촉매 단어가 들어간 기사 → 근거. (근거 목록, 전체 기사 수)
 
@@ -170,10 +188,15 @@ def news_evidence(items: list[dict], label: str, must: tuple[str, ...] = ()) -> 
     if must:
         low = [m.lower() for m in must if m]
         items = [i for i in items if any(m in i["title"].lower() for m in low)]
-    hot = sorted((i for i in items if i["hits"]), key=lambda i: i["date"], reverse=True)
+    hot = sorted((i for i in items if i["hits"] and not is_negative(i["title"])), key=lambda i: i["date"], reverse=True)
+    bad = sorted((i for i in items if is_negative(i["title"])), key=lambda i: i["date"], reverse=True)
     out = []
     if hot:
         pts = min(20, 4 * len(hot))
         for i in hot[:2]:
             out.append(ev("cat", f"뉴스({label}): {i['title']}", f"Google 뉴스 · {i['source']}", i["url"], i["date"], pts / 2))
+    if bad:  # 점수에는 넣지 않고, 판단에 참고하도록 최신 부정 기사 하나를 보여 준다
+        i = bad[0]
+        out.append(ev("cat", f"부정적 뉴스(점수 제외, 최근 30일 {len(bad)}건): {i['title']}",
+                      f"Google 뉴스 · {i['source']}", i["url"], i["date"], 0))
     return out, len(items)

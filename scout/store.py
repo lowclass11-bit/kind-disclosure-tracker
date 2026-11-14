@@ -147,6 +147,19 @@ def briefing(data: dict) -> str:
                 "업종 점수 변화와 새 후보가 여기에 표시됩니다.", ""]
 
     stocks = [s for s in data["stocks"] if s.get("candidate")]
+    tb = data.get("trend_base")
+    rising = sorted((s for s in stocks if (s.get("trend") or {}).get("d", 0) >= 3), key=lambda s: -s["trend"]["d"])
+    out.append(f"## 근거가 쌓이는 종목 ({tb['date']} 대비)" if tb else "## 근거가 쌓이는 종목")
+    if not tb:
+        out.append("비교할 지난 기록이 아직 없습니다. 다음 수집부터 표시됩니다.")
+    names = {"smart": "수급", "rev": "실적", "cat": "계기"}
+    for s in rising[:10]:
+        ax = ", ".join(f"{names[k]} {v:+.0f}" for k, v in s["trend"]["axes"].items() if abs(v) >= 1)
+        out.append(f"- **{s['name']}** ({s['sector']}, {s['market']}) 근거 점수 {s['trend']['d']:+.1f}"
+                   + (" · 새로 등장" if s["trend"]["new"] else "") + (f" — {ax}" if ax else ""))
+    if tb and not rising:
+        out.append("- 근거 점수가 3점 이상 늘어난 후보가 없습니다.")
+    out.append("")
     out.append("## 근거가 가장 많이 겹친 종목")
     for s in sorted(stocks, key=lambda s: (-s["confirm"], -s["score"]))[:8]:
         out.append(f"- **{s['name']}** ({s['sector']}, {s['market']}) {s['score']:.0f}점 — "

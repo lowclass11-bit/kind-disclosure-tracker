@@ -137,7 +137,7 @@ function evLine(e, { common = false } = {}) {
   const u = safeUrl(e.url);
   const meta = [esc(e.src), e.d ? esc(e.d) : ""].filter(Boolean).join(" · ");
   const cls = e.pts < 0 ? "neg" : e.pts > 0 ? "pos" : "zero";
-  return `<li class="ev ${cls}"><span class="pts">${e.pts === 0 ? "설명" : fmtPts(e.pts)}</span><span class="body">${esc(e.t)}${common ? ' <span class="chip">업종 공통 · 근거 판정 제외</span>' : ""}<small>${meta}${u ? ` · <a href="${esc(u)}" target="_blank" rel="noopener noreferrer">원문 ↗</a>` : ""}</small></span></li>`;
+  return `<li class="ev ${cls}"><span class="pts">${e.pts === 0 ? "참고" : fmtPts(e.pts)}</span><span class="body">${esc(e.t)}${common ? ' <span class="chip">업종 공통 · 근거 판정 제외</span>' : ""}<small>${meta}${u ? ` · <a href="${esc(u)}" target="_blank" rel="noopener noreferrer">원문 ↗</a>` : ""}</small></span></li>`;
 }
 
 /** 소외도: 가격 지표로 계산한 기본 점수의 내역 + 가점 근거 */
@@ -180,6 +180,23 @@ function axisDetail(s, k) {
   return h;
 }
 
+function trendHtml(s) {
+  const tb = D.trend_base, t = s.trend;
+  const recent = s.recent_ev ? ` · 최근 14일 안에 나온 근거 ${s.recent_ev}건` : "";
+  if (!tb) return `<div class="trend"><b>근거 추세</b> 비교할 지난 기록이 아직 없습니다. 다음 수집부터 지난주 대비 변화가 표시됩니다.${recent}</div>`;
+  if (!t) return `<div class="trend"><b>근거 추세</b> ${esc(tb.date)}에는 관찰 대상이 아니어서 비교할 수 없습니다.${recent}</div>`;
+  const dir = t.d >= 3 ? "up" : t.d <= -3 ? "down" : "flat";
+  const word = t.new ? "새로 등장 — 지난 기록에는 근거가 없던 종목입니다" : dir === "up" ? "근거가 쌓이는 중" : dir === "down" ? "근거가 줄어드는 중" : "큰 변화 없음";
+  const ax = Object.entries(t.axes).map(([k, v]) => `<span class="${v > 0 ? "pos" : v < 0 ? "neg" : ""}">${SHORT[k]} ${v > 0 ? "+" : ""}${Math.round(v)}</span>`).join(" · ");
+  return `<div class="trend ${dir}"><b>근거 추세</b> ${esc(tb.date)} 대비(${tb.days}일) 근거 점수 <b class="d">${t.d > 0 ? "+" : ""}${t.d.toFixed(1)}</b> · ${word}<br><small>${ax}${recent}</small></div>`;
+}
+function trendBadge(t) {
+  if (!t) return "";
+  if (t.new) return '<span class="tb up">NEW</span>';
+  if (t.d >= 3) return `<span class="tb up">▲${Math.round(t.d)}</span>`;
+  if (t.d <= -3) return `<span class="tb down">▼${Math.round(-t.d)}</span>`;
+  return "";
+}
 function panel(s) {
   if (!s) return '<p class="empty">지도에서 점을 누르거나 아래 목록에서 종목을 고르세요.</p>';
   const watching = store.get().some((w) => w.id === s.id);
@@ -190,6 +207,7 @@ function panel(s) {
   h += `<p class="rankline">${MK[s.market]} 후보 ${s.rank_of}개 중 ${s.rank}위 · 한국과 미국은 따로 순위를 매깁니다</p>`;
   h += `<div class="formula">종합 ${s.score.toFixed(1)} = ${Q.map(([k]) => `${SHORT[k]} ${Math.round(s.pillars[k])}×${Math.round(w[k] * 100)}%`).join(" + ")}</div>`;
   h += `<p class="rankline">근거가 겹친 축 ${s.confirm}개${has.length ? ": " + has.join(", ") : ""} · 근거 ${s.ev.filter((e) => e.pts !== 0).length}건</p>`;
+  h += trendHtml(s);
   h += Q.map(([k, t], i) => `<details class="g"${i < 2 || s.pillars[k] > 0 ? " open" : ""}><summary><span class="t">${t}<span>${Math.round(s.pillars[k])}</span></span><span class="bar"><b style="width:${Math.max(0, Math.min(100, s.pillars[k]))}%"></b></span></summary>${k === "quiet" ? quietDetail(s) : axisDetail(s, k)}</details>`).join("");
   if (s.below_200 && (s.ret_1m || 0) < 0) h += '<div class="note warn">주의 · 아직 하락 추세입니다 (200일선 아래, 최근 1개월도 약세)</div>';
   h += '<div class="btns">';
@@ -204,7 +222,7 @@ function rowHtml(s, i, selId) {
   const first = s.ev.find((e) => e.pts > 0) || s.ev[0];
   const down = s.below_200 && (s.ret_1m || 0) < 0;
   return `<button type="button" class="row${s.id === selId ? " on" : ""}" data-id="${esc(s.id)}"><span class="rk">${i}</span>
-    <span class="nm"><b>${esc(s.name)}</b><small>${esc(s.sector)} · 6개월 ${pct(s.ret_6m)}</small><span class="pips" aria-hidden="true">${Q.map(([k]) => `<u class="${s.pillars[k] >= 40 ? "on" : ""}"></u>`).join("")}</span>${down ? '<span class="tag">하락 추세</span>' : ""}</span>
+    <span class="nm"><b>${esc(s.name)}</b><small>${esc(s.sector)} · 6개월 ${pct(s.ret_6m)}</small><span class="pips" aria-hidden="true">${Q.map(([k]) => `<u class="${s.pillars[k] >= 40 ? "on" : ""}"></u>`).join("")}</span>${trendBadge(s.trend)}${down ? '<span class="tag">하락 추세</span>' : ""}</span>
     <span class="n">${Math.round(s.score)}</span><p>${first ? esc(first.t) : ""}</p></button>`;
 }
 
@@ -220,7 +238,8 @@ function renderMarket() {
   const st = D.stats, key = m.toLowerCase();
   const q = S.q.trim().toLowerCase();
   let list = q ? all.filter((s) => (s.name + " " + s.ticker + " " + s.sector).toLowerCase().includes(q)) : all;
-  if (S.sort !== "rank") list = [...list].sort((a, b) => b.pillars[S.sort] - a.pillars[S.sort]);
+  if (S.sort === "trend") list = [...list].sort((a, b) => ((b.trend || {}).d ?? -999) - ((a.trend || {}).d ?? -999));
+  else if (S.sort !== "rank") list = [...list].sort((a, b) => b.pillars[S.sort] - a.pillars[S.sort]);
   const usNote = m === "US" ? " 미국 종목은 S&amp;P 500 대비 <b>베타를 감안한</b> 수익률로 소외도를 재고, 미국 종목끼리만 비교합니다." : "";
   $("view").innerHTML = `
     <p class="say">${MK[m]} ${st[key]}종목 중 <b>오른쪽 위</b>에 있는 종목이 "주가는 조용한데 근거가 쌓이는" 곳입니다. 오늘은 <b>${map.zone.length}종목</b>이 들어와 있습니다.${usNote}</p>
@@ -232,7 +251,7 @@ function renderMarket() {
     </div>
     <div class="tools"><h2>${MK[m]} 후보 ${all.length}</h2>
       <input type="search" id="q" placeholder="종목·업종 찾기" value="${esc(S.q)}" aria-label="종목·업종 찾기">
-      <select id="sort" aria-label="정렬"><option value="rank">종합 순위순</option><option value="quiet">소외도순</option><option value="smart">누가 사나 순</option><option value="rev">실적 기대순</option><option value="cat">계기순</option></select></div>
+      <select id="sort" aria-label="정렬"><option value="rank">종합 순위순</option><option value="quiet">소외도순</option><option value="smart">누가 사나 순</option><option value="rev">실적 기대순</option><option value="cat">계기순</option><option value="trend">근거 증가순</option></select></div>
     <div class="rows" id="rows">${list.slice(0, S.limit).map((s, i) => rowHtml(s, S.sort === "rank" && !q ? s.rank : i + 1, sel.id)).join("") || '<p class="empty">찾는 종목이 없습니다.</p>'}</div>
     ${list.length > S.limit ? `<button type="button" class="more" id="more">더 보기 (${list.length - S.limit}개 남음)</button>` : ""}
     <div class="tools"><h2>거시 환경</h2></div><div class="strip">${macroHtml()}</div>`;
@@ -278,7 +297,7 @@ function renderSectors() {
     <div class="two">
       <section class="card"><h2>① 업종을 고릅니다</h2><p class="sub">원을 누르면 옆 지도가 그 업종으로 바뀝니다</p>
         <svg viewBox="0 0 ${sc.W} ${sc.H}" role="img" aria-label="업종 분포">${g}</svg>
-        <div class="rows" style="margin-top:12px">${secs.slice(0, 8).map((x, i) => `<button type="button" class="row${x === pick ? " on" : ""}" data-sec="${esc(x.id)}"><span class="rk">${i + 1}</span><span class="nm"><b>${esc(x.name)}</b><small>후보 ${count[x.id]}개</small></span><span class="n">${Math.round(x.score)}</span><p>${esc(x.leaders.slice(0, 3).map((l) => l.name).join(" · "))}</p></button>`).join("")}</div></section>
+        <div class="rows" style="margin-top:12px">${secs.slice(0, 8).map((x, i) => `<button type="button" class="row${x === pick ? " on" : ""}" data-sec="${esc(x.id)}"><span class="rk">${i + 1}</span><span class="nm"><b>${esc(x.name)}</b><small>후보 ${count[x.id]}개</small>${x.trend_d != null ? trendBadge({ d: x.trend_d }) : ""}</span><span class="n">${Math.round(x.score)}</span><p>${esc(x.leaders.slice(0, 3).map((l) => l.name).join(" · "))}</p></button>`).join("")}</div></section>
       <section class="card"><h2>② ${esc(pick.name)} 안에서 종목을 고릅니다</h2><p class="sub">진한 점이 이 업종의 후보 · 종합 ${Math.round(pick.score)}점</p>
         ${map2.svg}
         <details class="g sec-ev" open><summary><span class="t">이 업종의 근거 ${pick.ev.length}건</span></summary>
@@ -352,6 +371,8 @@ function aboutHtml() {
     <li><b>세로축 근거</b>: 누가 사고 있나(수급·내부자·기관), 실적 기대(추정치), 예정된 계기(수주·증설·실적 발표·뉴스) 세 점수의 평균.</li>
     <li><b>발굴 구역</b>: 그 시장 후보들 가운데 소외도 상위 절반이면서 근거 상위 40%인 영역. 한국과 미국은 각자 기준으로 따로 정합니다.</li>
     <li><b>근거 축 개수</b>: 한국은 축 점수 25점 이상, 미국은 자료 종류가 적어 미국 종목 중 상위 30% 점수(15~25점)를 기준으로 셉니다.</li>
+    <li><b>근거 추세</b>: 5일 이상 지난 기록 중 가장 최근 것과 비교한 근거 점수(수급·실적·계기 평균, 거시 가점 제외) 변화. ▲는 3점 이상 늘어남, NEW는 그때 근거가 없던 종목. 종합 점수에는 넣지 않습니다.</li>
+    <li><b>뉴스</b>: 촉매 단어가 있어도 적자·하락·소송 같은 부정적인 말이 제목에 있으면 점수에서 빼고 "참고"로만 보여 줍니다.</li>
     <li>투자 스타일 ${esc(D.style_label)} · 이미 많이 오른 종목은 제외</li></ul><p><b>오늘 받은 자료</b></p><ul>${src}</ul>`;
 }
 function render() {
