@@ -206,10 +206,10 @@ def collect() -> None:
     if cfg["dart_key"]:
         codes = _guard("DART OpenAPI", lambda: sources_kr.dart_corp_codes(cfg["dart_key"]), {})
         if codes:
-            res = net.pmap(lambda s: sources_kr.dart_quarter(s, cfg["dart_key"], codes), kr_short[:80],
+            res = net.pmap(lambda s: sources_kr.dart_quarter(s, cfg["dart_key"], codes), kr_short,
                            workers=4, on_done=_progress("DART 재무"))
-            _attach(kr_short[:80], res)
-            JOB.src("DART 정기보고서 재무", sum(len(r or []) for r in res), note="상위 80종목 조회")
+            _attach(kr_short, res)
+            JOB.src("DART 정기보고서 재무", sum(len(r or []) for r in res), note=f"{len(kr_short)}종목 조회")
     else:
         JOB.src("DART 정기보고서 재무", None, "키 필요", "PC: 설정 화면 / 온라인: 저장소 Secrets의 DART_API_KEY")
 
