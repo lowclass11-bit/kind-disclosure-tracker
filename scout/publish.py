@@ -29,14 +29,14 @@ def _stock(s: dict, full: bool) -> dict:
     keep = ("id", "kind", "market", "ticker", "name", "sector", "sector_id", "exchange", "mcap", "url", "price",
             "hot", "candidate", "score", "pillars", "confirm", "ret_1m", "ret_6m", "rel_6m", "pos52", "from_hi",
             "below_200", "per", "pbr", "fwd_pe", "next_earnings", "beta", "rank", "rank_of", "lo52",
-            "quiet_parts", "quiet_base", "core")
+            "quiet_parts", "quiet_base", "core", "trend", "recent_ev")
     out = {k: s.get(k) for k in keep}
     out["ev"] = s["ev"] if full else s["ev"][:2]   # 후보는 근거를 하나도 빼지 않는다
     return out
 
 
 def _sector(x: dict) -> dict:
-    keep = ("id", "kind", "market", "name", "etf", "n", "pillars", "score", "hot", "rel_6m", "breadth",
+    keep = ("id", "kind", "market", "name", "etf", "n", "pillars", "score", "hot", "rel_6m", "breadth", "trend_d",
             "leaders", "candidate", "url")
     out = {k: x.get(k) for k in keep}
     out["ev"] = x["ev"]
@@ -125,7 +125,7 @@ def main() -> int:
         "date": data["date"], "generated_at": data["generated_at"], "style_label": data["style_label"],
         "weights": data["weights"], "pillars": pipeline.PILLARS, "macro": data["macro"],
         "sources": data["sources"],
-        "bar": data.get("bar", {}),
+        "bar": data.get("bar", {}), "trend_base": data.get("trend_base"),
         "sectors": [dict(_sector(x), doc=item_key(x["id"]) if x["id"] in has_doc else None)
                     for x in data["sectors"]],
         "stocks": [dict(_stock(s, True), doc=item_key(s["id"]) if s["id"] in has_doc else None)

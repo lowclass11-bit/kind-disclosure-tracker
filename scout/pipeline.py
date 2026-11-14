@@ -283,6 +283,7 @@ def collect() -> None:
             x["score"] = _total(x["pillars"], style)
 
     today = dt.date.today().isoformat()
+    trend_base = _attach_trend(stocks, sectors, today)
     result = {
         "date": today, "generated_at": dt.datetime.now().isoformat(timespec="seconds"),
         "style": cfg["style"], "style_label": style["label"], "weights": style["w"],
@@ -290,6 +291,7 @@ def collect() -> None:
         "stocks": [_slim(s) for s in sorted(stocks, key=lambda s: -s.get("score", 0))],
         "sources": JOB.snapshot()["sources"], "bench": bench_close,
         "bar": {m: {k: round(v, 1) for k, v in b.items()} for m, b in bar.items()},
+        "trend_base": trend_base,
     }
     config.write_json(LATEST, result)
     config.write_json(config.HISTORY / f"{today}.json", {
@@ -298,6 +300,10 @@ def collect() -> None:
                     for x in sectors},
         "stocks": {s["id"]: {"name": s["name"], "score": s["score"], "price": s["m"]["price"], "sector": s["sector"]}
                    for s in stocks if s.get("candidate")},
+        # 종목 고유 근거 점수(수급·실적·계기, 거시 가점 제외). 다음 실행이 '근거가 쌓이는지' 비교할 때 쓴다
+        "ev_scores": {s["id"]: [round(min(100, s["core"][k]), 1) for k in ("smart", "rev", "cat")]
+                      for s in stocks if any(s["core"].values())},
+        "universe": sorted(s["id"] for s in stocks),
     })
     n_cand = sum(1 for s in stocks if s.get("candidate"))
     say(f"후보 {n_cand}종목, 업종 {len(sectors)}개 점수 계산 완료")
@@ -321,6 +327,49 @@ def _prune_cache(days: int = 35) -> None:
                 f.unlink()
         except OSError:
             pass
+
+
+TREND_MIN_DAYS = 5
+
+
+def _attach_trend(stocks: list[dict], sectors: list[dict], today: str) -> dict | None:
+    """지난 기록과 비교해 종목별 근거 점수 변화를 붙인다.
+
+    5일 이상 지난 기록 중 가장 최근 것을 기준으로 삼고(주간 변화), 없으면 가장 오래된 기록을 쓴다.
+    기준 기록에 근거 점수가 없던 종목은 0점이었던 것으로 본다(그때 관찰 대상이었을 때만).
+    """
+    snaps = []
+    for path in sorted(config.HISTORY.glob("*.json")):
+        snap = config.read_json(path)
+        if snap and snap.get("date", "") < today and "ev_scores" in snap:
+            snaps.append(snap)
+    if not snaps:
+        return None
+    t = dt.date.fromisoformat(today)
+    old = [x for x in snaps if (t - dt.date.fromisoformat(x["date"])).days >= TREND_MIN_DAYS]
+    base = old[-1] if old else snaps[0]
+    days = (t - dt.date.fromisoformat(base["date"])).days
+    was = set(base.get("universe", []))
+    keys = ("smart", "rev", "cat")
+    for s in stocks:
+        now = [min(100, s["core"][k]) for k in keys]
+        prev = base["ev_scores"].get(s["id"])
+        if prev is None and s["id"] not in was:
+            continue  # 그때는 관찰 대상이 아니었다
+        prev = prev or [0, 0, 0]
+        s["trend"] = {"d": round(sum(now) / 3 - sum(prev) / 3, 1),
+                      "axes": {k: round(a - b, 1) for k, a, b in zip(keys, now, prev)},
+                      "new": not any(prev)}
+    for x in sectors:
+        ds = [s["trend"]["d"] for s in stocks if s["sector_id"] == x["id"] and "trend" in s]
+        if ds:
+            x["trend_d"] = round(statistics.fmean(ds), 1)
+    return {"date": base["date"], "days": days}
+
+
+def _recent_ev(s: dict, today: str, days: int = 14) -> int:
+    cut = (dt.date.fromisoformat(today) - dt.timedelta(days=days)).isoformat()
+    return sum(1 for e in s["ev"] if e["pts"] > 0 and e["p"] != "quiet" and e.get("d") and e["d"] >= cut)
 
 
 def _sector_match(category: str, sector: str) -> bool:
@@ -458,6 +507,7 @@ def _slim(s: dict) -> dict:
         "ev": sorted(s["ev"], key=lambda e: -e["pts"]),
         "quiet_parts": s.get("quiet_parts"), "quiet_base": s.get("quiet"),
         "core": {k: round(v, 1) for k, v in (s.get("core") or {}).items()},
+        "trend": s.get("trend"), "recent_ev": _recent_ev(s, dt.date.today().isoformat()),
     }
 
 
