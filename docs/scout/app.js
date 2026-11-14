@@ -429,6 +429,58 @@ addEventListener("resize", () => {
   resizeTimer = setTimeout(() => { if (D && narrow() !== lastNarrow) { lastNarrow = narrow(); render(); } }, 200);
 });
 
+// ---------------------------------------------------------------- 갱신 버튼 (Claude 웹앱에서만 보인다)
+// 누르면 Claude Code의 '발굴 지도 웹앱 갱신' 작업이 시작되고, 그 작업이 GitHub의 최신 자료로 이 웹앱을 다시 올린다.
+// 다시 올라가면 열려 있는 화면은 저절로 새 버전으로 바뀐다.
+const REFRESH_KEY = "scout.refreshAt", REFRESH_WAIT = 15 * 60 * 1000;
+const setMsg = (t) => { $("refreshMsg").textContent = t; };
+function refreshAt() { try { return Number(localStorage.getItem(REFRESH_KEY) || 0); } catch { return 0; } }
+function refreshError(e) {
+  const code = e && e.code;
+  if (code === "needs_reauth") return "claude.ai 설정 → 커넥터에서 Claude Code 연결을 다시 해 주세요.";
+  if (code === "server_not_connected" || code === "server_not_found") return "claude.ai 설정 → 커넥터에 Claude Code 연결이 있어야 갱신할 수 있습니다.";
+  if (code === "not_in_manifest" || code === "approval_required" || code === "consent_required") return "갱신하려면 허용이 필요합니다. 다시 누르면 허용 창이 뜹니다.";
+  if (code === "blocked_by_policy") return "조직 정책으로 갱신 기능이 막혀 있습니다.";
+  if (code === "tool_error") return "갱신 작업을 시작하지 못했습니다. 작업이 삭제됐거나 꺼져 있을 수 있습니다.";
+  if (code === "server_unavailable" || code === "upstream_error") return "연결이 불안정합니다. 요청이 이미 들어갔을 수 있으니 몇 분 기다렸다가 화면이 바뀌지 않으면 다시 눌러 주세요.";
+  return "갱신을 요청하지 못했습니다. 잠시 뒤 다시 눌러 주세요.";
+}
+function showRefreshState() {
+  const btn = $("refreshBtn"), at = refreshAt(), ago = Date.now() - at;
+  if (at && ago < REFRESH_WAIT) {
+    btn.disabled = true;
+    setMsg(`갱신 중 (${Math.max(1, Math.round(ago / 60000))}분 전 요청) · 새 자료가 있으면 곧 화면이 바뀝니다. 15분이 지나도 그대로면 이미 최신입니다.`);
+    setTimeout(showRefreshState, 60000);
+  } else {
+    btn.disabled = false;
+    setMsg("");
+  }
+}
+async function setupRefresh() {
+  const cfg = window.SCOUT_REFRESH;
+  if (!cfg || !cfg.trigger || !window.claude || typeof window.claude.use !== "function") return;
+  let mcp = null;
+  try { mcp = await window.claude.use("mcp"); } catch { mcp = null; }
+  if (!mcp) return;
+  const btn = $("refreshBtn");
+  btn.hidden = false;
+  showRefreshState();
+  btn.onclick = async () => {
+    btn.disabled = true;
+    setMsg("갱신을 요청하는 중…");
+    try {
+      await mcp.callTool("Claude Code Remote", "fire_trigger", { trigger_id: cfg.trigger }, { cache: false });
+      try { localStorage.setItem(REFRESH_KEY, String(Date.now())); } catch { /* 표시용일 뿐 */ }
+      toast("갱신을 시작했습니다.");
+      showRefreshState();
+    } catch (e) {
+      btn.disabled = false;
+      setMsg(refreshError(e));
+    }
+  };
+}
+setupRefresh();
+
 (async function init() {
   try {
     const r = await fetch("data/dashboard.json", { cache: "no-store" });

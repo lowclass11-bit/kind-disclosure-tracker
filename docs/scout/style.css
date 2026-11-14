@@ -173,3 +173,9 @@ details.g > summary .bar b { display: block; height: 100%; border-radius: 5px; b
 .tb { font-size: 11px; font-weight: 800; margin-left: 6px; padding: 0 6px; border-radius: 999px; white-space: nowrap; vertical-align: 1px; }
 .tb.up { color: var(--acc-ink); background: var(--acc); }
 .tb.down { color: var(--warn); border: 1px solid var(--warn); }
+
+/* 갱신 버튼 (Claude 웹앱에서만 보임) */
+.refresh { display: inline-flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 12.5px; }
+.refresh button { padding: 3px 12px; font-size: 12.5px; }
+.refresh button:disabled { opacity: .55; cursor: default; }
+#refreshMsg { max-width: 46ch; }
