@@ -15,6 +15,7 @@ PILLARS = {"quiet": "소외도", "smart": "스마트머니", "rev": "실적 추�
 LATEST = config.DATA / "latest.json"
 CNS_HISTORY = config.STATE / "consensus_history.json"
 
+MACRO_EV = "거시 환경이 유리"
 STEPS = ["유니버스", "가격·소외 필터", "스마트머니", "실적 추정", "촉매·거시", "점수 계산"]
 
 
@@ -231,7 +232,7 @@ def collect() -> None:
     for s in stocks:
         hit = [t for t in s.get("macro", []) if t in active]
         if hit:
-            s["ev"].append(ev("cat", f"거시 환경이 유리: {', '.join(macro.TAG_LABEL[t] for t in hit)}",
+            s["ev"].append(ev("cat", f"{MACRO_EV}: {', '.join(macro.TAG_LABEL[t] for t in hit)}",
                               "거시 지표", pts=min(20, 10 * len(hit))))
 
     sector_extra: dict[str, list[dict]] = {}
@@ -376,7 +377,7 @@ def _confirm_bar(stocks: list[dict]) -> dict[str, dict[str, float]]:
     bar = {"KR": {k: 25.0 for k in ("smart", "rev", "cat")}, "US": {}}
     us = [s for s in stocks if s["market"] == "US" and not s["hot"]]
     for k in ("smart", "rev", "cat"):
-        vals = sorted(s["pillars"][k] for s in us)
+        vals = sorted(s["core"][k] for s in us)
         p70 = vals[int(len(vals) * 0.7)] if vals else 25.0
         bar["US"][k] = min(25.0, max(15.0, p70))
     return bar
@@ -389,10 +390,13 @@ def _score(stocks: list[dict], style: dict) -> None:
             p[k] = round(max(0, min(100, sum(e["pts"] for e in s["ev"] if e["p"] == k))), 1)
         p["quiet"] = round(p["quiet"], 1)
         s["pillars"], s["score"] = p, _total(p, style)
+        # 근거 축 판정용 점수: 업종 전체에 똑같이 붙는 거시 가점은 뺀다 (종목 고유의 근거만)
+        s["core"] = {k: max(0, sum(e["pts"] for e in s["ev"] if e["p"] == k and not e["t"].startswith(MACRO_EV)))
+                     for k in ("smart", "rev", "cat")}
     bar = _confirm_bar(stocks)
     for s in stocks:
         p = s["pillars"]
-        confirm = sum(1 for k in ("smart", "rev", "cat") if p[k] >= bar[s["market"]][k])
+        confirm = sum(1 for k in ("smart", "rev", "cat") if s["core"][k] >= bar[s["market"]][k])
         s["confirm"] = confirm
         # 후보 조건: 뜨겁지 않고, 충분히 소외됐고, 소외 외에 근거 축이 하나 이상 있어야 한다
         s["candidate"] = (not s["hot"]) and (not s.get("too_small")) and p["quiet"] >= 40 and confirm >= 1
