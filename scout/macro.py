@@ -188,13 +188,10 @@ def news_evidence(items: list[dict], label: str, must: tuple[str, ...] = ()) -> 
     if must:
         low = [m.lower() for m in must if m]
         items = [i for i in items if any(m in i["title"].lower() for m in low)]
-    hot = sorted((i for i in items if i["hits"] and not is_negative(i["title"])), key=lambda i: i["date"], reverse=True)
+    from . import catalyst  # 같은 소재 기사가 여러 건이어도 종류별로 가장 좋은 하나만 센다
     bad = sorted((i for i in items if is_negative(i["title"])), key=lambda i: i["date"], reverse=True)
-    out = []
-    if hot:
-        pts = min(20, 4 * len(hot))
-        for i in hot[:2]:
-            out.append(ev("cat", f"뉴스({label}): {i['title']}", f"Google 뉴스 · {i['source']}", i["url"], i["date"], pts / 2))
+    good = [i for i in items if not is_negative(i["title"])]
+    out = catalyst.from_news(ev, good, label, dt.date.today(), CATALYST_KR + CATALYST_EN)
     if bad:  # 점수에는 넣지 않고, 판단에 참고하도록 최신 부정 기사 하나를 보여 준다
         i = bad[0]
         out.append(ev("cat", f"부정적 뉴스(점수 제외, 최근 30일 {len(bad)}건): {i['title']}",

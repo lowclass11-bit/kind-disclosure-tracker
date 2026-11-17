@@ -210,6 +210,6 @@ def quote_summary(stock: dict) -> list[dict]:
         gap = (when - dt.date.today()).days
         if 0 <= gap <= 60:
             stock["next_earnings"] = when.isoformat()
-            out.append(ev("cat", f"다음 실적 발표 예정: {when.isoformat()} ({gap}일 뒤)",
-                          "Yahoo Finance", f"https://finance.yahoo.com/quote/{sym}", when.isoformat(), pts=10))
+            from . import catalyst
+            out.append(catalyst.earnings(ev, when, gap, f"https://finance.yahoo.com/quote/{sym}"))
     return out
