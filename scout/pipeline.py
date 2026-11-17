@@ -8,7 +8,7 @@ import threading
 import time
 import traceback
 
-from . import config, macro, net, prices, sources_kr, sources_us, universe
+from . import catalyst, config, macro, net, prices, sources_kr, sources_us, universe
 from .sources_kr import ev
 
 PILLARS = {"quiet": "소외도", "smart": "스마트머니", "rev": "실적 추정", "cat": "촉매"}
@@ -245,10 +245,8 @@ def collect() -> None:
                    "관세청 수출입 통계", row["url"], pts=max(-10, min(20, row["yoy"] * 80))))
     for cat, rows in (ind_reports or {}).items():
         for sid in {s["sector_id"] for s in stocks if s["market"] == "KR" and _sector_match(cat, s["sector"])}:
-            last = max(rows, key=lambda r: r.get("writeDate", ""))
-            sector_extra.setdefault(sid, []).append(
-                ev("cat", f"산업 리포트 {len(rows)}건 — 최신: 「{last.get('title', '')}」 {last.get('brokerName', '')}",
-                   "네이버 증권 리서치", last.get("endUrl", ""), last.get("writeDate", ""), pts=min(15, 3 * len(rows))))
+            positive = any(w in r.get("title", "") for r in rows[:3] for w in sources_kr.GOOD_WORDS)
+            sector_extra.setdefault(sid, []).append(catalyst.sector_report(ev, rows, positive))
 
     # 1차 점수 → 상위 후보만 뉴스 조회
     _score(stocks, style)
@@ -279,7 +277,8 @@ def collect() -> None:
             evs, count = macro.news_evidence(items, "업종")
             x["ev"] += evs
             x["news_count"] = count
-            x["pillars"]["cat"] = min(100, x["pillars"]["cat"] + sum(e["pts"] for e in evs))
+            catalyst.rescore(x["ev"])
+            x["pillars"]["cat"] = round(min(100, x["bases"]["cat"] + sum(e["pts"] for e in x["ev"] if e["p"] == "cat")), 1)
             x["score"] = _total(x["pillars"], style)
 
     today = dt.date.today().isoformat()
@@ -304,6 +303,7 @@ def collect() -> None:
         "ev_scores": {s["id"]: [round(min(100, s["core"][k]), 1) for k in ("smart", "rev", "cat")]
                       for s in stocks if any(s["core"].values())},
         "universe": sorted(s["id"] for s in stocks),
+        "score_version": SCORE_VERSION,
     })
     n_cand = sum(1 for s in stocks if s.get("candidate"))
     say(f"후보 {n_cand}종목, 업종 {len(sectors)}개 점수 계산 완료")
@@ -330,6 +330,7 @@ def _prune_cache(days: int = 35) -> None:
 
 
 TREND_MIN_DAYS = 5
+SCORE_VERSION = 2   # 2: 계기를 재료의 종류·질로 매기기 시작 (그 전 기록과는 계기 점수를 비교하지 않는다)
 
 
 def _attach_trend(stocks: list[dict], sectors: list[dict], today: str) -> dict | None:
@@ -351,15 +352,17 @@ def _attach_trend(stocks: list[dict], sectors: list[dict], today: str) -> dict |
     days = (t - dt.date.fromisoformat(base["date"])).days
     was = set(base.get("universe", []))
     keys = ("smart", "rev", "cat")
+    same = base.get("score_version", 1) == SCORE_VERSION
+    use = [0, 1, 2] if same else [0, 1]   # 점수 방식이 바뀐 축은 비교에서 뺀다
     for s in stocks:
         now = [min(100, s["core"][k]) for k in keys]
         prev = base["ev_scores"].get(s["id"])
         if prev is None and s["id"] not in was:
             continue  # 그때는 관찰 대상이 아니었다
         prev = prev or [0, 0, 0]
-        s["trend"] = {"d": round(sum(now) / 3 - sum(prev) / 3, 1),
-                      "axes": {k: round(a - b, 1) for k, a, b in zip(keys, now, prev)},
-                      "new": not any(prev)}
+        s["trend"] = {"d": round(sum(now[i] for i in use) / len(use) - sum(prev[i] for i in use) / len(use), 1),
+                      "axes": {keys[i]: round(now[i] - prev[i], 1) for i in use},
+                      "new": not any(prev[i] for i in use), "partial": not same}
     for x in sectors:
         ds = [s["trend"]["d"] for s in stocks if s["sector_id"] == x["id"] and "trend" in s]
         if ds:
@@ -435,6 +438,7 @@ def _confirm_bar(stocks: list[dict]) -> dict[str, dict[str, float]]:
 
 def _score(stocks: list[dict], style: dict) -> dict:
     for s in stocks:
+        catalyst.rescore(s["ev"])   # 계기: 같은 종류는 하나만, 다른 종류는 순위별 체감
         p = {"quiet": min(100, s["quiet"] + sum(e["pts"] for e in s["ev"] if e["p"] == "quiet"))}
         for k in ("smart", "rev", "cat"):
             p[k] = round(max(0, min(100, sum(e["pts"] for e in s["ev"] if e["p"] == k))), 1)
@@ -467,11 +471,14 @@ def _sectors(stocks: list[dict], extra: dict[str, list[dict]], style: dict) -> l
         if len(members) < 3:
             continue
         evs = list(extra.get(sid, []))
+        catalyst.rescore(evs)
         p = {"quiet": round(statistics.median(m["quiet"] for m in members), 1)}
+        bases = {}
         for k in ("smart", "rev", "cat"):
             vals = sorted((m["pillars"][k] for m in members), reverse=True)
             top_half = vals[: max(1, len(vals) // 2)]
             base = statistics.fmean(top_half)
+            bases[k] = round(base, 1)
             p[k] = round(max(0, min(100, base + sum(e["pts"] for e in evs if e["p"] == k))), 1)
         rel6 = statistics.median((m["m"].get("rel_6m") or 0) for m in members)
         above = sum(1 for m in members if m["m"]["price"] >= m["m"]["ma50"]) / len(members)
@@ -483,7 +490,7 @@ def _sectors(stocks: list[dict], extra: dict[str, list[dict]], style: dict) -> l
         first = members[0]
         out.append({
             "id": sid, "kind": "sector", "market": first["market"], "name": first["sector"],
-            "etf": first.get("etf", ""), "n": len(members), "pillars": p, "score": _total(p, style),
+            "etf": first.get("etf", ""), "n": len(members), "pillars": p, "bases": bases, "score": _total(p, style),
             "hot": hot_share > 0.5, "rel_6m": round(rel6, 4), "breadth": round(above, 2),
             "ev": evs, "leaders": [{"id": m["id"], "name": m["name"], "score": m["score"]} for m in cands[:5]],
             "candidate": hot_share <= 0.5 and p["quiet"] >= 40,

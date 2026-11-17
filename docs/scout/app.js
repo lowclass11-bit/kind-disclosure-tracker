@@ -137,7 +137,13 @@ function evLine(e, { common = false } = {}) {
   const u = safeUrl(e.url);
   const meta = [esc(e.src), e.d ? esc(e.d) : ""].filter(Boolean).join(" · ");
   const cls = e.pts < 0 ? "neg" : e.pts > 0 ? "pos" : "zero";
-  return `<li class="ev ${cls}"><span class="pts">${e.pts === 0 ? "참고" : fmtPts(e.pts)}</span><span class="body">${esc(e.t)}${common ? ' <span class="chip">업종 공통 · 근거 판정 제외</span>' : ""}<small>${meta}${u ? ` · <a href="${esc(u)}" target="_blank" rel="noopener noreferrer">원문 ↗</a>` : ""}</small></span></li>`;
+  let calc = "";
+  if (e.q) {  // 계기 재료: 종류·질 계산 내역과 순위 반영
+    const tail = e.rank ? ` → ${e.rank}순위 재료 ×${e.w} = <b>${e.pts}</b>` : e.dup ? " → 같은 종류의 더 좋은 재료가 있어 반영 안 함" : "";
+    calc = `<small class="calc-q">${esc(e.q)}${tail}</small>`;
+  }
+  const label = e.pts === 0 ? (e.dup ? "중복" : "참고") : fmtPts(e.pts);
+  return `<li class="ev ${cls}"><span class="pts">${label}</span><span class="body">${esc(e.t)}${common ? ' <span class="chip">업종 공통 · 근거 판정 제외</span>' : ""}${calc}<small>${meta}${u ? ` · <a href="${esc(u)}" target="_blank" rel="noopener noreferrer">원문 ↗</a>` : ""}</small></span></li>`;
 }
 
 /** 소외도: 가격 지표로 계산한 기본 점수의 내역 + 가점 근거 */
@@ -166,11 +172,12 @@ function quietDetail(s) {
 }
 
 /** 스마트머니·실적·촉매: 근거 하나하나의 점수 합계 */
+const CAT_RULE = '<p class="sumline muted rule">계기 점수는 기사·공시의 <b>개수가 아니라 재료의 종류와 질</b>로 매깁니다. 종류별 기본 점수(확정 계약 30 · 증설 25 · 인허가 25 · 가이던스 상향 20 · 정책 18 · 인수합병 16 · 주주환원 15 · 판가 인상 15 · 수주 소식 12 · 출시·가동 12 · 실적 발표 일정 8 · 턴어라운드 전망 6 · 기타 4)에 규모·확정도·출처·최근성을 곱합니다. 같은 종류는 가장 좋은 하나만 세고, 다른 종류끼리는 1순위 ×1, 2순위 ×0.6, 3순위 ×0.35, 4순위 ×0.2로 더합니다.</p>';
 function axisDetail(s, k) {
-  const evs = s.ev.filter((e) => e.p === k);
-  if (!evs.length) return '<p class="sumline muted">확인된 근거가 없어 0점입니다.</p>';
+  const evs = [...s.ev.filter((e) => e.p === k)].sort((a, b) => b.pts - a.pts);
+  if (!evs.length) return '<p class="sumline muted">확인된 근거가 없어 0점입니다.</p>' + (k === "cat" ? CAT_RULE : "");
   const total = evs.reduce((n, e) => n + e.pts, 0);
-  let h = `<ul class="evs-all">${evs.map((e) => evLine(e, { common: e.t.startsWith(MACRO_EV) })).join("")}</ul>`;
+  let h = (k === "cat" ? CAT_RULE : "") + `<ul class="evs-all">${evs.map((e) => evLine(e, { common: e.t.startsWith(MACRO_EV) })).join("")}</ul>`;
   h += `<p class="sumline">합계 ${total.toFixed(1)} → <b>${Math.round(s.pillars[k])}점</b>${total > 100 ? " (100점 상한)" : total < 0 ? " (0점 하한)" : ""}</p>`;
   const bar = (D.bar && D.bar[s.market] && D.bar[s.market][k]) ?? 25, core = s.core ? s.core[k] : null;
   if (core != null) {
@@ -188,7 +195,8 @@ function trendHtml(s) {
   const dir = t.d >= 3 ? "up" : t.d <= -3 ? "down" : "flat";
   const word = t.new ? "새로 등장 — 지난 기록에는 근거가 없던 종목입니다" : dir === "up" ? "근거가 쌓이는 중" : dir === "down" ? "근거가 줄어드는 중" : "큰 변화 없음";
   const ax = Object.entries(t.axes).map(([k, v]) => `<span class="${v > 0 ? "pos" : v < 0 ? "neg" : ""}">${SHORT[k]} ${v > 0 ? "+" : ""}${Math.round(v)}</span>`).join(" · ");
-  return `<div class="trend ${dir}"><b>근거 추세</b> ${esc(tb.date)} 대비(${tb.days}일) 근거 점수 <b class="d">${t.d > 0 ? "+" : ""}${t.d.toFixed(1)}</b> · ${word}<br><small>${ax}${recent}</small></div>`;
+  const part = t.partial ? " · 계기 점수 방식이 바뀌어 이번 비교에서는 계기를 뺐습니다" : "";
+  return `<div class="trend ${dir}"><b>근거 추세</b> ${esc(tb.date)} 대비(${tb.days}일) 근거 점수 <b class="d">${t.d > 0 ? "+" : ""}${t.d.toFixed(1)}</b> · ${word}<br><small>${ax}${recent}${part}</small></div>`;
 }
 function trendBadge(t) {
   if (!t) return "";
@@ -301,7 +309,7 @@ function renderSectors() {
       <section class="card"><h2>② ${esc(pick.name)} 안에서 종목을 고릅니다</h2><p class="sub">진한 점이 이 업종의 후보 · 종합 ${Math.round(pick.score)}점</p>
         ${map2.svg}
         <details class="g sec-ev" open><summary><span class="t">이 업종의 근거 ${pick.ev.length}건</span></summary>
-          <p class="sumline muted">업종 점수 = 소외도는 구성 종목 중앙값, 나머지 축은 구성 종목 상위 절반의 평균에 아래 업종 근거의 점수를 더한 값입니다.</p>
+          <p class="sumline muted">업종 점수 = 소외도는 구성 종목 중앙값, 나머지 축은 구성 종목 상위 절반의 평균에 아래 업종 근거의 점수를 더한 값입니다.</p>${CAT_RULE}
           <ul class="evs-all">${pick.ev.map((e) => evLine(e)).join("")}</ul>
           <p class="sumline">${Q.map(([k, t]) => `${t} <b>${Math.round(pick.pillars[k])}</b>`).join(" · ")}</p></details>
         ${pick.doc ? `<div class="btns"><button type="button" class="primary" data-doc="${esc(pick.id)}">업종 메모 보기</button></div>` : ""}
@@ -372,6 +380,7 @@ function aboutHtml() {
     <li><b>발굴 구역</b>: 그 시장 후보들 가운데 소외도 상위 절반이면서 근거 상위 40%인 영역. 한국과 미국은 각자 기준으로 따로 정합니다.</li>
     <li><b>근거 축 개수</b>: 한국은 축 점수 25점 이상, 미국은 자료 종류가 적어 미국 종목 중 상위 30% 점수(15~25점)를 기준으로 셉니다.</li>
     <li><b>근거 추세</b>: 5일 이상 지난 기록 중 가장 최근 것과 비교한 근거 점수(수급·실적·계기 평균, 거시 가점 제외) 변화. ▲는 3점 이상 늘어남, NEW는 그때 근거가 없던 종목. 종합 점수에는 넣지 않습니다.</li>
+    <li><b>계기(재료)</b>: 기사·공시의 개수가 아니라 재료의 종류(확정 계약, 증설, 인허가, 정책 …)와 질(규모, 확정인지 기대인지, 출처, 최근성)로 점수를 매깁니다. 같은 종류는 가장 좋은 하나만 셉니다. 사옥·투자용 부동산 취득은 제외합니다.</li>
     <li><b>뉴스</b>: 촉매 단어가 있어도 적자·하락·소송 같은 부정적인 말이 제목에 있으면 점수에서 빼고 "참고"로만 보여 줍니다.</li>
     <li>투자 스타일 ${esc(D.style_label)} · 이미 많이 오른 종목은 제외</li></ul><p><b>오늘 받은 자료</b></p><ul>${src}</ul>`;
 }

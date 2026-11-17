@@ -179,3 +179,8 @@ details.g > summary .bar b { display: block; height: 100%; border-radius: 5px; b
 .refresh button { padding: 3px 12px; font-size: 12.5px; }
 .refresh button:disabled { opacity: .55; cursor: default; }
 #refreshMsg { max-width: 46ch; }
+
+/* 계기 재료 계산 내역 */
+.evs-all .calc-q { color: var(--body); background: var(--zone); border-radius: 6px; padding: 2px 6px; margin: 3px 0 1px; display: inline-block; }
+.evs-all .calc-q b { color: var(--acc); }
+.rule { line-height: 1.55; }

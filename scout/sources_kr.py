@@ -195,18 +195,8 @@ def tracker_evidence(items: list[dict]) -> list[dict]:
         last = max(buyback, key=lambda i: i.get("date", ""))
         out.append(ev("smart", f"자사주 취득 결정: {last.get('summary', '')}",
                       "KIND 공시 트래커", last.get("url", ""), last.get("date", ""), 25))
-    capex = [i for i in items if i.get("category") == "capex"]
-    plant = [i for i in capex if i.get("subtype") != "공급계약"]
-    orders = [i for i in capex if i.get("subtype") == "공급계약"]
-    if plant:
-        last = max(plant, key=lambda i: i.get("date", ""))
-        out.append(ev("cat", f"{last.get('subtype', '시설투자')} 공시: {last.get('summary', '')} — 증설은 보통 6~18개월 뒤 매출로 이어짐",
-                      "KIND 공시 트래커", last.get("url", ""), last.get("date", ""), 28))
-    if orders:
-        last = max(orders, key=lambda i: i.get("date", ""))
-        out.append(ev("cat", f"공급계약 공시 {len(orders)}건 — 최신: {last.get('summary', '')}",
-                      "KIND 공시 트래커", last.get("url", ""), last.get("date", ""),
-                      min(30, 12 + 6 * len(orders))))
+    from . import catalyst  # 계기 점수: 개수가 아니라 종류·규모·최근성으로
+    out += catalyst.from_disclosures(ev, items, dt.date.today())
     earn = [i for i in items if i.get("category") == "earnings" and i.get("direction") == "up"]
     if earn:
         last = max(earn, key=lambda i: i.get("date", ""))
