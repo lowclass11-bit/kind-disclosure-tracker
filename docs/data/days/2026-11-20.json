@@ -1,7 +1,7 @@
 {
  "date": "2026-11-20",
  "source": "KIND+DART",
- "collected_at": "2026-11-21T03:10:06+09:00",
+ "collected_at": "2026-11-21T03:37:41+09:00",
  "total_disclosures": 455,
  "items": [
   {
@@ -19,8 +19,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000630",
-   "kind_id": "20261120000964",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000964",
    "metrics": {
     "reasons": [
      "장외매수(+)"
@@ -33,7 +31,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장외매수(+) · +1,668,242주 · +13.00%p · 매수 약 59억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000964",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000964"
   },
   {
    "id": "20261120000629",
@@ -50,8 +50,6 @@
    "amend_tag": "기재정정",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000629",
-   "kind_id": "20261120000957",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000957",
    "metrics": {
     "reasons": [
      "유상신주취득(+)"
@@ -67,7 +65,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "유상신주취득(+) · -0.76%p · → 22.86% · 매수 약 13억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000957",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000957"
   },
   {
    "id": "20261120000628",
@@ -84,8 +84,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000628",
-   "kind_id": "20261120000955",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000955",
    "metrics": {
     "reasons": [
      "장외매수(+)"
@@ -101,7 +99,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장외매수(+) · +13.06%p · → 13.06% · 매수 약 59억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000955",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000955"
   },
   {
    "id": "20261120000627",
@@ -118,8 +118,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000627",
-   "kind_id": "20261120000956",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000956",
    "metrics": {
     "reasons": [
      "주식매수선택권부여취소(-)"
@@ -134,7 +132,9 @@
    "direction": "sell",
    "signal": false,
    "summary": "주식매수선택권부여취소(-) · -0.75%p · → 56.88%",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000956",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000956"
   },
   {
    "id": "20261120000624",
@@ -151,8 +151,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000624",
-   "kind_id": "20261120000948",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000948",
    "metrics": {
     "reasons": [
      "장내매수(+)"
@@ -165,7 +163,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+) · +15,877주 · +0.03%p · 매수 약 0.8억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000948",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000948"
   },
   {
    "id": "20261120000622",
@@ -182,8 +182,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000622",
-   "kind_id": "20261120000945",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000945",
    "metrics": {
     "reasons": [
      "신규상장(+)",
@@ -199,7 +197,9 @@
    "direction": "buy",
    "signal": false,
    "summary": "신규상장(+), 장내매도(-) · +2.84%p · → 2.84%",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000945",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000945"
   },
   {
    "id": "20261120000619",
@@ -216,8 +216,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000619",
-   "kind_id": "20261120000943",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000943",
    "metrics": {
     "reasons": [
      "기타(-)"
@@ -229,7 +227,9 @@
    "direction": "sell",
    "signal": false,
    "summary": "기타(-) · -11,027주 · -0.02%p",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000943",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000943"
   },
   {
    "id": "20261120000618",
@@ -246,8 +246,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000618",
-   "kind_id": "20261120000942",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000942",
    "metrics": {
     "reasons": [],
     "ratio_prev": 50.8,
@@ -260,7 +258,9 @@
    "direction": "flat",
    "signal": false,
    "summary": "+0.00%p · → 50.80%",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000942",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000942"
   },
   {
    "id": "20261120000614",
@@ -277,8 +277,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000614",
-   "kind_id": "20261120000939",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000939",
    "metrics": {
     "reasons": [
      "신규보고(+)"
@@ -293,7 +291,9 @@
    "direction": "buy",
    "signal": false,
    "summary": "신규보고(+) · +43.63%p · → 43.63%",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000939",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000939"
   },
   {
    "id": "20261120000611",
@@ -310,8 +310,6 @@
    "amend_tag": "기재정정",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000611",
-   "kind_id": "20261120000935",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000935",
    "metrics": {
     "reasons": [
      "( - )"
@@ -326,7 +324,9 @@
    "direction": "sell",
    "signal": false,
    "summary": "(-) · +0.00%p · → 51.84%",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000935",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000935"
   },
   {
    "id": "20261120900912",
@@ -343,8 +343,6 @@
    "amend_tag": "기재정정",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120900912",
-   "kind_id": "20261120000912",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000912",
    "metrics": {
     "name": "고성능 서버 장비 및 부품 공급",
     "counterparty": "국내 반도체 관련 업체",
@@ -357,7 +355,9 @@
    "direction": "up",
    "signal": true,
    "summary": "309억 (매출액 대비 24.6%) · 국내 반도체 관련 업체",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000912",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000912"
   },
   {
    "id": "20261120800933",
@@ -374,8 +374,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120800933",
-   "kind_id": "20261120000933",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000933",
    "metrics": {
     "reasons": [
      "기타(-)"
@@ -386,7 +384,9 @@
    "direction": "sell",
    "signal": false,
    "summary": "기타(-) · -11,027주 · +0.01%p",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000933",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000933"
   },
   {
    "id": "20261120800932",
@@ -403,8 +403,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120800932",
-   "kind_id": "20261120000932",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000932",
    "metrics": {
     "reasons": [
      "장내매수(+)"
@@ -415,7 +413,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+) · +10,500주 · +0.01%p",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000932",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000932"
   },
   {
    "id": "20261120000607",
@@ -432,8 +432,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000607",
-   "kind_id": "20261120000931",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000931",
    "metrics": {
     "reasons": [
      "기타(-)",
@@ -447,7 +445,9 @@
    "direction": "flat",
    "signal": false,
    "summary": "기타(-), 유상신주취득(+) · +0주 · -1.13%p · 매수 약 6,662억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000931",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000931"
   },
   {
    "id": "20261120800853",
@@ -464,8 +464,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120800853",
-   "kind_id": "20261120000853",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000853",
    "metrics": {
     "name": "장지차고지 입체화사업 건설공사",
     "counterparty": "서울주택도시개발공사",
@@ -478,7 +476,9 @@
    "direction": "up",
    "signal": true,
    "summary": "1,402억 (매출액 대비 8.0%) · 서울주택도시개발공사",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000853",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000853"
   },
   {
    "id": "20261120000599",
@@ -495,8 +495,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000599",
-   "kind_id": "20261120000919",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000919",
    "metrics": {
     "reasons": [],
     "ratio_prev": 47.17,
@@ -509,7 +507,9 @@
    "direction": "flat",
    "signal": false,
    "summary": "+0.00%p · → 47.17%",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000919",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000919"
   },
   {
    "id": "20261120000596",
@@ -526,8 +526,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000596",
-   "kind_id": "20261120000915",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000915",
    "metrics": {
     "reasons": [
      "기타(-)",
@@ -541,7 +539,9 @@
    "direction": "flat",
    "signal": false,
    "summary": "기타(-), 유상신주취득(+) · +0주 · -1.35%p · 매수 약 9,190억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000915",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000915"
   },
   {
    "id": "20261120000593",
@@ -558,8 +558,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000593",
-   "kind_id": "20261120000911",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000911",
    "metrics": {
     "reasons": [
      "장내매수(+)"
@@ -572,7 +570,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+) · +124,373주 · +1.93%p · 매수 약 5.0억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000911",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000911"
   },
   {
    "id": "20261120000591",
@@ -589,8 +589,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000591",
-   "kind_id": "20261120000910",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000910",
    "metrics": {
     "reasons": [
      "유상신주취득(+)"
@@ -606,7 +604,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "유상신주취득(+) · -0.76%p · → 22.86% · 매수 약 2.8억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000910",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000910"
   },
   {
    "id": "20261120000589",
@@ -625,11 +625,22 @@
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000589",
    "kind_id": "20261120000908",
    "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000908",
-   "metrics": {},
-   "direction": null,
-   "signal": false,
-   "summary": "본문 파싱 실패 - 원문 확인",
-   "parsed": false
+   "metrics": {
+    "reasons": [
+     "장내매수(+)"
+    ],
+    "buy_amount": 655048965.0,
+    "ratio_prev": 68.25,
+    "ratio_cur": 70.8,
+    "ratio_delta": 2.549999999999997,
+    "relation": "최대주주",
+    "reason_text": "장내매수",
+    "simple": false
+   },
+   "direction": "buy",
+   "signal": true,
+   "summary": "장내매수(+) · +2.55%p · → 70.80% · 매수 약 6.6억",
+   "parsed": true
   },
   {
    "id": "20261120000587",
@@ -646,8 +657,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000587",
-   "kind_id": "20261120000906",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000906",
    "metrics": {
     "reasons": [
      "장내매도(-)"
@@ -662,7 +671,9 @@
    "direction": "sell",
    "signal": false,
    "summary": "장내매도(-) · -2.80%p · → 8.02%",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000906",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000906"
   },
   {
    "id": "20261120000577",
@@ -681,11 +692,22 @@
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000577",
    "kind_id": "20261120000888",
    "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000888",
-   "metrics": {},
-   "direction": null,
-   "signal": false,
-   "summary": "본문 파싱 실패 - 원문 확인",
-   "parsed": false
+   "metrics": {
+    "reasons": [
+     "장내매수(+)"
+    ],
+    "buy_amount": 49997115.0,
+    "ratio_prev": 56.0,
+    "ratio_cur": 56.03,
+    "ratio_delta": 0.030000000000001137,
+    "relation": "임원(등기)",
+    "reason_text": "- 특별관계자의 장내매수",
+    "simple": false
+   },
+   "direction": "buy",
+   "signal": true,
+   "summary": "장내매수(+) · +0.03%p · → 56.03% · 매수 약 0.5억",
+   "parsed": true
   },
   {
    "id": "20261120000573",
@@ -704,11 +726,25 @@
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000573",
    "kind_id": "20261120000881",
    "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000881",
-   "metrics": {},
-   "direction": null,
+   "metrics": {
+    "reasons": [
+     "콜옵션권리행사배정에따른주식처분(-)",
+     "전환등(-)",
+     "전환사채의권리행사(+)",
+     "장내매도(-)",
+     "풋옵션권리행사에따른주식처분(-)"
+    ],
+    "ratio_prev": 14.9,
+    "ratio_cur": 11.85,
+    "ratio_delta": -3.0500000000000007,
+    "relation": "기타",
+    "reason_text": "전환사채 풋옵션 행사에 따른 주식수 변동 등",
+    "simple": false
+   },
+   "direction": "sell",
    "signal": false,
-   "summary": "본문 파싱 실패 - 원문 확인",
-   "parsed": false
+   "summary": "콜옵션권리행사배정에따른주식처분(-), 전환등(-) · -3.05%p · → 11.85%",
+   "parsed": true
   },
   {
    "id": "20261120000572",
@@ -725,8 +761,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000572",
-   "kind_id": "20261120000880",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000880",
    "metrics": {
     "reasons": [
      "장내매수(+)"
@@ -742,7 +776,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+) · +0.00%p · → 35.50% · 매수 약 0.2억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000880",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000880"
   },
   {
    "id": "20261120800875",
@@ -761,11 +797,17 @@
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120800875",
    "kind_id": "20261120000875",
    "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000875",
-   "metrics": {},
-   "direction": null,
-   "signal": false,
-   "summary": "본문 파싱 실패 - 원문 확인",
-   "parsed": false
+   "metrics": {
+    "reasons": [
+     "장내매수(+)"
+    ],
+    "shares_delta": 12465.0,
+    "ratio_delta": 0.03
+   },
+   "direction": "buy",
+   "signal": true,
+   "summary": "장내매수(+) · +12,465주 · +0.03%p",
+   "parsed": true
   },
   {
    "id": "20261120000570",
@@ -782,8 +824,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000570",
-   "kind_id": "20261120000874",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000874",
    "metrics": {
     "reasons": [
      "제3자배정유상증자(+)"
@@ -799,7 +839,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "제3자배정유상증자(+) · +3.44%p · → 53.67% · 매수 약 100억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000874",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000874"
   },
   {
    "id": "20261120800859",
@@ -816,8 +858,6 @@
    "amend_tag": "",
    "subsidiary": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120800859",
-   "kind_id": "20261120000859",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000859",
    "metrics": {
     "name": "서울 서초구 잠원동 28-6 번지",
     "purpose": "채권회수를 위한 토지 취득",
@@ -829,7 +869,9 @@
    "direction": "up",
    "signal": true,
    "summary": "2,549억 (자산총액 대비 3.5%) · ㈜하나자산신탁",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000859",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000859"
   },
   {
    "id": "20261120000569",
@@ -846,8 +888,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000569",
-   "kind_id": "20261120000872",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000872",
    "metrics": {
     "reasons": [
      "제3자배정유상증자(+)"
@@ -860,7 +900,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "제3자배정유상증자(+) · +1,300,728주 · -0.97%p · 매수 약 50억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000872",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000872"
   },
   {
    "id": "20261120000567",
@@ -877,8 +919,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000567",
-   "kind_id": "20261120000867",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000867",
    "metrics": {
     "reasons": [
      "증여(-)"
@@ -890,7 +930,9 @@
    "direction": "sell",
    "signal": false,
    "summary": "증여(-) · -600,000주 · -6.91%p",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000867",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000867"
   },
   {
    "id": "20261120800857",
@@ -907,8 +949,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120800857",
-   "kind_id": "20261120000857",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000857",
    "metrics": {
     "reasons": [
      "장내매수(+)"
@@ -919,7 +959,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+) · +35,711주 · +2.13%p",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000857",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000857"
   },
   {
    "id": "20261120800844",
@@ -936,8 +978,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120800844",
-   "kind_id": "20261120000844",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000844",
    "metrics": {
     "name": "서울 서초구 잠원동 28-6 번지",
     "purpose": "채권회수를 위한 토지 취득",
@@ -949,7 +989,9 @@
    "direction": "up",
    "signal": true,
    "summary": "2,549억 (자산총액 대비 3.5%) · ㈜하나자산신탁",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000844",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000844"
   },
   {
    "id": "20261120900839",
@@ -966,8 +1008,6 @@
    "amend_tag": "기재정정",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120900839",
-   "kind_id": "20261120000839",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000839",
    "metrics": {
     "name": "기업용 SSD 컨트롤러 공급",
     "counterparty": "국내 반도체 제조사",
@@ -980,7 +1020,9 @@
    "direction": "up",
    "signal": true,
    "summary": "101억 (매출액 대비 23.2%) · 국내 반도체 제조사",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000839",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000839"
   },
   {
    "id": "20261120900854",
@@ -997,8 +1039,6 @@
    "amend_tag": "기재정정",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120900854",
-   "kind_id": "20261120000854",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000854",
    "metrics": {
     "name": "주덕하수관로 정비사업(2단계)",
     "counterparty": "충북지방조달청",
@@ -1011,7 +1051,9 @@
    "direction": "up",
    "signal": true,
    "summary": "92억 (매출액 대비 18.4%) · 충북지방조달청",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000854",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000854"
   },
   {
    "id": "20261120000563",
@@ -1028,8 +1070,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000563",
-   "kind_id": "20261120000845",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000845",
    "metrics": {
     "reasons": [
      "장내매수(+)"
@@ -1045,7 +1085,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+) · +2.29%p · → 20.75% · 매수 약 12억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000845",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000845"
   },
   {
    "id": "20261120800766",
@@ -1062,8 +1104,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120800766",
-   "kind_id": "20261120000766",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000766",
    "metrics": {
     "name": "K5방독면 10차 양산",
     "counterparty": "방위사업청",
@@ -1076,7 +1116,9 @@
    "direction": "up",
    "signal": true,
    "summary": "190억 (매출액 대비 20.6%) · 방위사업청",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000766",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000766"
   },
   {
    "id": "20261120000558",
@@ -1093,8 +1135,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000558",
-   "kind_id": "20261120000838",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000838",
    "metrics": {
     "reasons": [],
     "ratio_prev": 35.71,
@@ -1107,7 +1147,9 @@
    "direction": "flat",
    "signal": false,
    "summary": "+0.00%p · → 35.71%",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000838",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000838"
   },
   {
    "id": "20261120000554",
@@ -1124,8 +1166,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000554",
-   "kind_id": "20261120000833",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000833",
    "metrics": {
     "reasons": [
      "장내매수(+)"
@@ -1138,7 +1178,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+) · +1,000주 · +0.01%p · 매수 약 0.0억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000833",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000833"
   },
   {
    "id": "20261120900789",
@@ -1155,8 +1197,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120900789",
-   "kind_id": "20261120000789",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000789",
    "metrics": {
     "name": "임상 의약품 공급 계약",
     "counterparty": "Access to Advanced Health (UK) Ltd",
@@ -1169,7 +1209,9 @@
    "direction": "up",
    "signal": true,
    "summary": "25억 (매출액 대비 101.3%) · Access to Advanced Health (UK) Ltd",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000789",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000789"
   },
   {
    "id": "20261120000552",
@@ -1186,8 +1228,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000552",
-   "kind_id": "20261120000831",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000831",
    "metrics": {
     "reasons": [
      "장내매수(+)"
@@ -1200,7 +1240,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+) · +35,711주 · +2.13%p · 매수 약 11억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000831",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000831"
   },
   {
    "id": "20261120000551",
@@ -1217,8 +1259,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000551",
-   "kind_id": "20261120000829",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000829",
    "metrics": {
     "reasons": [
      "( - )"
@@ -1233,7 +1273,9 @@
    "direction": "sell",
    "signal": false,
    "summary": "(-) · +0.00%p · → 56.70%",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000829",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000829"
   },
   {
    "id": "20261120000548",
@@ -1250,8 +1292,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000548",
-   "kind_id": "20261120000824",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000824",
    "metrics": {
     "reasons": [
      "장내매도(-)"
@@ -1263,7 +1303,9 @@
    "direction": "sell",
    "signal": false,
    "summary": "장내매도(-) · -1,250,000주 · -1.79%p",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000824",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000824"
   },
   {
    "id": "20261120000545",
@@ -1280,8 +1322,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000545",
-   "kind_id": "20261120000791",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000791",
    "metrics": {
     "reasons": [
      "장내매도(-)"
@@ -1296,7 +1336,9 @@
    "direction": "sell",
    "signal": false,
    "summary": "장내매도(-) · -1.79%p · → 8.90%",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000791",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000791"
   },
   {
    "id": "20261120000536",
@@ -1313,8 +1355,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000536",
-   "kind_id": "20261120000786",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000786",
    "metrics": {
     "reasons": [
      "신규상장(+)",
@@ -1330,7 +1370,9 @@
    "direction": "buy",
    "signal": false,
    "summary": "신규상장(+), 장내매도(-) · +4.84%p · → 4.84%",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000786",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000786"
   },
   {
    "id": "20261120800776",
@@ -1349,11 +1391,17 @@
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120800776",
    "kind_id": "20261120000776",
    "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000776",
-   "metrics": {},
-   "direction": null,
+   "metrics": {
+    "reasons": [
+     "장내매도(-)"
+    ],
+    "shares_delta": -8291.0,
+    "ratio_delta": -0.05
+   },
+   "direction": "sell",
    "signal": false,
-   "summary": "본문 파싱 실패 - 원문 확인",
-   "parsed": false
+   "summary": "장내매도(-) · -8,291주 · -0.05%p",
+   "parsed": true
   },
   {
    "id": "20261120000522",
@@ -1370,8 +1418,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000522",
-   "kind_id": "20261120000774",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000774",
    "metrics": {
     "reasons": [
      "CB인수(+)",
@@ -1388,7 +1434,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "CB인수(+), 유상신주취득(+) · +11.28%p · → 11.28% · 매수 약 40억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000774",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000774"
   },
   {
    "id": "20261120000521",
@@ -1405,8 +1453,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000521",
-   "kind_id": "20261120000772",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000772",
    "metrics": {
     "reasons": [
      "장내매수(+)"
@@ -1418,7 +1464,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+) · +126,352주 · +0.50%p",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000772",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000772"
   },
   {
    "id": "20261120800767",
@@ -1435,8 +1483,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120800767",
-   "kind_id": "20261120000767",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000767",
    "metrics": {
     "reasons": [
      "장내매수(+)"
@@ -1447,7 +1493,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+) · +15,007주 · +0.04%p",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000767",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000767"
   },
   {
    "id": "20261120800722",
@@ -1466,11 +1514,19 @@
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120800722",
    "kind_id": "20261120000722",
    "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000722",
-   "metrics": {},
-   "direction": null,
-   "signal": false,
-   "summary": "본문 파싱 실패 - 원문 확인",
-   "parsed": false
+   "metrics": {
+    "name": "장지차고지 입체화사업 건설공사",
+    "counterparty": "서울주택도시개발공사",
+    "start": "2026-11-25",
+    "end": "2030-09-23",
+    "amount": 175305000000.0,
+    "ratio": 8.68,
+    "ratio_base": "매출액"
+   },
+   "direction": "up",
+   "signal": true,
+   "summary": "1,753억 (매출액 대비 8.7%) · 서울주택도시개발공사",
+   "parsed": true
   },
   {
    "id": "20261120900747",
@@ -1489,11 +1545,19 @@
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120900747",
    "kind_id": "20261120000747",
    "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000747",
-   "metrics": {},
-   "direction": null,
-   "signal": false,
-   "summary": "본문 파싱 실패 - 원문 확인",
-   "parsed": false
+   "metrics": {
+    "name": "RI폐기물 관리시설 해체(방사성오염 제거) 용역",
+    "counterparty": "한국원자력환경공단",
+    "start": "2021-12-13",
+    "end": "2029-09-30",
+    "amount": 4936205685.0,
+    "ratio": 9.24,
+    "ratio_base": "매출액"
+   },
+   "direction": "up",
+   "signal": true,
+   "summary": "49억 (매출액 대비 9.2%) · 한국원자력환경공단",
+   "parsed": true
   },
   {
    "id": "20261120800761",
@@ -1512,11 +1576,17 @@
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120800761",
    "kind_id": "20261120000761",
    "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000761",
-   "metrics": {},
-   "direction": null,
-   "signal": false,
-   "summary": "본문 파싱 실패 - 원문 확인",
-   "parsed": false
+   "metrics": {
+    "reasons": [
+     "장내매수(+)"
+    ],
+    "shares_delta": 500.0,
+    "ratio_delta": 0.01
+   },
+   "direction": "buy",
+   "signal": true,
+   "summary": "장내매수(+) · +500주 · +0.01%p",
+   "parsed": true
   },
   {
    "id": "20261120000515",
@@ -1533,8 +1603,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000515",
-   "kind_id": "20261120000758",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000758",
    "metrics": {
     "reasons": [
      "장내매도(-)"
@@ -1546,7 +1614,9 @@
    "direction": "sell",
    "signal": false,
    "summary": "장내매도(-) · -4,000주 · -0.01%p",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000758",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000758"
   },
   {
    "id": "20261120800757",
@@ -1565,11 +1635,17 @@
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120800757",
    "kind_id": "20261120000757",
    "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000757",
-   "metrics": {},
-   "direction": null,
-   "signal": false,
-   "summary": "본문 파싱 실패 - 원문 확인",
-   "parsed": false
+   "metrics": {
+    "reasons": [
+     "장내매수(+)"
+    ],
+    "shares_delta": 1896.0,
+    "ratio_delta": 0.0
+   },
+   "direction": "buy",
+   "signal": true,
+   "summary": "장내매수(+) · +1,896주 · +0.00%p",
+   "parsed": true
   },
   {
    "id": "20261120000511",
@@ -1586,8 +1662,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000511",
-   "kind_id": "20261120000754",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000754",
    "metrics": {
     "reasons": [
      "장내매도(-)"
@@ -1599,7 +1673,9 @@
    "direction": "sell",
    "signal": false,
    "summary": "장내매도(-) · -8,291주 · -0.04%p",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000754",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000754"
   },
   {
    "id": "20261120000506",
@@ -1616,8 +1692,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000506",
-   "kind_id": "20261120000740",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000740",
    "metrics": {
     "reasons": [],
     "ratio_prev": 38.27,
@@ -1630,7 +1704,9 @@
    "direction": "flat",
    "signal": false,
    "summary": "+0.00%p · → 38.27%",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000740",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000740"
   },
   {
    "id": "20261120000505",
@@ -1647,8 +1723,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000505",
-   "kind_id": "20261120000737",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000737",
    "metrics": {
     "reasons": [
      "장내매수(+)"
@@ -1661,7 +1735,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+) · +500주 · +0.00%p · 매수 약 1.3억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000737",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000737"
   },
   {
    "id": "20261120800697",
@@ -1678,8 +1754,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120800697",
-   "kind_id": "20261120000697",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000697",
    "metrics": {
     "kind": "신규시설투자",
     "purpose": "자가보유 노후 부동산 개발",
@@ -1692,7 +1766,9 @@
    "direction": "up",
    "signal": true,
    "summary": "850억 (자기자본 대비 80.6%)",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000697",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000697"
   },
   {
    "id": "20261120000504",
@@ -1709,8 +1785,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000504",
-   "kind_id": "20261120000734",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000734",
    "metrics": {
     "reasons": [
      "장내매수(+)"
@@ -1723,7 +1797,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+) · +300주 · +0.01%p · 매수 약 0.1억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000734",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000734"
   },
   {
    "id": "20261120000502",
@@ -1740,8 +1816,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000502",
-   "kind_id": "20261120000729",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000729",
    "metrics": {
     "reasons": [
      "장내매수(+)"
@@ -1753,7 +1827,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+) · +1,896주 · +0.00%p",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000729",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000729"
   },
   {
    "id": "20261120000500",
@@ -1770,8 +1846,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000500",
-   "kind_id": "20261120000725",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000725",
    "metrics": {
     "reasons": [
      "장내매수(+)"
@@ -1784,7 +1858,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+) · +500주 · +0.00%p · 매수 약 1.3억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000725",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000725"
   },
   {
    "id": "20261120900676",
@@ -1801,8 +1877,6 @@
    "amend_tag": "기재정정",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120900676",
-   "kind_id": "20261120000676",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000676",
    "metrics": {
     "name": "CMOS Backplane development",
     "counterparty": "글로벌 마이크로 디스플레이 솔루션 기업",
@@ -1815,7 +1889,9 @@
    "direction": "up",
    "signal": true,
    "summary": "55억 (매출액 대비 68.0%) · 글로벌 마이크로 디스플레이 솔루션 기업",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000676",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000676"
   },
   {
    "id": "20261120000493",
@@ -1832,8 +1908,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000493",
-   "kind_id": "20261120000706",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000706",
    "metrics": {
     "reasons": [
      "장내매수(+)"
@@ -1849,7 +1923,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+) · +4.18%p · → 53.17% · 매수 약 4.1억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000706",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000706"
   },
   {
    "id": "20261120800695",
@@ -1866,8 +1942,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120800695",
-   "kind_id": "20261120000695",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000695",
    "metrics": {
     "reasons": [
      "장내매수(+)"
@@ -1878,7 +1952,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+) · +8,982주 · +0.21%p",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000695",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000695"
   },
   {
    "id": "20261120000488",
@@ -1895,8 +1971,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000488",
-   "kind_id": "20261120000699",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000699",
    "metrics": {
     "reasons": [
      "장내매수(+)"
@@ -1912,7 +1986,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+) · +1.32%p · → 56.94% · 매수 약 5.1억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000699",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000699"
   },
   {
    "id": "20261120000486",
@@ -1929,8 +2005,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000486",
-   "kind_id": "20261120000692",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000692",
    "metrics": {
     "reasons": [],
     "ratio_prev": 85.61,
@@ -1943,7 +2017,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "+0.46%p · → 86.07%",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000692",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000692"
   },
   {
    "id": "20261120000485",
@@ -1960,8 +2036,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000485",
-   "kind_id": "20261120000690",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000690",
    "metrics": {
     "reasons": [
      "신규상장(+)",
@@ -1977,7 +2051,9 @@
    "direction": "buy",
    "signal": false,
    "summary": "신규상장(+), 장내매도(-) · +4.31%p · → 4.31%",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000690",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000690"
   },
   {
    "id": "20261120000482",
@@ -1994,8 +2070,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000482",
-   "kind_id": "20261120000687",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000687",
    "metrics": {
     "reasons": [],
     "ratio_prev": 23.22,
@@ -2008,7 +2082,9 @@
    "direction": "flat",
    "signal": false,
    "summary": "+0.00%p · → 23.22%",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000687",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000687"
   },
   {
    "id": "20261120900657",
@@ -2027,11 +2103,19 @@
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120900657",
    "kind_id": "20261120000657",
    "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000657",
-   "metrics": {},
-   "direction": null,
-   "signal": false,
-   "summary": "본문 파싱 실패 - 원문 확인",
-   "parsed": false
+   "metrics": {
+    "name": "CMOS Backplane development",
+    "counterparty": "MicroLED Display 제조업체",
+    "start": "2025-10-01",
+    "end": "2027-01-29",
+    "amount": 5870254680.0,
+    "ratio": 73.0,
+    "ratio_base": "매출액"
+   },
+   "direction": "up",
+   "signal": true,
+   "summary": "59억 (매출액 대비 73.0%) · MicroLED Display 제조업체",
+   "parsed": true
   },
   {
    "id": "20261120000481",
@@ -2048,8 +2132,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000481",
-   "kind_id": "20261120000681",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000681",
    "metrics": {
     "reasons": [],
     "ratio_prev": 30.56,
@@ -2062,7 +2144,9 @@
    "direction": "flat",
    "signal": false,
    "summary": "+0.00%p · → 30.56%",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000681",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000681"
   },
   {
    "id": "20261120000479",
@@ -2079,8 +2163,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000479",
-   "kind_id": "20261120000674",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000674",
    "metrics": {
     "reasons": [],
     "shares_delta": 1597325.0,
@@ -2090,7 +2172,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "+1,597,325주 · +4.87%p",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000674",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000674"
   },
   {
    "id": "20261120000478",
@@ -2107,8 +2191,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000478",
-   "kind_id": "20261120000672",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000672",
    "metrics": {
     "reasons": [
      "장내매수(+)",
@@ -2125,7 +2207,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+), 장내매도(-) · +0.27%p · → 34.28% · 매수 약 18억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000672",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000672"
   },
   {
    "id": "20261120000477",
@@ -2142,8 +2226,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000477",
-   "kind_id": "20261120000671",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000671",
    "metrics": {
     "reasons": [
      "(-)"
@@ -2158,7 +2240,9 @@
    "direction": "sell",
    "signal": false,
    "summary": "(-) · +2.10%p · → 70.90%",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000671",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000671"
   },
   {
    "id": "20261120000476",
@@ -2175,8 +2259,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000476",
-   "kind_id": "20261120000668",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000668",
    "metrics": {
     "reasons": [
      "장내매수(+)"
@@ -2189,7 +2271,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+) · +121,423주 · +2.12%p · 매수 약 3.3억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000668",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000668"
   },
   {
    "id": "20261120900631",
@@ -2206,8 +2290,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120900631",
-   "kind_id": "20261120000631",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000631",
    "metrics": {
     "name": "임상 2상용 원료의약품 위탁개발생산계약",
     "counterparty": "주식회사 스킨메드",
@@ -2220,7 +2302,9 @@
    "direction": "up",
    "signal": true,
    "summary": "6.7억 (매출액 대비 13.4%) · 주식회사 스킨메드",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000631",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000631"
   },
   {
    "id": "20261120000472",
@@ -2237,8 +2321,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000472",
-   "kind_id": "20261120000655",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000655",
    "metrics": {
     "reasons": [
      "장내매수(+)"
@@ -2251,7 +2333,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+) · +8,982주 · +0.21%p · 매수 약 28억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000655",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000655"
   },
   {
    "id": "20261120000471",
@@ -2268,8 +2352,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000471",
-   "kind_id": "20261120000654",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000654",
    "metrics": {
     "reasons": [
      "주식매수선택권(+)"
@@ -2281,7 +2363,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "주식매수선택권(+) · +220,000주 · +1.54%p",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000654",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000654"
   },
   {
    "id": "20261120000470",
@@ -2300,11 +2384,21 @@
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000470",
    "kind_id": "20261120000653",
    "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000653",
-   "metrics": {},
-   "direction": null,
+   "metrics": {
+    "reasons": [
+     "(-)"
+    ],
+    "ratio_prev": 40.26,
+    "ratio_cur": 40.26,
+    "ratio_delta": 0.0,
+    "relation": "최대주주",
+    "reason_text": "주식 담보 설정",
+    "simple": false
+   },
+   "direction": "sell",
    "signal": false,
-   "summary": "본문 파싱 실패 - 원문 확인",
-   "parsed": false
+   "summary": "(-) · +0.00%p · → 40.26%",
+   "parsed": true
   },
   {
    "id": "20261120900630",
@@ -2323,11 +2417,19 @@
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120900630",
    "kind_id": "20261120000630",
    "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000630",
-   "metrics": {},
-   "direction": null,
-   "signal": false,
-   "summary": "본문 파싱 실패 - 원문 확인",
-   "parsed": false
+   "metrics": {
+    "name": "원주메가클러스터AI데이터센터 전기,통신 공사 계약",
+    "counterparty": "주식회사 메가데이타코리아",
+    "start": "2026-11-20",
+    "end": "2029-03-30",
+    "amount": 230000000000.0,
+    "ratio": 86.87,
+    "ratio_base": "매출액"
+   },
+   "direction": "up",
+   "signal": true,
+   "summary": "2,300억 (매출액 대비 86.9%) · 주식회사 메가데이타코리아",
+   "parsed": true
   },
   {
    "id": "20261120800647",
@@ -2346,11 +2448,17 @@
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120800647",
    "kind_id": "20261120000647",
    "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000647",
-   "metrics": {},
-   "direction": null,
-   "signal": false,
-   "summary": "본문 파싱 실패 - 원문 확인",
-   "parsed": false
+   "metrics": {
+    "reasons": [
+     "장내매수(+)"
+    ],
+    "shares_delta": 30000.0,
+    "ratio_delta": 0.07
+   },
+   "direction": "buy",
+   "signal": true,
+   "summary": "장내매수(+) · +30,000주 · +0.07%p",
+   "parsed": true
   },
   {
    "id": "20261120000468",
@@ -2369,11 +2477,19 @@
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000468",
    "kind_id": "20261120000648",
    "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000648",
-   "metrics": {},
-   "direction": null,
+   "metrics": {
+    "reasons": [],
+    "ratio_prev": 30.68,
+    "ratio_cur": 30.68,
+    "ratio_delta": 0.0,
+    "relation": "최대주주",
+    "reason_text": "계약 내용의 변경",
+    "simple": false
+   },
+   "direction": "flat",
    "signal": false,
-   "summary": "본문 파싱 실패 - 원문 확인",
-   "parsed": false
+   "summary": "+0.00%p · → 30.68%",
+   "parsed": true
   },
   {
    "id": "20261120900621",
@@ -2390,8 +2506,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120900621",
-   "kind_id": "20261120000621",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000621",
    "metrics": {
     "kind": "설비투자",
     "purpose": "생산성 및 업무효율 제고를 위한 설비투자",
@@ -2404,7 +2518,9 @@
    "direction": "up",
    "signal": true,
    "summary": "13억 (자기자본 대비 20.9%)",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000621",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000621"
   },
   {
    "id": "20261120000467",
@@ -2421,8 +2537,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000467",
-   "kind_id": "20261120000641",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000641",
    "metrics": {
     "reasons": [],
     "ratio_prev": 39.25,
@@ -2435,7 +2549,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "+1.79%p · → 41.04%",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000641",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000641"
   },
   {
    "id": "20261120800629",
@@ -2452,8 +2568,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120800629",
-   "kind_id": "20261120000629",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000629",
    "metrics": {
     "reasons": [
      "장내매수(+)"
@@ -2464,7 +2578,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+) · +11,600주 · +0.05%p",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000629",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000629"
   },
   {
    "id": "20261120000462",
@@ -2481,8 +2597,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000462",
-   "kind_id": "20261120000628",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000628",
    "metrics": {
     "reasons": [],
     "ratio_prev": 46.02,
@@ -2495,7 +2609,9 @@
    "direction": "flat",
    "signal": false,
    "summary": "+0.00%p · → 46.02%",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000628",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000628"
   },
   {
    "id": "20261120000461",
@@ -2512,8 +2628,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000461",
-   "kind_id": "20261120000626",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000626",
    "metrics": {
     "reasons": [
      "장내매수(+)"
@@ -2529,7 +2643,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+) · +0.05%p · → 21.17% · 매수 약 1.3억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000626",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000626"
   },
   {
    "id": "20261120900603",
@@ -2546,8 +2662,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120900603",
-   "kind_id": "20261120000603",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000603",
    "metrics": {
     "name": "당진 청정수소 패키지(CO2 포집 및 바이오고품질화) 제작 및 설치",
     "counterparty": "한국가스기술공사",
@@ -2560,7 +2674,9 @@
    "direction": "up",
    "signal": true,
    "summary": "98억 (매출액 대비 34.9%) · 한국가스기술공사",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000603",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000603"
   },
   {
    "id": "20261120900570",
@@ -2577,8 +2693,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120900570",
-   "kind_id": "20261120000570",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000570",
    "metrics": {
     "name": "국가정보자원관리원 2026년 제2차 정보자원 통합구축 용역계약",
     "counterparty": "조달청",
@@ -2591,7 +2705,9 @@
    "direction": "up",
    "signal": true,
    "summary": "199억 (매출액 대비 7.7%) · 조달청",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000570",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000570"
   },
   {
    "id": "20261120800585",
@@ -2608,8 +2724,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120800585",
-   "kind_id": "20261120000585",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000585",
    "metrics": {
     "reasons": [
      "장내매수(+)"
@@ -2620,7 +2734,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+) · +16,000주 · +0.08%p",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000585",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000585"
   },
   {
    "id": "20261120000434",
@@ -2637,8 +2753,6 @@
    "amend_tag": "기재정정",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000434",
-   "kind_id": "20261120000583",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000583",
    "metrics": {
     "reasons": [
      "장내매수(+)"
@@ -2651,7 +2765,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+) · +12,020주 · +0.07%p · 매수 약 0.2억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000583",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000583"
   },
   {
    "id": "20261120000432",
@@ -2668,8 +2784,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000432",
-   "kind_id": "20261120000581",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000581",
    "metrics": {
     "reasons": [
      "장내매수(+)"
@@ -2682,7 +2796,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+) · +2,000주 · +0.01%p · 매수 약 0.0억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000581",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000581"
   },
   {
    "id": "20261120000429",
@@ -2699,8 +2815,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000429",
-   "kind_id": "20261120000578",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000578",
    "metrics": {
     "reasons": [
      "장내매수(+)"
@@ -2713,7 +2827,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+) · +16,000주 · +0.08%p · 매수 약 0.2억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000578",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000578"
   },
   {
    "id": "20261120000426",
@@ -2730,8 +2846,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000426",
-   "kind_id": "20261120000572",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000572",
    "metrics": {
     "reasons": [
      "신규상장(+)",
@@ -2747,7 +2861,9 @@
    "direction": "buy",
    "signal": false,
    "summary": "신규상장(+), 장내매도(-) · +2.84%p · → 2.84%",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000572",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000572"
   },
   {
    "id": "20261120000425",
@@ -2764,8 +2880,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000425",
-   "kind_id": "20261120000571",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000571",
    "metrics": {
     "reasons": [
      "신규상장(무상취득)(+)"
@@ -2780,7 +2894,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "신규상장(무상취득)(+) · +67.57%p · → 67.57%",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000571",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000571"
   },
   {
    "id": "20261120800566",
@@ -2797,8 +2913,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120800566",
-   "kind_id": "20261120000566",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000566",
    "metrics": {
     "reasons": [
      "장내매수(+)"
@@ -2809,7 +2923,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+) · +4,000주 · +0.04%p",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000566",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000566"
   },
   {
    "id": "20261120000408",
@@ -2826,8 +2942,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000408",
-   "kind_id": "20261120000544",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000544",
    "metrics": {
     "amount": 500000000.0,
     "purpose": "주가안정 및 임직원 보상"
@@ -2835,7 +2949,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "자사주 5.0억 · 주가안정 및 임직원 보상",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000544",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000544"
   },
   {
    "id": "20261120800556",
@@ -2852,8 +2968,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120800556",
-   "kind_id": "20261120000556",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000556",
    "metrics": {
     "reasons": [
      "기타(-)"
@@ -2864,7 +2978,9 @@
    "direction": "sell",
    "signal": false,
    "summary": "기타(-) · +0주 · +0.00%p",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000556",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000556"
   },
   {
    "id": "20261120900538",
@@ -2881,8 +2997,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120900538",
-   "kind_id": "20261120000538",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000538",
    "metrics": {
     "name": "드라마 <프로모터> 공동제작 및 외주제작",
     "counterparty": "주식회사 몬스터컴퍼니",
@@ -2895,7 +3009,9 @@
    "direction": "up",
    "signal": true,
    "summary": "98억 (매출액 대비 173.3%) · 주식회사 몬스터컴퍼니",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000538",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000538"
   },
   {
    "id": "20261120000414",
@@ -2912,8 +3028,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000414",
-   "kind_id": "20261120000550",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000550",
    "metrics": {
     "reasons": [
      "장내매도(-)"
@@ -2925,7 +3039,9 @@
    "direction": "sell",
    "signal": false,
    "summary": "장내매도(-) · -2,500주 · +0.00%p",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000550",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000550"
   },
   {
    "id": "20261120000411",
@@ -2942,8 +3058,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000411",
-   "kind_id": "20261120000547",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000547",
    "metrics": {
     "reasons": [
      "장내매수(+)"
@@ -2956,7 +3070,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+) · +299,360주 · +1.17%p · 매수 약 20억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000547",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000547"
   },
   {
    "id": "20261120000406",
@@ -2973,8 +3089,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000406",
-   "kind_id": "20261120000543",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000543",
    "metrics": {
     "reasons": [
      "장내매수(+)"
@@ -2990,7 +3104,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+) · +1.17%p · → 41.39% · 매수 약 20억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000543",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000543"
   },
   {
    "id": "20261120000392",
@@ -3007,8 +3123,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000392",
-   "kind_id": "20261120000521",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000521",
    "metrics": {
     "reasons": [
      "기타(-)"
@@ -3020,7 +3134,9 @@
    "direction": "sell",
    "signal": false,
    "summary": "기타(-) · -2,087,682주 · -2.36%p",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000521",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000521"
   },
   {
    "id": "20261120000387",
@@ -3037,8 +3153,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000387",
-   "kind_id": "20261120000518",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000518",
    "metrics": {
     "reasons": [
      "장외매도(-)"
@@ -3053,7 +3167,9 @@
    "direction": "sell",
    "signal": false,
    "summary": "장외매도(-) · -2.36%p · → 56.76%",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000518",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000518"
   },
   {
    "id": "20261120000384",
@@ -3072,11 +3188,19 @@
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000384",
    "kind_id": "20261120000516",
    "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000516",
-   "metrics": {},
-   "direction": null,
-   "signal": false,
-   "summary": "본문 파싱 실패 - 원문 확인",
-   "parsed": false
+   "metrics": {
+    "reasons": [
+     "장내매수(+)"
+    ],
+    "buy_amount": 1307740.0,
+    "shares_delta": 1632.0,
+    "ratio_delta": 0.02,
+    "relation": "대표이사"
+   },
+   "direction": "buy",
+   "signal": true,
+   "summary": "장내매수(+) · +1,632주 · +0.02%p · 매수 약 0.0억",
+   "parsed": true
   },
   {
    "id": "20261120000370",
@@ -3095,11 +3219,19 @@
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000370",
    "kind_id": "20261120000500",
    "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000500",
-   "metrics": {},
-   "direction": null,
-   "signal": false,
-   "summary": "본문 파싱 실패 - 원문 확인",
-   "parsed": false
+   "metrics": {
+    "reasons": [
+     "장내매수(+)"
+    ],
+    "buy_amount": 99467066.0,
+    "shares_delta": 18778.0,
+    "ratio_delta": 0.1,
+    "relation": "10%이상주주"
+   },
+   "direction": "buy",
+   "signal": true,
+   "summary": "장내매수(+) · +18,778주 · +0.10%p · 매수 약 1.0억",
+   "parsed": true
   },
   {
    "id": "20261120000369",
@@ -3118,11 +3250,19 @@
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000369",
    "kind_id": "20261120000499",
    "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000499",
-   "metrics": {},
-   "direction": null,
-   "signal": false,
-   "summary": "본문 파싱 실패 - 원문 확인",
-   "parsed": false
+   "metrics": {
+    "reasons": [
+     "장내매수(+)"
+    ],
+    "buy_amount": 1109750.0,
+    "shares_delta": 1150.0,
+    "ratio_delta": 0.0,
+    "relation": "이사"
+   },
+   "direction": "buy",
+   "signal": true,
+   "summary": "장내매수(+) · +1,150주 · +0.00%p · 매수 약 0.0억",
+   "parsed": true
   },
   {
    "id": "20261120000364",
@@ -3139,8 +3279,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000364",
-   "kind_id": "20261120000494",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000494",
    "metrics": {
     "reasons": [
      "장내매수(+)"
@@ -3153,7 +3291,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+) · +2,053주 · +0.00%p · 매수 약 0.0억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000494",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000494"
   },
   {
    "id": "20261120000351",
@@ -3170,8 +3310,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000351",
-   "kind_id": "20261120000477",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000477",
    "metrics": {
     "reasons": [
      "장내매수(+)"
@@ -3187,7 +3325,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+) · +0.65%p · → 44.30% · 매수 약 2.1억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000477",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000477"
   },
   {
    "id": "20261120000348",
@@ -3204,8 +3344,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000348",
-   "kind_id": "20261120000476",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000476",
    "metrics": {
     "reasons": [],
     "ratio_prev": 44.71,
@@ -3218,7 +3356,9 @@
    "direction": "flat",
    "signal": false,
    "summary": "+0.00%p · → 44.71%",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000476",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000476"
   },
   {
    "id": "20261120000344",
@@ -3235,8 +3375,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000344",
-   "kind_id": "20261120000473",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000473",
    "metrics": {
     "reasons": [],
     "ratio_prev": 29.46,
@@ -3249,7 +3387,9 @@
    "direction": "flat",
    "signal": false,
    "summary": "+0.00%p · → 29.46%",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000473",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000473"
   },
   {
    "id": "20261120000317",
@@ -3266,8 +3406,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000317",
-   "kind_id": "20261120000449",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000449",
    "metrics": {
     "reasons": [
      "장내매수(+)"
@@ -3280,7 +3418,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+) · +35,000주 · +0.41%p · 매수 약 1.3억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000449",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000449"
   },
   {
    "id": "20261120000308",
@@ -3297,8 +3437,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000308",
-   "kind_id": "20261120000439",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000439",
    "metrics": {
     "reasons": [
      "장내매수(+)"
@@ -3311,7 +3449,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+) · +20주 · +0.00%p · 매수 약 0.0억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000439",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000439"
   },
   {
    "id": "20261120800432",
@@ -3328,8 +3468,6 @@
    "amend_tag": "",
    "subsidiary": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120800432",
-   "kind_id": "20261120000432",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000432",
    "metrics": {
     "name": "진주 도동지구 공동주택용지 B블록 신축공사",
     "counterparty": "아이파크아이앤콘스(주)",
@@ -3342,7 +3480,9 @@
    "direction": "up",
    "signal": true,
    "summary": "3,501억 (매출액 대비 8.4%) · 아이파크아이앤콘스(주)",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000432",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000432"
   },
   {
    "id": "20261120800414",
@@ -3359,8 +3499,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120800414",
-   "kind_id": "20261120000414",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000414",
    "metrics": {
     "name": "진주 도동지구 공동주택용지 B블록 신축공사",
     "counterparty": "아이파크아이앤콘스(주)",
@@ -3373,7 +3511,9 @@
    "direction": "up",
    "signal": true,
    "summary": "3,501억 (매출액 대비 8.4%) · 아이파크아이앤콘스(주)",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000414",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000414"
   },
   {
    "id": "20261120000299",
@@ -3390,8 +3530,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000299",
-   "kind_id": "20261120000433",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000433",
    "metrics": {
     "reasons": [
      "신규상장(무상취득)(+)"
@@ -3406,7 +3544,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "신규상장(무상취득)(+) · +45.14%p · → 45.14%",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000433",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000433"
   },
   {
    "id": "20261120000282",
@@ -3423,8 +3563,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000282",
-   "kind_id": "20261120000412",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000412",
    "metrics": {
     "reasons": [
      "신규상장(+)"
@@ -3436,7 +3574,9 @@
    "direction": "buy",
    "signal": false,
    "summary": "신규상장(+) · +2,302,900주 · +24.07%p",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000412",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000412"
   },
   {
    "id": "20261120000276",
@@ -3455,11 +3595,18 @@
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000276",
    "kind_id": "20261120000407",
    "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000407",
-   "metrics": {},
-   "direction": null,
+   "metrics": {
+    "reasons": [
+     "신규상장(+)"
+    ],
+    "shares_delta": 1387000.0,
+    "ratio_delta": 14.5,
+    "relation": "대표이사"
+   },
+   "direction": "buy",
    "signal": false,
-   "summary": "본문 파싱 실패 - 원문 확인",
-   "parsed": false
+   "summary": "신규상장(+) · +1,387,000주 · +14.50%p",
+   "parsed": true
   },
   {
    "id": "20261120000270",
@@ -3476,8 +3623,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000270",
-   "kind_id": "20261120000399",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000399",
    "metrics": {
     "reasons": [
      "장내매수(+)"
@@ -3493,7 +3638,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+) · +0.04%p · → 31.27% · 매수 약 0.2억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000399",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000399"
   },
   {
    "id": "20261120000259",
@@ -3510,8 +3657,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000259",
-   "kind_id": "20261120000390",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000390",
    "metrics": {
     "reasons": [
      "신규상장(무상취득)(+)"
@@ -3526,7 +3671,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "신규상장(무상취득)(+) · +46.27%p · → 46.27%",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000390",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000390"
   },
   {
    "id": "20261120000248",
@@ -3543,8 +3690,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000248",
-   "kind_id": "20261120000381",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000381",
    "metrics": {
     "reasons": [
      "신규상장(+)"
@@ -3556,7 +3701,9 @@
    "direction": "buy",
    "signal": false,
    "summary": "신규상장(+) · +8,203,900주 · +46.27%p",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000381",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000381"
   },
   {
    "id": "20261120000243",
@@ -3573,8 +3720,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000243",
-   "kind_id": "20261120000377",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000377",
    "metrics": {
     "reasons": [
      "장내매수(+)"
@@ -3587,7 +3732,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+) · +5,162주 · +0.02%p · 매수 약 0.1억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000377",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000377"
   },
   {
    "id": "20261120000241",
@@ -3604,8 +3751,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000241",
-   "kind_id": "20261120000375",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000375",
    "metrics": {
     "reasons": [
      "신규상장(+)"
@@ -3617,7 +3762,9 @@
    "direction": "buy",
    "signal": false,
    "summary": "신규상장(+) · +591,477주 · +4.08%p",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000375",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000375"
   },
   {
    "id": "20261120000239",
@@ -3634,8 +3781,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000239",
-   "kind_id": "20261120000367",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000367",
    "metrics": {
     "reasons": [
      "장내매수(+)"
@@ -3648,7 +3793,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+) · +24,811주 · +0.15%p · 매수 약 0.6억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000367",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000367"
   },
   {
    "id": "20261120000238",
@@ -3665,8 +3812,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000238",
-   "kind_id": "20261120000365",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000365",
    "metrics": {
     "reasons": [],
     "ratio_prev": 22.08,
@@ -3679,7 +3824,9 @@
    "direction": "flat",
    "signal": false,
    "summary": "+0.00%p · → 22.08%",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000365",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000365"
   },
   {
    "id": "20261120000229",
@@ -3698,11 +3845,23 @@
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000229",
    "kind_id": "20261120000353",
    "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000353",
-   "metrics": {},
-   "direction": null,
-   "signal": false,
-   "summary": "본문 파싱 실패 - 원문 확인",
-   "parsed": false
+   "metrics": {
+    "reasons": [
+     "장내매수(+)",
+     "장내매도(-)"
+    ],
+    "buy_amount": 2104383698.0,
+    "ratio_prev": 5.02,
+    "ratio_cur": 6.0,
+    "ratio_delta": 0.9800000000000004,
+    "relation": "주주",
+    "reason_text": "장내매수로 인한 보유지분 변동보고",
+    "simple": true
+   },
+   "direction": "buy",
+   "signal": true,
+   "summary": "장내매수(+), 장내매도(-) · +0.98%p · → 6.00% · 매수 약 21억",
+   "parsed": true
   },
   {
    "id": "20261120900323",
@@ -3721,11 +3880,19 @@
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120900323",
    "kind_id": "20261120000323",
    "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000323",
-   "metrics": {},
-   "direction": null,
-   "signal": false,
-   "summary": "본문 파싱 실패 - 원문 확인",
-   "parsed": false
+   "metrics": {
+    "name": "반도체 FOUP Cleaner 장비 판매",
+    "counterparty": "Amkor Technology Arizona, Inc.",
+    "start": "2026-11-19",
+    "end": "2028-03-31",
+    "amount": 1956717000.0,
+    "ratio": 6.07,
+    "ratio_base": "매출액"
+   },
+   "direction": "up",
+   "signal": true,
+   "summary": "20억 (매출액 대비 6.1%) · Amkor Technology Arizona, Inc.",
+   "parsed": true
   },
   {
    "id": "20261120000222",
@@ -3742,8 +3909,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000222",
-   "kind_id": "20261120000347",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000347",
    "metrics": {
     "reasons": [
      "장내매수(+)"
@@ -3756,7 +3921,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+) · +5,000주 · +0.01%p · 매수 약 0.0억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000347",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000347"
   },
   {
    "id": "20261120000221",
@@ -3773,8 +3940,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000221",
-   "kind_id": "20261120000344",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000344",
    "metrics": {
     "reasons": [
      "장내매수(+)"
@@ -3786,7 +3951,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+) · +1,227주 · +0.01%p",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000344",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000344"
   },
   {
    "id": "20261120800340",
@@ -3803,8 +3970,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120800340",
-   "kind_id": "20261120000340",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000340",
    "metrics": {
     "reasons": [
      "장내매수(+)"
@@ -3815,7 +3980,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+) · +1,227주 · +0.00%p",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000340",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000340"
   },
   {
    "id": "20261120000220",
@@ -3834,11 +4001,19 @@
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000220",
    "kind_id": "20261120000341",
    "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000341",
-   "metrics": {},
-   "direction": null,
-   "signal": false,
-   "summary": "본문 파싱 실패 - 원문 확인",
-   "parsed": false
+   "metrics": {
+    "reasons": [
+     "장내매수(+)"
+    ],
+    "buy_amount": 1172610.0,
+    "shares_delta": 1161.0,
+    "ratio_delta": 0.01,
+    "relation": "사장"
+   },
+   "direction": "buy",
+   "signal": true,
+   "summary": "장내매수(+) · +1,161주 · +0.01%p · 매수 약 0.0억",
+   "parsed": true
   },
   {
    "id": "20261120900304",
@@ -3855,8 +4030,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120900304",
-   "kind_id": "20261120000304",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000304",
    "metrics": {
     "name": "평택캠퍼스 P5 FAB2 건축공사 중 데크공사 2공구",
     "counterparty": "삼성물산주식회사",
@@ -3869,7 +4042,9 @@
    "direction": "up",
    "signal": true,
    "summary": "117억 (매출액 대비 8.7%) · 삼성물산주식회사",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000304",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000304"
   },
   {
    "id": "20261120000219",
@@ -3886,8 +4061,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000219",
-   "kind_id": "20261120000337",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000337",
    "metrics": {
     "reasons": [
      "장내매수(+)"
@@ -3900,7 +4073,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+) · +3,050주 · +0.01%p · 매수 약 0.0억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000337",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000337"
   },
   {
    "id": "20261120000213",
@@ -3917,8 +4092,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000213",
-   "kind_id": "20261120000330",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000330",
    "metrics": {
     "reasons": [],
     "ratio_prev": 36.24,
@@ -3931,7 +4104,9 @@
    "direction": "sell",
    "signal": false,
    "summary": "-0.05%p · → 36.19%",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000330",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000330"
   },
   {
    "id": "20261120000208",
@@ -3950,11 +4125,19 @@
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000208",
    "kind_id": "20261120000328",
    "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000328",
-   "metrics": {},
-   "direction": null,
-   "signal": false,
-   "summary": "본문 파싱 실패 - 원문 확인",
-   "parsed": false
+   "metrics": {
+    "reasons": [
+     "장내매수(+)"
+    ],
+    "buy_amount": 2901000.0,
+    "shares_delta": 3000.0,
+    "ratio_delta": 0.01,
+    "relation": "대표이사"
+   },
+   "direction": "buy",
+   "signal": true,
+   "summary": "장내매수(+) · +3,000주 · +0.01%p · 매수 약 0.0억",
+   "parsed": true
   },
   {
    "id": "20261120000207",
@@ -3971,8 +4154,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000207",
-   "kind_id": "20261120000326",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000326",
    "metrics": {
     "reasons": [],
     "ratio_prev": 44.24,
@@ -3985,7 +4166,9 @@
    "direction": "flat",
    "signal": false,
    "summary": "+0.00%p · → 44.24%",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000326",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000326"
   },
   {
    "id": "20261120900311",
@@ -4002,8 +4185,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120900311",
-   "kind_id": "20261120000311",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000311",
    "metrics": {
     "name": "경수로 원자력연료 비축재고 운영을 위한 가돌리늄 분말(Gadolinium Oxide Powder) 공급",
     "counterparty": "한전원자력연료(주)",
@@ -4016,7 +4197,9 @@
    "direction": "up",
    "signal": true,
    "summary": "19억 (매출액 대비 14.2%) · 한전원자력연료(주)",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000311",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000311"
   },
   {
    "id": "20261120900293",
@@ -4033,8 +4216,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120900293",
-   "kind_id": "20261120000293",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000293",
    "metrics": {
     "name": "25-F-K 지역 시설공사 (수배전반, 분전반 제조/설치 납품)",
     "counterparty": "현대건설 주식회사",
@@ -4047,7 +4228,9 @@
    "direction": "up",
    "signal": true,
    "summary": "75억 (매출액 대비 11.0%) · 현대건설 주식회사",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000293",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000293"
   },
   {
    "id": "20261120900283",
@@ -4064,8 +4247,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120900283",
-   "kind_id": "20261120000283",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000283",
    "metrics": {
     "name": "베트남 하노이 도시철도 5개 노선 타당성조사(F/S) 및 FEED 설계 컨설팅 서비스",
     "counterparty": "SGC INVESTMENT AND CONSTRUCTION JOINT STOCK COMPANY",
@@ -4078,7 +4259,9 @@
    "direction": "up",
    "signal": true,
    "summary": "636억 (매출액 대비 16.5%) · SGC INVESTMENT AND CONSTRUCTION JOINT STOCK COMPANY",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000283",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000283"
   },
   {
    "id": "20261120800289",
@@ -4095,8 +4278,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120800289",
-   "kind_id": "20261120000289",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000289",
    "metrics": {
     "name": "강북~암사 송수계통 연결공사",
     "counterparty": "조달청(서울특별시 서울아리수본부)",
@@ -4109,7 +4290,9 @@
    "direction": "up",
    "signal": true,
    "summary": "295억 (매출액 대비 9.9%) · 조달청(서울특별시 서울아리수본부)",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000289",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000289"
   },
   {
    "id": "20261120000182",
@@ -4126,8 +4309,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000182",
-   "kind_id": "20261120000303",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000303",
    "metrics": {
     "reasons": [
      "장내매수(+)"
@@ -4140,7 +4321,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+) · +25,000주 · +0.18%p · 매수 약 1.3억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000303",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000303"
   },
   {
    "id": "20261120900192",
@@ -4157,8 +4340,6 @@
    "amend_tag": "기재정정",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120900192",
-   "kind_id": "20261120000192",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000192",
    "metrics": {
     "name": "Micro OLED 디스플레이 양산용 증착장비",
     "counterparty": "SeeYA Display Co.,Ltd.",
@@ -4171,7 +4352,9 @@
    "direction": "up",
    "signal": true,
    "summary": "451억 (매출액 대비 39.9%) · SeeYA Display Co.,Ltd.",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000192",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000192"
   },
   {
    "id": "20261120000153",
@@ -4188,8 +4371,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000153",
-   "kind_id": "20261120000275",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000275",
    "metrics": {
     "reasons": [
      "장내매수(+)",
@@ -4206,7 +4387,9 @@
    "direction": "sell",
    "signal": false,
    "summary": "장내매수(+), 장내매도(-) · -13.89%p · → 0.00% · 매수 약 6.5억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000275",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000275"
   },
   {
    "id": "20261120000147",
@@ -4223,8 +4406,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000147",
-   "kind_id": "20261120000273",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000273",
    "metrics": {
     "reasons": [
      "증여(-)"
@@ -4236,7 +4417,9 @@
    "direction": "sell",
    "signal": false,
    "summary": "증여(-) · -3,000주 · -0.03%p",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000273",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000273"
   },
   {
    "id": "20261120000142",
@@ -4253,8 +4436,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000142",
-   "kind_id": "20261120000269",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000269",
    "metrics": {
     "reasons": [
      "장내매수(+)"
@@ -4267,7 +4448,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+) · +26,304주 · +0.08%p · 매수 약 0.5억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000269",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000269"
   },
   {
    "id": "20261120000138",
@@ -4284,8 +4467,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000138",
-   "kind_id": "20261120000266",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000266",
    "metrics": {
     "reasons": [
      "장내매수(+)"
@@ -4298,7 +4479,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+) · +2,500주 · +0.02%p · 매수 약 0.1억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000266",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000266"
   },
   {
    "id": "20261120000137",
@@ -4315,8 +4498,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000137",
-   "kind_id": "20261120000265",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000265",
    "metrics": {
     "reasons": [
      "장내매수(+)"
@@ -4329,7 +4510,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+) · +60주 · +0.00%p · 매수 약 0.1억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000265",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000265"
   },
   {
    "id": "20261120000136",
@@ -4346,8 +4529,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000136",
-   "kind_id": "20261120000264",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000264",
    "metrics": {
     "reasons": [
      "장내매수(+)"
@@ -4360,7 +4541,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+) · +3,000주 · +0.02%p · 매수 약 0.1억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000264",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000264"
   },
   {
    "id": "20261120000133",
@@ -4377,8 +4560,6 @@
    "amend_tag": "기재정정",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000133",
-   "kind_id": "20261120000262",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000262",
    "metrics": {
     "reasons": [
      "유상신주취득(+)",
@@ -4395,7 +4576,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "유상신주취득(+), 장외매도(-) · +0.75%p · → 0.75% · 매수 약 25억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000262",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000262"
   },
   {
    "id": "20261120000128",
@@ -4412,8 +4595,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000128",
-   "kind_id": "20261120000251",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000251",
    "metrics": {
     "reasons": [
      "장내매수(+)",
@@ -4430,7 +4611,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+), 특별관계해소(-) · +0.33%p · → 73.48% · 매수 약 0.5억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000251",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000251"
   },
   {
    "id": "20261120000117",
@@ -4447,8 +4630,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000117",
-   "kind_id": "20261120000239",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000239",
    "metrics": {
     "amount": 3000000000.0,
     "shares": 3171247.0,
@@ -4458,7 +4639,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "자사주 30억 · 주주가치 제고 및 주가안정화",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000239",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000239"
   },
   {
    "id": "20261120000125",
@@ -4475,8 +4658,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000125",
-   "kind_id": "20261120000249",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000249",
    "metrics": {
     "reasons": [
      "장내매수(+)"
@@ -4489,7 +4670,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+) · +39,000주 · +0.25%p · 매수 약 0.8억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000249",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000249"
   },
   {
    "id": "20261120800244",
@@ -4506,8 +4689,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120800244",
-   "kind_id": "20261120000244",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000244",
    "metrics": {
     "reasons": [
      "장내매수(+)"
@@ -4518,7 +4699,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+) · +42,000주 · +0.27%p",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000244",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000244"
   },
   {
    "id": "20261120000118",
@@ -4535,8 +4718,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000118",
-   "kind_id": "20261120000241",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000241",
    "metrics": {
     "reasons": [
      "장내매수(+)",
@@ -4554,7 +4735,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+), 기타(-) · +1.04%p · → 14.21% · 매수 약 50억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000241",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000241"
   },
   {
    "id": "20261120000112",
@@ -4665,11 +4848,19 @@
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000099",
    "kind_id": "20261120000223",
    "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000223",
-   "metrics": {},
-   "direction": null,
-   "signal": false,
-   "summary": "본문 파싱 실패 - 원문 확인",
-   "parsed": false
+   "metrics": {
+    "reasons": [
+     "장내매수(+)"
+    ],
+    "buy_amount": 24883927.0,
+    "shares_delta": 10545.0,
+    "ratio_delta": 0.13,
+    "relation": "대표이사"
+   },
+   "direction": "buy",
+   "signal": true,
+   "summary": "장내매수(+) · +10,545주 · +0.13%p · 매수 약 0.2억",
+   "parsed": true
   },
   {
    "id": "20261120000096",
@@ -4686,8 +4877,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120000096",
-   "kind_id": "20261120000222",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000222",
    "metrics": {
     "reasons": [
      "장내매수(+)"
@@ -4700,7 +4889,9 @@
    "direction": "buy",
    "signal": true,
    "summary": "장내매수(+) · +5,028주 · +0.06%p · 매수 약 0.1억",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000222",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000222"
   },
   {
    "id": "20261120900191",
@@ -4717,8 +4908,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120900191",
-   "kind_id": "20261120000191",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000191",
    "metrics": {
     "name": "반도체 제조장비",
     "counterparty": "삼성전자 주식회사",
@@ -4731,7 +4920,9 @@
    "direction": "up",
    "signal": true,
    "summary": "234억 (매출액 대비 10.2%) · 삼성전자 주식회사",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000191",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000191"
   },
   {
    "id": "20261120900180",
@@ -4748,8 +4939,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120900180",
-   "kind_id": "20261120000180",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000180",
    "metrics": {
     "name": "평택캠퍼스 P5 FAB2 건축공사",
     "counterparty": "삼성물산주식회사",
@@ -4762,7 +4951,9 @@
    "direction": "up",
    "signal": true,
    "summary": "114억 (매출액 대비 10.7%) · 삼성물산주식회사",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000180",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000180"
   },
   {
    "id": "20261120800170",
@@ -4779,8 +4970,6 @@
    "amend_tag": "기재정정",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120800170",
-   "kind_id": "20261120000170",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000170",
    "metrics": {
     "name": "중앙선 도담~영천 복선전철 제10공구 노반신설 기타공사",
     "counterparty": "한국철도시설공단",
@@ -4793,7 +4982,9 @@
    "direction": "up",
    "signal": true,
    "summary": "1,450억 (매출액 대비 9.5%) · 한국철도시설공단",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000170",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000170"
   },
   {
    "id": "20261120900120",
@@ -4810,8 +5001,6 @@
    "amend_tag": "",
    "subsidiary": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120900120",
-   "kind_id": "20261120000120",
-   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000120",
    "metrics": {
     "name": "DYNAMIXEL-X 공급계약",
     "counterparty": "Pollen Robotics SAS",
@@ -4824,7 +5013,9 @@
    "direction": "up",
    "signal": true,
    "summary": "40억 (매출액 대비 10.2%) · Pollen Robotics SAS",
-   "parsed": true
+   "parsed": true,
+   "kind_id": "20261120000120",
+   "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261120000120"
   }
  ]
 }
