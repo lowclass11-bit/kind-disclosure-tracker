@@ -1,0 +1,41 @@
+{
+ "date": "2026-11-24",
+ "source": "DART",
+ "collected_at": "2026-11-24T07:35:37+09:00",
+ "total_disclosures": 1,
+ "items": [
+  {
+   "id": "20261123000408",
+   "date": "2026-11-24",
+   "time": "07:30",
+   "market": "KOSPI",
+   "corp": "유엔젤",
+   "title": "주식등의대량보유상황보고서(약식)",
+   "filer": "더원엠티에스",
+   "corp_code": "00416654",
+   "category": "stake",
+   "subtype": "대량보유(5%)",
+   "amended": false,
+   "amend_tag": "",
+   "subsidiary": false,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261123000408",
+   "metrics": {
+    "reasons": [
+     "장내매수(+)",
+     "장내매도(-)"
+    ],
+    "buy_amount": 2039516097.0,
+    "ratio_prev": 9.91,
+    "ratio_cur": 10.52,
+    "ratio_delta": 0.6099999999999994,
+    "relation": "주주",
+    "reason_text": "보유 목적 변경/특별 관계자 보유 주식 변동",
+    "simple": true
+   },
+   "direction": "buy",
+   "signal": true,
+   "summary": "장내매수(+), 장내매도(-) · +0.61%p · → 10.52% · 매수 약 20억",
+   "parsed": true
+  }
+ ]
+}

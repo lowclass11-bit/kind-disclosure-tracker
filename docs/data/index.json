@@ -1,11 +1,23 @@
 {
- "updated_at": "2026-11-24T07:13:44+09:00",
- "latest": "2026-11-23",
+ "updated_at": "2026-11-24T07:35:43+09:00",
+ "latest": "2026-11-24",
  "days": [
   {
+   "date": "2026-11-24",
+   "source": "DART",
+   "collected_at": "2026-11-24T07:35:37+09:00",
+   "total_disclosures": 1,
+   "counts": {
+    "stake": 1
+   },
+   "signals": {
+    "stake": 1
+   }
+  },
+  {
    "date": "2026-11-23",
-   "source": "KIND+DART",
-   "collected_at": "2026-11-24T07:13:44+09:00",
+   "source": "DART",
+   "collected_at": "2026-11-24T07:35:43+09:00",
    "total_disclosures": 345,
    "counts": {
     "stake": 100,
