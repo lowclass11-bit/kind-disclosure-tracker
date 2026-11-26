@@ -1,5 +1,4375 @@
 [
  {
+  "id": "20261126000960",
+  "date": "2026-11-26",
+  "time": "17:55",
+  "market": "KOSDAQ",
+  "corp": "켄코아에어로스페이스",
+  "title": "주식등의대량보유상황보고서(일반)",
+  "filer": "케플러",
+  "corp_code": "01158553",
+  "category": "stake",
+  "subtype": "대량보유(5%)",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000960",
+  "kind_id": "20261126000813",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000813",
+  "metrics": {
+   "reasons": [],
+   "ratio_prev": 57.33,
+   "ratio_cur": 55.66,
+   "ratio_delta": -1.6700000000000017,
+   "relation": "최대주주",
+   "reason_text": "보유주식등에 대한 주요계약 변경 및 체결",
+   "simple": false
+  },
+  "direction": "sell",
+  "signal": false,
+  "summary": "-1.67%p · → 55.66%",
+  "parsed": true
+ },
+ {
+  "id": "20261126000958",
+  "date": "2026-11-26",
+  "time": "17:55",
+  "market": "KOSDAQ",
+  "corp": "드림인사이트",
+  "title": "[기재정정]임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "케이 바이오테크 1호 신기술사업투자조합",
+  "corp_code": "01492688",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": true,
+  "amend_tag": "기재정정",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000958",
+  "kind_id": "20261126000809",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000809",
+  "metrics": {
+   "reasons": [
+    "장외매수(+)"
+   ],
+   "buy_amount": 9999999132.5,
+   "shares_delta": 3894839.0,
+   "ratio_delta": 23.18,
+   "relation": "사실상지배주주"
+  },
+  "direction": "buy",
+  "signal": true,
+  "summary": "장외매수(+) · +3,894,839주 · +23.18%p · 매수 약 100억",
+  "parsed": true
+ },
+ {
+  "id": "20261126000955",
+  "date": "2026-11-26",
+  "time": "17:54",
+  "market": "KOSDAQ",
+  "corp": "드림인사이트",
+  "title": "주식등의대량보유상황보고서(일반)",
+  "filer": "케이 바이오테크 1호 신기술사업투자조합",
+  "corp_code": "01492688",
+  "category": "stake",
+  "subtype": "대량보유(5%)",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000955",
+  "kind_id": "20261126000806",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000806",
+  "metrics": {
+   "reasons": [],
+   "ratio_prev": 23.18,
+   "ratio_cur": 23.18,
+   "ratio_delta": 0.0,
+   "relation": "사실상지배주주",
+   "reason_text": "주식매매계약 거래종결(잔금 지급ㆍ주식 인도)에 따른 보유형태 변경(소유에 준하는 보유 → 소유)",
+   "simple": false
+  },
+  "direction": "flat",
+  "signal": false,
+  "summary": "+0.00%p · → 23.18%",
+  "parsed": true
+ },
+ {
+  "id": "20261126000954",
+  "date": "2026-11-26",
+  "time": "17:54",
+  "market": "KOSDAQ",
+  "corp": "드림인사이트",
+  "title": "[기재정정]주식등의대량보유상황보고서(일반)",
+  "filer": "케이 바이오테크 1호 신기술사업투자조합",
+  "corp_code": "01492688",
+  "category": "stake",
+  "subtype": "대량보유(5%)",
+  "amended": true,
+  "amend_tag": "기재정정",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000954",
+  "kind_id": "20261126000802",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000802",
+  "metrics": {
+   "reasons": [
+    "장외매수(+)"
+   ],
+   "buy_amount": 10001946552.0,
+   "ratio_prev": 0.0,
+   "ratio_cur": 23.18,
+   "ratio_delta": 23.18,
+   "relation": "해당사항 없음",
+   "reason_text": "주식매매계약에 따른 장외매수로 인한 신규 보고",
+   "simple": false
+  },
+  "direction": "buy",
+  "signal": true,
+  "summary": "장외매수(+) · +23.18%p · → 23.18% · 매수 약 100억",
+  "parsed": true
+ },
+ {
+  "id": "20261126000952",
+  "date": "2026-11-26",
+  "time": "17:53",
+  "market": "KOSDAQ",
+  "corp": "디케이앤디",
+  "title": "주식등의대량보유상황보고서(일반)",
+  "filer": "최민석",
+  "corp_code": "00892526",
+  "category": "stake",
+  "subtype": "대량보유(5%)",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000952",
+  "kind_id": "20261126000792",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000792",
+  "metrics": {
+   "reasons": [
+    "장내매수(+)"
+   ],
+   "buy_amount": 238274750.0,
+   "ratio_prev": 29.41,
+   "ratio_cur": 32.61,
+   "ratio_delta": 3.1999999999999993,
+   "relation": "최대주주",
+   "reason_text": "변동 보고",
+   "simple": false
+  },
+  "direction": "buy",
+  "signal": true,
+  "summary": "장내매수(+) · +3.20%p · → 32.61% · 매수 약 2.4억",
+  "parsed": true
+ },
+ {
+  "id": "20261126000947",
+  "date": "2026-11-26",
+  "time": "17:50",
+  "market": "KOSPI",
+  "corp": "유안타증권",
+  "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "유안타씨큐리티즈아시아파이낸셜서비시스프라이빗리미티드",
+  "corp_code": "00117601",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000947",
+  "kind_id": "20261126000768",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000768",
+  "metrics": {
+   "reasons": [
+    "장내매수(+)"
+   ],
+   "buy_amount": 191152500.0,
+   "shares_delta": 52500.0,
+   "ratio_delta": 0.03,
+   "relation": "10%이상주주"
+  },
+  "direction": "buy",
+  "signal": true,
+  "summary": "장내매수(+) · +52,500주 · +0.03%p · 매수 약 1.9억",
+  "parsed": true
+ },
+ {
+  "id": "20261126800767",
+  "date": "2026-11-26",
+  "time": "17:49",
+  "market": "KOSPI",
+  "corp": "유안타증권",
+  "title": "최대주주등소유주식변동신고서",
+  "filer": "유안타증권",
+  "corp_code": "00117601",
+  "category": "stake",
+  "subtype": "최대주주변동",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126800767",
+  "kind_id": "20261126000767",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000767",
+  "metrics": {
+   "reasons": [
+    "장내매수(+)"
+   ],
+   "shares_delta": 10500.0,
+   "ratio_delta": 0.01
+  },
+  "direction": "buy",
+  "signal": true,
+  "summary": "장내매수(+) · +10,500주 · +0.01%p",
+  "parsed": true
+ },
+ {
+  "id": "20261126000942",
+  "date": "2026-11-26",
+  "time": "17:48",
+  "market": "KOSDAQ",
+  "corp": "퀄리타스반도체",
+  "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "최광천",
+  "corp_code": "01584183",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000942",
+  "kind_id": "20261126000765",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000765",
+  "metrics": {
+   "reasons": [
+    "장내매수(+)"
+   ],
+   "buy_amount": 126622848.0,
+   "shares_delta": 15574.0,
+   "ratio_delta": 0.11,
+   "relation": "전무"
+  },
+  "direction": "buy",
+  "signal": true,
+  "summary": "장내매수(+) · +15,574주 · +0.11%p · 매수 약 1.3억",
+  "parsed": true
+ },
+ {
+  "id": "20261126900755",
+  "date": "2026-11-26",
+  "time": "17:47",
+  "market": "KOSDAQ",
+  "corp": "넥사다이내믹스",
+  "title": "단일판매ㆍ공급계약체결",
+  "filer": "넥사다이내믹스",
+  "corp_code": "01440153",
+  "category": "capex",
+  "subtype": "공급계약",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126900755",
+  "kind_id": "20261126000755",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000755",
+  "metrics": {
+   "name": "고성능 AI 서버 제품",
+   "counterparty": "대한민국",
+   "start": "2026-11-26",
+   "end": "2027-03-31",
+   "amount": 75500000000.0,
+   "ratio": 580.19,
+   "ratio_base": "매출액"
+  },
+  "direction": "up",
+  "signal": true,
+  "summary": "755억 (매출액 대비 580.2%) · 대한민국",
+  "parsed": true
+ },
+ {
+  "id": "20261126000927",
+  "date": "2026-11-26",
+  "time": "17:39",
+  "market": "KOSDAQ",
+  "corp": "퀄리타스반도체",
+  "title": "주식등의대량보유상황보고서(일반)",
+  "filer": "김두호",
+  "corp_code": "01584183",
+  "category": "stake",
+  "subtype": "대량보유(5%)",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000927",
+  "kind_id": "20261126000752",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000752",
+  "metrics": {
+   "reasons": [
+    "장내매수(+)"
+   ],
+   "buy_amount": 126622848.0,
+   "ratio_prev": 29.76,
+   "ratio_cur": 29.87,
+   "ratio_delta": 0.10999999999999943,
+   "relation": "최대주주",
+   "reason_text": "특별관계자의 주식 장내매수에 따른 보유주식등의 변동",
+   "simple": false
+  },
+  "direction": "buy",
+  "signal": true,
+  "summary": "장내매수(+) · +0.11%p · → 29.87% · 매수 약 1.3억",
+  "parsed": true
+ },
+ {
+  "id": "20261126000924",
+  "date": "2026-11-26",
+  "time": "17:38",
+  "market": "KOSDAQ",
+  "corp": "휴마시스",
+  "title": "주식등의대량보유상황보고서(약식)",
+  "filer": "이명헌",
+  "corp_code": "01042979",
+  "category": "stake",
+  "subtype": "대량보유(5%)",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000924",
+  "kind_id": "20261126000749",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000749",
+  "metrics": {
+   "reasons": [
+    "장내매수(+)"
+   ],
+   "buy_amount": 495381290.0,
+   "ratio_prev": 5.16,
+   "ratio_cur": 6.44,
+   "ratio_delta": 1.2800000000000002,
+   "relation": "주주",
+   "reason_text": "장내매수",
+   "simple": true
+  },
+  "direction": "buy",
+  "signal": true,
+  "summary": "장내매수(+) · +1.28%p · → 6.44% · 매수 약 5.0억",
+  "parsed": true
+ },
+ {
+  "id": "20261126000918",
+  "date": "2026-11-26",
+  "time": "17:36",
+  "market": "KOSDAQ",
+  "corp": "에이아이코리아",
+  "title": "주식등의대량보유상황보고서(일반)",
+  "filer": "안진호",
+  "corp_code": "01307593",
+  "category": "stake",
+  "subtype": "대량보유(5%)",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000918",
+  "kind_id": "20261126000745",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000745",
+  "metrics": {
+   "reasons": [],
+   "ratio_prev": 31.24,
+   "ratio_cur": 31.24,
+   "ratio_delta": 0.0,
+   "relation": "최대주주",
+   "reason_text": "주식담보계약 등의 주요계약 일부변경 (계약기간 연장, 이자율 변경 및 주식담보수 조정)",
+   "simple": false
+  },
+  "direction": "flat",
+  "signal": false,
+  "summary": "+0.00%p · → 31.24%",
+  "parsed": true
+ },
+ {
+  "id": "20261126800741",
+  "date": "2026-11-26",
+  "time": "17:35",
+  "market": "KOSPI",
+  "corp": "코오롱",
+  "title": "[기재정정]단일판매ㆍ공급계약체결(자회사의 주요경영사항)",
+  "filer": "코오롱",
+  "corp_code": "00152862",
+  "category": "capex",
+  "subtype": "공급계약",
+  "amended": true,
+  "amend_tag": "기재정정",
+  "subsidiary": true,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126800741",
+  "kind_id": "20261126000741",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000741",
+  "metrics": {
+   "name": "세운4구역 도시환경정비사업 건설공사",
+   "counterparty": "서울주택도시공사",
+   "start": "2019-01-15",
+   "end": "",
+   "amount": 481056400000.0,
+   "ratio": 13.17,
+   "ratio_base": "매출액"
+  },
+  "direction": "up",
+  "signal": true,
+  "summary": "4,811억 (매출액 대비 13.2%) · 서울주택도시공사",
+  "parsed": true
+ },
+ {
+  "id": "20261126800718",
+  "date": "2026-11-26",
+  "time": "17:32",
+  "market": "KOSPI",
+  "corp": "코오롱글로벌",
+  "title": "[기재정정]단일판매ㆍ공급계약체결",
+  "filer": "코오롱글로벌",
+  "corp_code": "00152880",
+  "category": "capex",
+  "subtype": "공급계약",
+  "amended": true,
+  "amend_tag": "기재정정",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126800718",
+  "kind_id": "20261126000718",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000718",
+  "metrics": {
+   "name": "세운4구역 도시환경정비사업 건설공사",
+   "counterparty": "서울주택도시공사",
+   "start": "2019-01-15",
+   "end": "",
+   "amount": 481056400000.0,
+   "ratio": 13.17,
+   "ratio_base": "매출액"
+  },
+  "direction": "up",
+  "signal": true,
+  "summary": "4,811억 (매출액 대비 13.2%) · 서울주택도시공사",
+  "parsed": true
+ },
+ {
+  "id": "20261126000910",
+  "date": "2026-11-26",
+  "time": "17:28",
+  "market": "KOSDAQ",
+  "corp": "리드코프",
+  "title": "주식등의대량보유상황보고서(일반)",
+  "filer": "디케이마린",
+  "corp_code": "00117708",
+  "category": "stake",
+  "subtype": "대량보유(5%)",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000910",
+  "kind_id": "20261126000735",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000735",
+  "metrics": {
+   "reasons": [],
+   "ratio_prev": 42.58,
+   "ratio_cur": 42.58,
+   "ratio_delta": 0.0,
+   "relation": "사실상지배주주",
+   "reason_text": "주식담보계약 연장 및 상환",
+   "simple": false
+  },
+  "direction": "flat",
+  "signal": false,
+  "summary": "+0.00%p · → 42.58%",
+  "parsed": true
+ },
+ {
+  "id": "20261126000902",
+  "date": "2026-11-26",
+  "time": "17:27",
+  "market": "KOSDAQ",
+  "corp": "엠투엔",
+  "title": "주식등의대량보유상황보고서(일반)",
+  "filer": "디케이마린",
+  "corp_code": "00143226",
+  "category": "stake",
+  "subtype": "대량보유(5%)",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000902",
+  "kind_id": "20261126000732",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000732",
+  "metrics": {
+   "reasons": [
+    "장내매수(+)"
+   ],
+   "buy_amount": 9541042.0,
+   "ratio_prev": 38.75,
+   "ratio_cur": 38.77,
+   "ratio_delta": 0.020000000000003126,
+   "relation": "최대주주",
+   "reason_text": "주식담보계약 연장 및 상환, 주식 장내매수",
+   "simple": false
+  },
+  "direction": "buy",
+  "signal": true,
+  "summary": "장내매수(+) · +0.02%p · → 38.77% · 매수 약 0.1억",
+  "parsed": true
+ },
+ {
+  "id": "20261126800728",
+  "date": "2026-11-26",
+  "time": "17:26",
+  "market": "KOSPI",
+  "corp": "롯데지주",
+  "title": "최대주주등소유주식변동신고서",
+  "filer": "롯데지주",
+  "corp_code": "00120562",
+  "category": "stake",
+  "subtype": "최대주주변동",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126800728",
+  "kind_id": "20261126000728",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000728",
+  "metrics": {
+   "reasons": [
+    "시간외매매(-)",
+    "시간외매매(+)"
+   ],
+   "shares_delta": 0.0,
+   "ratio_delta": 0.0
+  },
+  "direction": "flat",
+  "signal": false,
+  "summary": "시간외매매(-), 시간외매매(+) · +0주 · +0.00%p",
+  "parsed": true
+ },
+ {
+  "id": "20261126900724",
+  "date": "2026-11-26",
+  "time": "17:22",
+  "market": "KOSDAQ",
+  "corp": "하림지주",
+  "title": "[기재정정]신규시설투자등(자회사의 주요경영사항)",
+  "filer": "하림지주",
+  "corp_code": "00148364",
+  "category": "capex",
+  "subtype": "신규시설투자",
+  "amended": true,
+  "amend_tag": "기재정정",
+  "subsidiary": true,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126900724",
+  "kind_id": "20261126000724",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000724",
+  "metrics": {
+   "kind": "시설증설",
+   "purpose": "생산라인 증설",
+   "start": "2024-07-26",
+   "end": "2027-03-31",
+   "amount": 40313000000.0,
+   "ratio": 9.12,
+   "ratio_base": "자기자본"
+  },
+  "direction": "up",
+  "signal": true,
+  "summary": "403억 (자기자본 대비 9.1%)",
+  "parsed": true
+ },
+ {
+  "id": "20261126800722",
+  "date": "2026-11-26",
+  "time": "17:20",
+  "market": "KOSPI",
+  "corp": "동아지질",
+  "title": "[기재정정]단일판매ㆍ공급계약체결(자율공시)",
+  "filer": "동아지질",
+  "corp_code": "00178754",
+  "category": "capex",
+  "subtype": "공급계약",
+  "amended": true,
+  "amend_tag": "기재정정",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126800722",
+  "kind_id": "20261126000722",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000722",
+  "metrics": {},
+  "direction": null,
+  "signal": false,
+  "summary": "본문 파싱 실패 - 원문 확인",
+  "parsed": false
+ },
+ {
+  "id": "20261126000881",
+  "date": "2026-11-26",
+  "time": "17:20",
+  "market": "KOSDAQ",
+  "corp": "서부T&D",
+  "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "오진상사",
+  "corp_code": "00130383",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000881",
+  "kind_id": "20261126000721",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000721",
+  "metrics": {
+   "reasons": [
+    "시간외매매(+)"
+   ],
+   "shares_delta": 139691.0,
+   "ratio_delta": 0.21,
+   "relation": "사실상지배주주"
+  },
+  "direction": "buy",
+  "signal": false,
+  "summary": "시간외매매(+) · +139,691주 · +0.21%p",
+  "parsed": true
+ },
+ {
+  "id": "20261126000879",
+  "date": "2026-11-26",
+  "time": "17:19",
+  "market": "KOSPI",
+  "corp": "ESR켄달스퀘어리츠",
+  "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "미래에셋자산운용",
+  "corp_code": "01437186",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000879",
+  "metrics": {
+   "reasons": [
+    "장내매도(-)",
+    "기타(+)",
+    "대여(-)",
+    "기타(-)"
+   ],
+   "shares_delta": -158523.0,
+   "ratio_delta": -0.07,
+   "relation": "10%이상주주"
+  },
+  "direction": "sell",
+  "signal": false,
+  "summary": "장내매도(-), 기타(+) · -158,523주 · -0.07%p",
+  "parsed": true
+ },
+ {
+  "id": "20261126000867",
+  "date": "2026-11-26",
+  "time": "17:16",
+  "market": "KOSDAQ",
+  "corp": "글로벌텍스프리",
+  "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "지티에프홀딩스",
+  "corp_code": "01042711",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000867",
+  "kind_id": "20261126000710",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000710",
+  "metrics": {},
+  "direction": null,
+  "signal": false,
+  "summary": "본문 파싱 실패 - 원문 확인",
+  "parsed": false
+ },
+ {
+  "id": "20261126900655",
+  "date": "2026-11-26",
+  "time": "17:15",
+  "market": "KOSDAQ",
+  "corp": "이노스페이스",
+  "title": "[기재정정]단일판매ㆍ공급계약체결",
+  "filer": "이노스페이스",
+  "corp_code": "01700587",
+  "category": "capex",
+  "subtype": "공급계약",
+  "amended": true,
+  "amend_tag": "기재정정",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126900655",
+  "kind_id": "20261126000655",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000655",
+  "metrics": {},
+  "direction": null,
+  "signal": false,
+  "summary": "본문 파싱 실패 - 원문 확인",
+  "parsed": false
+ },
+ {
+  "id": "20261126000863",
+  "date": "2026-11-26",
+  "time": "17:15",
+  "market": "KOSDAQ",
+  "corp": "엑스플러스",
+  "title": "주식등의대량보유상황보고서(일반)",
+  "filer": "엑스페릭스",
+  "corp_code": "01514698",
+  "category": "stake",
+  "subtype": "대량보유(5%)",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000863",
+  "kind_id": "20261126000706",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000706",
+  "metrics": {},
+  "direction": null,
+  "signal": false,
+  "summary": "본문 파싱 실패 - 원문 확인",
+  "parsed": false
+ },
+ {
+  "id": "20261126000858",
+  "date": "2026-11-26",
+  "time": "17:14",
+  "market": "KOSPI",
+  "corp": "코람코라이프인프라리츠",
+  "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "미래에셋자산운용",
+  "corp_code": "01430475",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000858",
+  "metrics": {
+   "reasons": [
+    "기타(+)",
+    "장내매도(-)",
+    "대여(-)",
+    "기타(-)"
+   ],
+   "shares_delta": -28946.0,
+   "ratio_delta": -0.03,
+   "relation": "10%이상주주"
+  },
+  "direction": "sell",
+  "signal": false,
+  "summary": "기타(+), 장내매도(-) · -28,946주 · -0.03%p",
+  "parsed": true
+ },
+ {
+  "id": "20261126000857",
+  "date": "2026-11-26",
+  "time": "17:14",
+  "market": "KOSPI",
+  "corp": "이지스밸류플러스리츠",
+  "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "미래에셋자산운용",
+  "corp_code": "01394377",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000857",
+  "metrics": {
+   "reasons": [
+    "기타(+)",
+    "대여(-)",
+    "기타(-)"
+   ],
+   "shares_delta": -3125.0,
+   "ratio_delta": 0.0,
+   "relation": "10%이상주주"
+  },
+  "direction": "sell",
+  "signal": false,
+  "summary": "기타(+), 대여(-) · -3,125주 · +0.00%p",
+  "parsed": true
+ },
+ {
+  "id": "20261126000856",
+  "date": "2026-11-26",
+  "time": "17:14",
+  "market": "KOSPI",
+  "corp": "신한알파리츠",
+  "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "미래에셋자산운용",
+  "corp_code": "01276594",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000856",
+  "metrics": {
+   "reasons": [
+    "장내매도(-)",
+    "기타(+)",
+    "대여(-)",
+    "장내매수(+)",
+    "기타(-)"
+   ],
+   "buy_amount": 74605264.0,
+   "shares_delta": -75313.0,
+   "ratio_delta": -0.06,
+   "relation": "10%이상주주"
+  },
+  "direction": "sell",
+  "signal": false,
+  "summary": "장내매도(-), 기타(+) · -75,313주 · -0.06%p · 매수 약 0.7억",
+  "parsed": true
+ },
+ {
+  "id": "20261126000855",
+  "date": "2026-11-26",
+  "time": "17:13",
+  "market": "KOSPI",
+  "corp": "롯데리츠",
+  "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "미래에셋자산운용",
+  "corp_code": "01363818",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000855",
+  "metrics": {
+   "reasons": [
+    "기타(+)",
+    "장내매도(-)",
+    "기타(-)"
+   ],
+   "shares_delta": -31550.0,
+   "ratio_delta": -0.01,
+   "relation": "10%이상주주"
+  },
+  "direction": "sell",
+  "signal": false,
+  "summary": "기타(+), 장내매도(-) · -31,550주 · -0.01%p",
+  "parsed": true
+ },
+ {
+  "id": "20261126000850",
+  "date": "2026-11-26",
+  "time": "17:11",
+  "market": "KOSDAQ",
+  "corp": "서부T&D",
+  "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "엠와이에이치",
+  "corp_code": "00130383",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000850",
+  "kind_id": "20261126000696",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000696",
+  "metrics": {
+   "reasons": [
+    "시간외매매(-)"
+   ],
+   "shares_delta": -139691.0,
+   "ratio_delta": -0.21,
+   "relation": "사실상지배주주"
+  },
+  "direction": "sell",
+  "signal": false,
+  "summary": "시간외매매(-) · -139,691주 · -0.21%p",
+  "parsed": true
+ },
+ {
+  "id": "20261126000848",
+  "date": "2026-11-26",
+  "time": "17:11",
+  "market": "KOSPI",
+  "corp": "한화리츠",
+  "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "미래에셋자산운용",
+  "corp_code": "01669226",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000848",
+  "metrics": {
+   "reasons": [
+    "기타(+)",
+    "장내매도(-)",
+    "기타(-)"
+   ],
+   "shares_delta": -21502.0,
+   "ratio_delta": -0.01,
+   "relation": "10%이상주주"
+  },
+  "direction": "sell",
+  "signal": false,
+  "summary": "기타(+), 장내매도(-) · -21,502주 · -0.01%p",
+  "parsed": true
+ },
+ {
+  "id": "20261126000847",
+  "date": "2026-11-26",
+  "time": "17:11",
+  "market": "KOSPI",
+  "corp": "삼성FN리츠",
+  "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "미래에셋자산운용",
+  "corp_code": "01688896",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000847",
+  "metrics": {
+   "reasons": [
+    "기타(+)",
+    "대여(-)",
+    "기타(-)"
+   ],
+   "shares_delta": 85606.0,
+   "ratio_delta": 0.08,
+   "relation": "10%이상주주"
+  },
+  "direction": "buy",
+  "signal": false,
+  "summary": "기타(+), 대여(-) · +85,606주 · +0.08%p",
+  "parsed": true
+ },
+ {
+  "id": "20261126000844",
+  "date": "2026-11-26",
+  "time": "17:11",
+  "market": "KOSPI",
+  "corp": "신한서부티엔디리츠",
+  "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "미래에셋자산운용",
+  "corp_code": "01436558",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000844",
+  "metrics": {
+   "reasons": [
+    "기타(+)",
+    "장내매수(+)",
+    "대여(-)",
+    "장내매도(-)",
+    "기타(-)"
+   ],
+   "buy_amount": 124070000.0,
+   "shares_delta": 26375.0,
+   "ratio_delta": 0.04,
+   "relation": "10%이상주주"
+  },
+  "direction": "buy",
+  "signal": true,
+  "summary": "기타(+), 장내매수(+) · +26,375주 · +0.04%p · 매수 약 1.2억",
+  "parsed": true
+ },
+ {
+  "id": "20261126000843",
+  "date": "2026-11-26",
+  "time": "17:11",
+  "market": "KOSPI",
+  "corp": "미래에셋글로벌리츠",
+  "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "미래에셋자산운용",
+  "corp_code": "01576102",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000843",
+  "metrics": {
+   "reasons": [
+    "장내매수(+)"
+   ],
+   "buy_amount": 181657160.0,
+   "shares_delta": 245641.0,
+   "ratio_delta": 0.62,
+   "relation": "10%이상주주"
+  },
+  "direction": "buy",
+  "signal": true,
+  "summary": "장내매수(+) · +245,641주 · +0.62%p · 매수 약 1.8억",
+  "parsed": true
+ },
+ {
+  "id": "20261126000842",
+  "date": "2026-11-26",
+  "time": "17:11",
+  "market": "KOSPI",
+  "corp": "SK리츠",
+  "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "미래에셋자산운용",
+  "corp_code": "01535150",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000842",
+  "metrics": {
+   "reasons": [
+    "장내매도(-)",
+    "기타(+)",
+    "대여(-)",
+    "장내매수(+)",
+    "기타(-)"
+   ],
+   "buy_amount": 32225457.0,
+   "shares_delta": -266980.0,
+   "ratio_delta": -0.09,
+   "relation": "10%이상주주"
+  },
+  "direction": "sell",
+  "signal": false,
+  "summary": "장내매도(-), 기타(+) · -266,980주 · -0.09%p · 매수 약 0.3억",
+  "parsed": true
+ },
+ {
+  "id": "20261126000840",
+  "date": "2026-11-26",
+  "time": "17:10",
+  "market": "KOSPI",
+  "corp": "디앤디플랫폼리츠",
+  "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "미래에셋자산운용",
+  "corp_code": "01475609",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000840",
+  "metrics": {
+   "reasons": [
+    "기타(+)",
+    "장내매도(-)"
+   ],
+   "shares_delta": -4942.0,
+   "ratio_delta": -0.01,
+   "relation": "10%이상주주"
+  },
+  "direction": "sell",
+  "signal": false,
+  "summary": "기타(+), 장내매도(-) · -4,942주 · -0.01%p",
+  "parsed": true
+ },
+ {
+  "id": "20261126000837",
+  "date": "2026-11-26",
+  "time": "17:10",
+  "market": "KOSDAQ",
+  "corp": "에코프로비엠",
+  "title": "주식등의대량보유상황보고서(일반)",
+  "filer": "에코프로",
+  "corp_code": "01160363",
+  "category": "stake",
+  "subtype": "대량보유(5%)",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000837",
+  "kind_id": "20261126000686",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000686",
+  "metrics": {
+   "reasons": [
+    "장내매수(+)"
+   ],
+   "buy_amount": 39250000.0,
+   "ratio_prev": 45.3,
+   "ratio_cur": 45.3,
+   "ratio_delta": 0.0,
+   "relation": "최대주주",
+   "reason_text": "특별관계자 장내매수,특관자 교환사채 교환청구",
+   "simple": false
+  },
+  "direction": "buy",
+  "signal": true,
+  "summary": "장내매수(+) · +0.00%p · → 45.30% · 매수 약 0.4억",
+  "parsed": true
+ },
+ {
+  "id": "20261126000825",
+  "date": "2026-11-26",
+  "time": "17:06",
+  "market": "KOSDAQ",
+  "corp": "에코프로비엠",
+  "title": "[기재정정]주식등의대량보유상황보고서(일반)",
+  "filer": "에코프로",
+  "corp_code": "01160363",
+  "category": "stake",
+  "subtype": "대량보유(5%)",
+  "amended": true,
+  "amend_tag": "기재정정",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000825",
+  "kind_id": "20261126000678",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000678",
+  "metrics": {
+   "reasons": [
+    "장내매수(+)"
+   ],
+   "buy_amount": 50625000.0,
+   "ratio_prev": 45.28,
+   "ratio_cur": 45.28,
+   "ratio_delta": 0.0,
+   "relation": "최대주주",
+   "reason_text": "특별관계자 장내매수",
+   "simple": false
+  },
+  "direction": "buy",
+  "signal": true,
+  "summary": "장내매수(+) · +0.00%p · → 45.28% · 매수 약 0.5억",
+  "parsed": true
+ },
+ {
+  "id": "20261126800630",
+  "date": "2026-11-26",
+  "time": "17:05",
+  "market": "KOSPI",
+  "corp": "남광토건",
+  "title": "단일판매ㆍ공급계약체결",
+  "filer": "남광토건",
+  "corp_code": "00107066",
+  "category": "capex",
+  "subtype": "공급계약",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126800630",
+  "kind_id": "20261126000630",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000630",
+  "metrics": {
+   "name": "평택고덕 A-70BL 민간참여 공공주택 건설사업",
+   "counterparty": "한국토지주택공사",
+   "start": "2026-11-26",
+   "end": "2030-09-30",
+   "amount": 55877209500.0,
+   "ratio": 15.63,
+   "ratio_base": "매출액"
+  },
+  "direction": "up",
+  "signal": true,
+  "summary": "559억 (매출액 대비 15.6%) · 한국토지주택공사",
+  "parsed": true
+ },
+ {
+  "id": "20261126000824",
+  "date": "2026-11-26",
+  "time": "17:05",
+  "market": "KOSPI",
+  "corp": "유나이티드",
+  "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "김귀자",
+  "corp_code": "00158963",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000824",
+  "kind_id": "20261126000677",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000677",
+  "metrics": {
+   "reasons": [
+    "장내매수(+)"
+   ],
+   "buy_amount": 47040000.0,
+   "shares_delta": 3000.0,
+   "ratio_delta": 0.01,
+   "relation": "부사장"
+  },
+  "direction": "buy",
+  "signal": true,
+  "summary": "장내매수(+) · +3,000주 · +0.01%p · 매수 약 0.5억",
+  "parsed": true
+ },
+ {
+  "id": "20261126800675",
+  "date": "2026-11-26",
+  "time": "17:03",
+  "market": "KOSPI",
+  "corp": "유나이티드",
+  "title": "최대주주등소유주식변동신고서",
+  "filer": "유나이티드",
+  "corp_code": "00158963",
+  "category": "stake",
+  "subtype": "최대주주변동",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126800675",
+  "kind_id": "20261126000675",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000675",
+  "metrics": {},
+  "direction": null,
+  "signal": false,
+  "summary": "본문 파싱 실패 - 원문 확인",
+  "parsed": false
+ },
+ {
+  "id": "20261126800663",
+  "date": "2026-11-26",
+  "time": "17:02",
+  "market": "KOSPI",
+  "corp": "태광산업",
+  "title": "[기재정정]신규시설투자등(자율공시)",
+  "filer": "태광산업",
+  "corp_code": "00153393",
+  "category": "capex",
+  "subtype": "신규시설투자",
+  "amended": true,
+  "amend_tag": "기재정정",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126800663",
+  "kind_id": "20261126000663",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000663",
+  "metrics": {
+   "kind": "시설증설",
+   "purpose": "5G 통신용 광케이블 보강재 및 전기차 초고성능 타이어용 아라미드 수요 증가에 따른 증설",
+   "start": "2022-05-11",
+   "end": "2027-01-01",
+   "amount": 145000000000.0,
+   "ratio": 3.65,
+   "ratio_base": "자기자본"
+  },
+  "direction": "up",
+  "signal": true,
+  "summary": "1,450억 (자기자본 대비 3.6%)",
+  "parsed": true
+ },
+ {
+  "id": "20261126800668",
+  "date": "2026-11-26",
+  "time": "17:01",
+  "market": "KOSPI",
+  "corp": "일신방직",
+  "title": "최대주주등소유주식변동신고서",
+  "filer": "일신방직",
+  "corp_code": "00146269",
+  "category": "stake",
+  "subtype": "최대주주변동",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126800668",
+  "kind_id": "20261126000668",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000668",
+  "metrics": {
+   "reasons": [
+    "장내매도(-)"
+   ],
+   "shares_delta": -43000.0,
+   "ratio_delta": 0.19
+  },
+  "direction": "sell",
+  "signal": false,
+  "summary": "장내매도(-) · -43,000주 · +0.19%p",
+  "parsed": true
+ },
+ {
+  "id": "20261126000802",
+  "date": "2026-11-26",
+  "time": "16:57",
+  "market": "KOSDAQ",
+  "corp": "지투지바이오",
+  "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "이주한",
+  "corp_code": "01577952",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000802",
+  "kind_id": "20261126000662",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000662",
+  "metrics": {
+   "reasons": [
+    "기타(+)"
+   ],
+   "shares_delta": 17733.0,
+   "ratio_delta": 0.1,
+   "relation": "상무이사"
+  },
+  "direction": "buy",
+  "signal": false,
+  "summary": "기타(+) · +17,733주 · +0.10%p",
+  "parsed": true
+ },
+ {
+  "id": "20261126000798",
+  "date": "2026-11-26",
+  "time": "16:56",
+  "market": "KOSDAQ",
+  "corp": "더블유에스아이",
+  "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "안병훈",
+  "corp_code": "01318261",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000798",
+  "kind_id": "20261126000658",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000658",
+  "metrics": {},
+  "direction": null,
+  "signal": false,
+  "summary": "본문 파싱 실패 - 원문 확인",
+  "parsed": false
+ },
+ {
+  "id": "20261126000793",
+  "date": "2026-11-26",
+  "time": "16:52",
+  "market": "KOSDAQ",
+  "corp": "에코프로비엠",
+  "title": "[기재정정]주식등의대량보유상황보고서(일반)",
+  "filer": "에코프로",
+  "corp_code": "01160363",
+  "category": "stake",
+  "subtype": "대량보유(5%)",
+  "amended": true,
+  "amend_tag": "기재정정",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000793",
+  "kind_id": "20261126000652",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000652",
+  "metrics": {
+   "reasons": [
+    "장내매수(+)"
+   ],
+   "buy_amount": 46323000.0,
+   "ratio_prev": 45.28,
+   "ratio_cur": 45.28,
+   "ratio_delta": 0.0,
+   "relation": "최대주주",
+   "reason_text": "특별관계자 추가,특별관계자 장내매수",
+   "simple": false
+  },
+  "direction": "buy",
+  "signal": true,
+  "summary": "장내매수(+) · +0.00%p · → 45.28% · 매수 약 0.5억",
+  "parsed": true
+ },
+ {
+  "id": "20261126000791",
+  "date": "2026-11-26",
+  "time": "16:52",
+  "market": "KOSDAQ",
+  "corp": "제일엠앤에스",
+  "title": "주식등의대량보유상황보고서(약식)",
+  "filer": "우리벤처-에버베스트기업재무안정사모투자",
+  "corp_code": "00528791",
+  "category": "stake",
+  "subtype": "대량보유(5%)",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000791",
+  "kind_id": "20261126000651",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000651",
+  "metrics": {},
+  "direction": null,
+  "signal": false,
+  "summary": "본문 파싱 실패 - 원문 확인",
+  "parsed": false
+ },
+ {
+  "id": "20261126000783",
+  "date": "2026-11-26",
+  "time": "16:50",
+  "market": "KOSPI",
+  "corp": "휴니드테크놀러지스",
+  "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "김영호",
+  "corp_code": "00111421",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000783",
+  "kind_id": "20261126000648",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000648",
+  "metrics": {
+   "reasons": [
+    "장내매수(+)",
+    "장내매도(-)"
+   ],
+   "buy_amount": 17735500.0,
+   "shares_delta": 0.0,
+   "ratio_delta": 0.0,
+   "relation": "대표이사"
+  },
+  "direction": "flat",
+  "signal": false,
+  "summary": "장내매수(+), 장내매도(-) · +0주 · +0.00%p · 매수 약 0.2억",
+  "parsed": true
+ },
+ {
+  "id": "20261126000771",
+  "date": "2026-11-26",
+  "time": "16:46",
+  "market": "KOSDAQ",
+  "corp": "에코프로비엠",
+  "title": "[기재정정]주식등의대량보유상황보고서(일반)",
+  "filer": "에코프로",
+  "corp_code": "01160363",
+  "category": "stake",
+  "subtype": "대량보유(5%)",
+  "amended": true,
+  "amend_tag": "기재정정",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000771",
+  "kind_id": "20261126000637",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000637",
+  "metrics": {
+   "reasons": [
+    "장내매수(+)"
+   ],
+   "buy_amount": 135750000.0,
+   "ratio_prev": 45.28,
+   "ratio_cur": 45.28,
+   "ratio_delta": 0.0,
+   "relation": "최대주주",
+   "reason_text": "특수관계자 장내매수 및 만기연장,이자율변경,담보주식수변경",
+   "simple": false
+  },
+  "direction": "buy",
+  "signal": true,
+  "summary": "장내매수(+) · +0.00%p · → 45.28% · 매수 약 1.4억",
+  "parsed": true
+ },
+ {
+  "id": "20261126900615",
+  "date": "2026-11-26",
+  "time": "16:43",
+  "market": "KOSDAQ",
+  "corp": "엑시온그룹",
+  "title": "[기재정정]유형자산취득결정(종속회사의주요경영사항)",
+  "filer": "엑시온그룹",
+  "corp_code": "00426068",
+  "category": "capex",
+  "subtype": "유형자산취득",
+  "amended": true,
+  "amend_tag": "기재정정",
+  "subsidiary": true,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126900615",
+  "kind_id": "20261126000615",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000615",
+  "metrics": {
+   "name": "",
+   "purpose": "종속회사 신규 사업 목적에 따른 생산시설 확보",
+   "counterparty": "주식회사 젬텍",
+   "amount": 12200000000.0,
+   "ratio": 15.74,
+   "ratio_base": "자산총액"
+  },
+  "direction": "up",
+  "signal": true,
+  "summary": "122억 (자산총액 대비 15.7%) · 주식회사 젬텍",
+  "parsed": true
+ },
+ {
+  "id": "20261126000755",
+  "date": "2026-11-26",
+  "time": "16:40",
+  "market": "KOSDAQ",
+  "corp": "상보",
+  "title": "주식등의대량보유상황보고서(일반)",
+  "filer": "레이노코리아",
+  "corp_code": "00129615",
+  "category": "stake",
+  "subtype": "대량보유(5%)",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000755",
+  "kind_id": "20261126000623",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000623",
+  "metrics": {
+   "reasons": [
+    "장내매수(+)"
+   ],
+   "buy_amount": 240736896.0,
+   "ratio_prev": 21.92,
+   "ratio_cur": 23.03,
+   "ratio_delta": 1.1099999999999994,
+   "relation": "최대주주",
+   "reason_text": "최대주주 등의 장내매수로 인한 보유비율 1%이상 변동",
+   "simple": false
+  },
+  "direction": "buy",
+  "signal": true,
+  "summary": "장내매수(+) · +1.11%p · → 23.03% · 매수 약 2.4억",
+  "parsed": true
+ },
+ {
+  "id": "20261126000742",
+  "date": "2026-11-26",
+  "time": "16:38",
+  "market": "KOSDAQ",
+  "corp": "비트컴퓨터",
+  "title": "주요사항보고서(자기주식취득결정)",
+  "filer": "비트컴퓨터",
+  "corp_code": "00231707",
+  "category": "stake",
+  "subtype": "자사주취득",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000742",
+  "kind_id": "20261126000614",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000614",
+  "metrics": {
+   "amount": 1003660000.0,
+   "shares": 268000.0,
+   "purpose": "주가안정 및 주주가치제고",
+   "method": "코스닥시장을 통한 직접 취득"
+  },
+  "direction": "buy",
+  "signal": true,
+  "summary": "자사주 10억 · 주가안정 및 주주가치제고",
+  "parsed": true
+ },
+ {
+  "id": "20261126000739",
+  "date": "2026-11-26",
+  "time": "16:36",
+  "market": "KOSDAQ",
+  "corp": "유진로봇",
+  "title": "주식등의대량보유상황보고서(약식)",
+  "filer": "J.P.MORGANSECURITIESPLC",
+  "corp_code": "00234227",
+  "category": "stake",
+  "subtype": "대량보유(5%)",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000739",
+  "kind_id": "20261126000611",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000611",
+  "metrics": {
+   "reasons": [
+    "신규보고(+)",
+    "장내매도(-)",
+    "기타(-)",
+    "기타(+)"
+   ],
+   "ratio_prev": 0.0,
+   "ratio_cur": 5.44,
+   "ratio_delta": 5.44,
+   "relation": "기타",
+   "reason_text": "신규보고의무 발생",
+   "simple": true
+  },
+  "direction": "buy",
+  "signal": false,
+  "summary": "신규보고(+), 장내매도(-) · +5.44%p · → 5.44%",
+  "parsed": true
+ },
+ {
+  "id": "20261126000725",
+  "date": "2026-11-26",
+  "time": "16:27",
+  "market": "KOSDAQ",
+  "corp": "포바이포",
+  "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "윤준호",
+  "corp_code": "01513699",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000725",
+  "kind_id": "20261126000573",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000573",
+  "metrics": {
+   "reasons": [
+    "장내매수(+)"
+   ],
+   "buy_amount": 50013327.0,
+   "shares_delta": 15197.0,
+   "ratio_delta": 0.11,
+   "relation": "대표이사"
+  },
+  "direction": "buy",
+  "signal": true,
+  "summary": "장내매수(+) · +15,197주 · +0.11%p · 매수 약 0.5억",
+  "parsed": true
+ },
+ {
+  "id": "20261126000704",
+  "date": "2026-11-26",
+  "time": "16:18",
+  "market": "KOSDAQ",
+  "corp": "에코프로비엠",
+  "title": "[기재정정]주식등의대량보유상황보고서(일반)",
+  "filer": "에코프로",
+  "corp_code": "01160363",
+  "category": "stake",
+  "subtype": "대량보유(5%)",
+  "amended": true,
+  "amend_tag": "기재정정",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000704",
+  "kind_id": "20261126000555",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000555",
+  "metrics": {
+   "reasons": [
+    "기타(-)",
+    "유상신주취득(+)",
+    "신규보고(+)"
+   ],
+   "buy_amount": 1216195989000.0,
+   "ratio_prev": 47.38,
+   "ratio_cur": 45.28,
+   "ratio_delta": -2.1000000000000014,
+   "relation": "최대주주",
+   "reason_text": "유상증자에 따른 보유주식등의 내역 변동",
+   "simple": false
+  },
+  "direction": "sell",
+  "signal": false,
+  "summary": "기타(-), 유상신주취득(+) · -2.10%p · → 45.28% · 매수 약 1.22조",
+  "parsed": true
+ },
+ {
+  "id": "20261126000698",
+  "date": "2026-11-26",
+  "time": "16:17",
+  "market": "KOSPI",
+  "corp": "JB금융지주",
+  "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "얼라인파트너스자산운용",
+  "corp_code": "00980122",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000698",
+  "kind_id": "20261126000548",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000548",
+  "metrics": {
+   "reasons": [
+    "시간외매매(-)"
+   ],
+   "shares_delta": -3000000.0,
+   "ratio_delta": -0.82,
+   "relation": "10%이상주주"
+  },
+  "direction": "sell",
+  "signal": false,
+  "summary": "시간외매매(-) · -3,000,000주 · -0.82%p",
+  "parsed": true
+ },
+ {
+  "id": "20261126000694",
+  "date": "2026-11-26",
+  "time": "16:17",
+  "market": "KOSDAQ",
+  "corp": "콜마비앤에이치",
+  "title": "주식등의대량보유상황보고서(일반)",
+  "filer": "콜마홀딩스",
+  "corp_code": "01032404",
+  "category": "stake",
+  "subtype": "대량보유(5%)",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000694",
+  "kind_id": "20261126000547",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000547",
+  "metrics": {
+   "reasons": [],
+   "ratio_prev": 54.84,
+   "ratio_cur": 54.84,
+   "ratio_delta": 0.0,
+   "relation": "최대주주",
+   "reason_text": "특별관계자의 주식담보계약 변경",
+   "simple": false
+  },
+  "direction": "flat",
+  "signal": false,
+  "summary": "+0.00%p · → 54.84%",
+  "parsed": true
+ },
+ {
+  "id": "20261126800542",
+  "date": "2026-11-26",
+  "time": "16:14",
+  "market": "KOSPI",
+  "corp": "대신증권",
+  "title": "최대주주등소유주식변동신고서",
+  "filer": "대신증권",
+  "corp_code": "00110893",
+  "category": "stake",
+  "subtype": "최대주주변동",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126800542",
+  "kind_id": "20261126000542",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000542",
+  "metrics": {},
+  "direction": null,
+  "signal": false,
+  "summary": "본문 파싱 실패 - 원문 확인",
+  "parsed": false
+ },
+ {
+  "id": "20261126000685",
+  "date": "2026-11-26",
+  "time": "16:14",
+  "market": "KOSPI",
+  "corp": "콜마홀딩스",
+  "title": "주식등의대량보유상황보고서(일반)",
+  "filer": "윤상현",
+  "corp_code": "00203290",
+  "category": "stake",
+  "subtype": "대량보유(5%)",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000685",
+  "kind_id": "20261126000537",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000537",
+  "metrics": {
+   "reasons": [],
+   "ratio_prev": 48.47,
+   "ratio_cur": 48.47,
+   "ratio_delta": 0.0,
+   "relation": "최대주주",
+   "reason_text": "특별관계자의 주식담보계약 변경",
+   "simple": false
+  },
+  "direction": "flat",
+  "signal": false,
+  "summary": "+0.00%p · → 48.47%",
+  "parsed": true
+ },
+ {
+  "id": "20261126000681",
+  "date": "2026-11-26",
+  "time": "16:12",
+  "market": "KOSDAQ",
+  "corp": "핌스",
+  "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "최일",
+  "corp_code": "01405390",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000681",
+  "kind_id": "20261126000535",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000535",
+  "metrics": {
+   "reasons": [],
+   "shares_delta": -7995.0,
+   "ratio_delta": 0.0,
+   "relation": "이사"
+  },
+  "direction": "sell",
+  "signal": false,
+  "summary": "-7,995주 · +0.00%p",
+  "parsed": true
+ },
+ {
+  "id": "20261126800524",
+  "date": "2026-11-26",
+  "time": "16:10",
+  "market": "KOSPI",
+  "corp": "CS홀딩스",
+  "title": "최대주주등소유주식변동신고서",
+  "filer": "CS홀딩스",
+  "corp_code": "00149026",
+  "category": "stake",
+  "subtype": "최대주주변동",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126800524",
+  "kind_id": "20261126000524",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000524",
+  "metrics": {
+   "reasons": [
+    "장내매수(+)"
+   ],
+   "shares_delta": 1494.0,
+   "ratio_delta": 0.13
+  },
+  "direction": "buy",
+  "signal": true,
+  "summary": "장내매수(+) · +1,494주 · +0.13%p",
+  "parsed": true
+ },
+ {
+  "id": "20261126000673",
+  "date": "2026-11-26",
+  "time": "16:10",
+  "market": "KOSDAQ",
+  "corp": "와이지-원",
+  "title": "주식등의대량보유상황보고서(일반)",
+  "filer": "송호근",
+  "corp_code": "00139719",
+  "category": "stake",
+  "subtype": "대량보유(5%)",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000673",
+  "kind_id": "20261126000525",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000525",
+  "metrics": {
+   "reasons": [
+    "(-)"
+   ],
+   "ratio_prev": 31.03,
+   "ratio_cur": 31.03,
+   "ratio_delta": 0.0,
+   "relation": "최대주주",
+   "reason_text": "주식담보계약 내용변경",
+   "simple": false
+  },
+  "direction": "sell",
+  "signal": false,
+  "summary": "(-) · +0.00%p · → 31.03%",
+  "parsed": true
+ },
+ {
+  "id": "20261126900499",
+  "date": "2026-11-26",
+  "time": "16:08",
+  "market": "KOSDAQ",
+  "corp": "야스",
+  "title": "[기재정정]단일판매ㆍ공급계약체결",
+  "filer": "야스",
+  "corp_code": "00875307",
+  "category": "capex",
+  "subtype": "공급계약",
+  "amended": true,
+  "amend_tag": "기재정정",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126900499",
+  "kind_id": "20261126000499",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000499",
+  "metrics": {
+   "name": "디스플레이 양산용 증발원",
+   "counterparty": "Guangzhou China Star Optoelectronics Printing Display Techno",
+   "start": "2026-06-12",
+   "end": "2026-12-31",
+   "amount": 12423672000.0,
+   "ratio": 35.74,
+   "ratio_base": "매출액"
+  },
+  "direction": "up",
+  "signal": true,
+  "summary": "124억 (매출액 대비 35.7%) · Guangzhou China Star Optoelectronics Printing Display Techno",
+  "parsed": true
+ },
+ {
+  "id": "20261126000665",
+  "date": "2026-11-26",
+  "time": "16:08",
+  "market": "KOSPI",
+  "corp": "CS홀딩스",
+  "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "장원영",
+  "corp_code": "00149026",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000665",
+  "kind_id": "20261126000522",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000522",
+  "metrics": {
+   "reasons": [
+    "장내매수(+)"
+   ],
+   "shares_delta": 1494.0,
+   "ratio_delta": 0.13,
+   "relation": "대표이사"
+  },
+  "direction": "buy",
+  "signal": true,
+  "summary": "장내매수(+) · +1,494주 · +0.13%p",
+  "parsed": true
+ },
+ {
+  "id": "20261126000664",
+  "date": "2026-11-26",
+  "time": "16:07",
+  "market": "KOSDAQ",
+  "corp": "핌스",
+  "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "조영수",
+  "corp_code": "01405390",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000664",
+  "kind_id": "20261126000520",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000520",
+  "metrics": {
+   "reasons": [],
+   "shares_delta": -15200.0,
+   "ratio_delta": 0.0,
+   "relation": "상무"
+  },
+  "direction": "sell",
+  "signal": false,
+  "summary": "-15,200주 · +0.00%p",
+  "parsed": true
+ },
+ {
+  "id": "20261126000661",
+  "date": "2026-11-26",
+  "time": "16:07",
+  "market": "KOSPI",
+  "corp": "인지컨트롤스",
+  "title": "주식등의대량보유상황보고서(일반)",
+  "filer": "정혜승",
+  "corp_code": "00103510",
+  "category": "stake",
+  "subtype": "대량보유(5%)",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000661",
+  "kind_id": "20261126000518",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000518",
+  "metrics": {},
+  "direction": null,
+  "signal": false,
+  "summary": "본문 파싱 실패 - 원문 확인",
+  "parsed": false
+ },
+ {
+  "id": "20261126900443",
+  "date": "2026-11-26",
+  "time": "16:03",
+  "market": "KOSDAQ",
+  "corp": "티에스아이",
+  "title": "[기재정정]단일판매ㆍ공급계약체결",
+  "filer": "티에스아이",
+  "corp_code": "01139035",
+  "category": "capex",
+  "subtype": "공급계약",
+  "amended": true,
+  "amend_tag": "기재정정",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126900443",
+  "kind_id": "20261126000443",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000443",
+  "metrics": {
+   "name": "2차전지 믹싱시스템",
+   "counterparty": "해외 이차전지기업",
+   "start": "2025-02-07",
+   "end": "2027-06-30",
+   "amount": 32823776290.0,
+   "ratio": 12.6,
+   "ratio_base": "매출액"
+  },
+  "direction": "up",
+  "signal": true,
+  "summary": "328억 (매출액 대비 12.6%) · 해외 이차전지기업",
+  "parsed": true
+ },
+ {
+  "id": "20261126000647",
+  "date": "2026-11-26",
+  "time": "16:03",
+  "market": "KOSDAQ",
+  "corp": "핌스",
+  "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "정종수",
+  "corp_code": "01405390",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000647",
+  "kind_id": "20261126000507",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000507",
+  "metrics": {
+   "reasons": [
+    "장내매수(+)"
+   ],
+   "buy_amount": 78204.0,
+   "shares_delta": -25678.0,
+   "ratio_delta": 0.0,
+   "relation": "상무"
+  },
+  "direction": "buy",
+  "signal": true,
+  "summary": "장내매수(+) · -25,678주 · +0.00%p · 매수 약 0.0억",
+  "parsed": true
+ },
+ {
+  "id": "20261126900502",
+  "date": "2026-11-26",
+  "time": "16:00",
+  "market": "KOSDAQ",
+  "corp": "바이넥스",
+  "title": "[기재정정]신규시설투자등",
+  "filer": "바이넥스",
+  "corp_code": "00216027",
+  "category": "capex",
+  "subtype": "신규시설투자",
+  "amended": true,
+  "amend_tag": "기재정정",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126900502",
+  "kind_id": "20261126000502",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000502",
+  "metrics": {},
+  "direction": null,
+  "signal": false,
+  "summary": "본문 파싱 실패 - 원문 확인",
+  "parsed": false
+ },
+ {
+  "id": "20261126000635",
+  "date": "2026-11-26",
+  "time": "15:58",
+  "market": "KOSDAQ",
+  "corp": "한탑",
+  "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "류지훈",
+  "corp_code": "00140566",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000635",
+  "kind_id": "20261126000498",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000498",
+  "metrics": {
+   "reasons": [
+    "장내매수(+)"
+   ],
+   "buy_amount": 19100694.0,
+   "shares_delta": 6962.0,
+   "ratio_delta": 0.09,
+   "relation": "사장"
+  },
+  "direction": "buy",
+  "signal": true,
+  "summary": "장내매수(+) · +6,962주 · +0.09%p · 매수 약 0.2억",
+  "parsed": true
+ },
+ {
+  "id": "20261126000634",
+  "date": "2026-11-26",
+  "time": "15:58",
+  "market": "KOSDAQ",
+  "corp": "핌스",
+  "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "배성일",
+  "corp_code": "01405390",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000634",
+  "kind_id": "20261126000497",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000497",
+  "metrics": {
+   "reasons": [],
+   "shares_delta": -161266.0,
+   "ratio_delta": 0.01,
+   "relation": "전무"
+  },
+  "direction": "sell",
+  "signal": false,
+  "summary": "-161,266주 · +0.01%p",
+  "parsed": true
+ },
+ {
+  "id": "20261126000633",
+  "date": "2026-11-26",
+  "time": "15:58",
+  "market": "KOSDAQ",
+  "corp": "지니언스",
+  "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "이민상",
+  "corp_code": "00962223",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000633",
+  "kind_id": "20261126000495",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000495",
+  "metrics": {
+   "reasons": [
+    "장내매도(-)"
+   ],
+   "shares_delta": -63323.0,
+   "ratio_delta": -0.7,
+   "relation": "전무이사"
+  },
+  "direction": "sell",
+  "signal": false,
+  "summary": "장내매도(-) · -63,323주 · -0.70%p",
+  "parsed": true
+ },
+ {
+  "id": "20261126000626",
+  "date": "2026-11-26",
+  "time": "15:55",
+  "market": "KOSPI",
+  "corp": "다스코",
+  "title": "주식등의대량보유상황보고서(일반)",
+  "filer": "한상원",
+  "corp_code": "00353878",
+  "category": "stake",
+  "subtype": "대량보유(5%)",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000626",
+  "kind_id": "20261126000487",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000487",
+  "metrics": {
+   "reasons": [],
+   "ratio_prev": 35.56,
+   "ratio_cur": 35.56,
+   "ratio_delta": 0.0,
+   "relation": "최대주주",
+   "reason_text": "특별관계자 주식담보계약 변경",
+   "simple": false
+  },
+  "direction": "flat",
+  "signal": false,
+  "summary": "+0.00%p · → 35.56%",
+  "parsed": true
+ },
+ {
+  "id": "20261126000623",
+  "date": "2026-11-26",
+  "time": "15:53",
+  "market": "KOSDAQ",
+  "corp": "핌스",
+  "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "주광연",
+  "corp_code": "01405390",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000623",
+  "kind_id": "20261126000480",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000480",
+  "metrics": {
+   "reasons": [],
+   "shares_delta": -3373611.0,
+   "ratio_delta": 0.16,
+   "relation": "사장"
+  },
+  "direction": "sell",
+  "signal": false,
+  "summary": "-3,373,611주 · +0.16%p",
+  "parsed": true
+ },
+ {
+  "id": "20261126000601",
+  "date": "2026-11-26",
+  "time": "15:47",
+  "market": "KOSDAQ",
+  "corp": "핌스",
+  "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "김영주",
+  "corp_code": "01405390",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000601",
+  "kind_id": "20261126000464",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000464",
+  "metrics": {
+   "reasons": [],
+   "shares_delta": -3371980.0,
+   "ratio_delta": 0.16,
+   "relation": "사장"
+  },
+  "direction": "sell",
+  "signal": false,
+  "summary": "-3,371,980주 · +0.16%p",
+  "parsed": true
+ },
+ {
+  "id": "20261126800461",
+  "date": "2026-11-26",
+  "time": "15:46",
+  "market": "KOSPI",
+  "corp": "코웨이",
+  "title": "최대주주등소유주식변동신고서",
+  "filer": "코웨이",
+  "corp_code": "00170558",
+  "category": "stake",
+  "subtype": "최대주주변동",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126800461",
+  "kind_id": "20261126000461",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000461",
+  "metrics": {
+   "reasons": [
+    "장내매수(+)"
+   ],
+   "shares_delta": 165000.0,
+   "ratio_delta": 0.24
+  },
+  "direction": "buy",
+  "signal": true,
+  "summary": "장내매수(+) · +165,000주 · +0.24%p",
+  "parsed": true
+ },
+ {
+  "id": "20261126000599",
+  "date": "2026-11-26",
+  "time": "15:46",
+  "market": "KOSDAQ",
+  "corp": "퀄리타스반도체",
+  "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "이종성",
+  "corp_code": "01584183",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000599",
+  "kind_id": "20261126000459",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000459",
+  "metrics": {
+   "reasons": [
+    "장내매수(+)"
+   ],
+   "buy_amount": 16380000.0,
+   "shares_delta": 2000.0,
+   "ratio_delta": 0.02,
+   "relation": "이사"
+  },
+  "direction": "buy",
+  "signal": true,
+  "summary": "장내매수(+) · +2,000주 · +0.02%p · 매수 약 0.2억",
+  "parsed": true
+ },
+ {
+  "id": "20261126800446",
+  "date": "2026-11-26",
+  "time": "15:43",
+  "market": "KOSPI",
+  "corp": "두산",
+  "title": "유형자산취득결정",
+  "filer": "두산",
+  "corp_code": "00117212",
+  "category": "capex",
+  "subtype": "유형자산취득",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126800446",
+  "kind_id": "20261126000446",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000446",
+  "metrics": {
+   "name": "서울특별시 중구 수표동 56-1번지 일원(을지파이낸스센터)",
+   "purpose": "사옥용 업무용 부동산 취득",
+   "counterparty": "아이비투자을지로㈜ 등",
+   "amount": 843900000000.0,
+   "ratio": 2.6,
+   "ratio_base": "자산총액"
+  },
+  "direction": "up",
+  "signal": true,
+  "summary": "8,439억 (자산총액 대비 2.6%) · 아이비투자을지로㈜ 등",
+  "parsed": true
+ },
+ {
+  "id": "20261126000587",
+  "date": "2026-11-26",
+  "time": "15:43",
+  "market": "KOSDAQ",
+  "corp": "핌스",
+  "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "김민용",
+  "corp_code": "01405390",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000587",
+  "kind_id": "20261126000449",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000449",
+  "metrics": {
+   "reasons": [],
+   "shares_delta": -183200.0,
+   "ratio_delta": 0.0,
+   "relation": "대표이사"
+  },
+  "direction": "sell",
+  "signal": false,
+  "summary": "-183,200주 · +0.00%p",
+  "parsed": true
+ },
+ {
+  "id": "20261126000582",
+  "date": "2026-11-26",
+  "time": "15:41",
+  "market": "KOSDAQ",
+  "corp": "셀트리온제약",
+  "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "최덕규",
+  "corp_code": "00541349",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000582",
+  "kind_id": "20261126000438",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000438",
+  "metrics": {
+   "reasons": [
+    "주식매수선택권(+)"
+   ],
+   "buy_amount": 9207450.0,
+   "shares_delta": 553.0,
+   "ratio_delta": 0.0,
+   "relation": "전무"
+  },
+  "direction": "buy",
+  "signal": true,
+  "summary": "주식매수선택권(+) · +553주 · +0.00%p · 매수 약 0.1억",
+  "parsed": true
+ },
+ {
+  "id": "20261126000579",
+  "date": "2026-11-26",
+  "time": "15:41",
+  "market": "KOSDAQ",
+  "corp": "상보",
+  "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "레이노코리아",
+  "corp_code": "00129615",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000579",
+  "kind_id": "20261126000434",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000434",
+  "metrics": {
+   "reasons": [
+    "장내매수(+)"
+   ],
+   "buy_amount": 301985246.0,
+   "shares_delta": 166631.0,
+   "ratio_delta": 1.41,
+   "relation": "사실상지배주주"
+  },
+  "direction": "buy",
+  "signal": true,
+  "summary": "장내매수(+) · +166,631주 · +1.41%p · 매수 약 3.0억",
+  "parsed": true
+ },
+ {
+  "id": "20261126000573",
+  "date": "2026-11-26",
+  "time": "15:38",
+  "market": "KOSPI",
+  "corp": "미래산업",
+  "title": "주식등의대량보유상황보고서(일반)",
+  "filer": "넥스턴앤롤코리아",
+  "corp_code": "00197759",
+  "category": "stake",
+  "subtype": "대량보유(5%)",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000573",
+  "kind_id": "20261126000423",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000423",
+  "metrics": {
+   "reasons": [],
+   "ratio_prev": 37.36,
+   "ratio_cur": 37.36,
+   "ratio_delta": 0.0,
+   "relation": "최대주주",
+   "reason_text": "기존 주식 담보에 대한 추가 담보 제공",
+   "simple": false
+  },
+  "direction": "flat",
+  "signal": false,
+  "summary": "+0.00%p · → 37.36%",
+  "parsed": true
+ },
+ {
+  "id": "20261126000568",
+  "date": "2026-11-26",
+  "time": "15:36",
+  "market": "KOSPI",
+  "corp": "코웨이",
+  "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "넷마블",
+  "corp_code": "00170558",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000568",
+  "kind_id": "20261126000421",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000421",
+  "metrics": {
+   "reasons": [
+    "장내매수(+)"
+   ],
+   "buy_amount": 17009830000.0,
+   "shares_delta": 165000.0,
+   "ratio_delta": 0.24,
+   "relation": "10%이상주주"
+  },
+  "direction": "buy",
+  "signal": true,
+  "summary": "장내매수(+) · +165,000주 · +0.24%p · 매수 약 170억",
+  "parsed": true
+ },
+ {
+  "id": "20261126800417",
+  "date": "2026-11-26",
+  "time": "15:35",
+  "market": "KOSPI",
+  "corp": "화인베스틸",
+  "title": "최대주주등소유주식변동신고서",
+  "filer": "화인베스틸",
+  "corp_code": "00661847",
+  "category": "stake",
+  "subtype": "최대주주변동",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126800417",
+  "kind_id": "20261126000417",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000417",
+  "metrics": {
+   "reasons": [
+    "장내매수(+)"
+   ],
+   "shares_delta": 397786.0,
+   "ratio_delta": 1.08
+  },
+  "direction": "buy",
+  "signal": true,
+  "summary": "장내매수(+) · +397,786주 · +1.08%p",
+  "parsed": true
+ },
+ {
+  "id": "20261126900384",
+  "date": "2026-11-26",
+  "time": "15:23",
+  "market": "KOSDAQ",
+  "corp": "씨이랩",
+  "title": "단일판매ㆍ공급계약체결",
+  "filer": "씨이랩",
+  "corp_code": "00991298",
+  "category": "capex",
+  "subtype": "공급계약",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126900384",
+  "kind_id": "20261126000384",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000384",
+  "metrics": {
+   "name": "AI 인프라 시스템 공급",
+   "counterparty": "",
+   "start": "2026-11-26",
+   "end": "2027-02-05",
+   "amount": 5400000000.0,
+   "ratio": 52.57,
+   "ratio_base": "매출액"
+  },
+  "direction": "up",
+  "signal": true,
+  "summary": "54억 (매출액 대비 52.6%)",
+  "parsed": true
+ },
+ {
+  "id": "20261126800397",
+  "date": "2026-11-26",
+  "time": "15:20",
+  "market": "KOSPI",
+  "corp": "서원",
+  "title": "최대주주등소유주식변동신고서",
+  "filer": "서원",
+  "corp_code": "00131197",
+  "category": "stake",
+  "subtype": "최대주주변동",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126800397",
+  "kind_id": "20261126000397",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000397",
+  "metrics": {},
+  "direction": null,
+  "signal": false,
+  "summary": "본문 파싱 실패 - 원문 확인",
+  "parsed": false
+ },
+ {
+  "id": "20261126000505",
+  "date": "2026-11-26",
+  "time": "15:14",
+  "market": "KOSDAQ",
+  "corp": "에코프로비엠",
+  "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "김장우",
+  "corp_code": "01160363",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000505",
+  "kind_id": "20261126000385",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000385",
+  "metrics": {
+   "reasons": [
+    "장내매수(+)"
+   ],
+   "buy_amount": 39250000.0,
+   "shares_delta": 500.0,
+   "ratio_delta": 0.0,
+   "relation": "부사장"
+  },
+  "direction": "buy",
+  "signal": true,
+  "summary": "장내매수(+) · +500주 · +0.00%p · 매수 약 0.4억",
+  "parsed": true
+ },
+ {
+  "id": "20261126000490",
+  "date": "2026-11-26",
+  "time": "15:10",
+  "market": "KOSPI",
+  "corp": "SJG세종",
+  "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "김용민",
+  "corp_code": "00134510",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000490",
+  "kind_id": "20261126000380",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000380",
+  "metrics": {
+   "reasons": [
+    "장내매수(+)"
+   ],
+   "buy_amount": 10840000.0,
+   "shares_delta": 2000.0,
+   "ratio_delta": 0.007,
+   "relation": "전무"
+  },
+  "direction": "buy",
+  "signal": true,
+  "summary": "장내매수(+) · +2,000주 · +0.01%p · 매수 약 0.1억",
+  "parsed": true
+ },
+ {
+  "id": "20261126000469",
+  "date": "2026-11-26",
+  "time": "15:00",
+  "market": "KOSPI",
+  "corp": "금비",
+  "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "고기영",
+  "corp_code": "00168401",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000469",
+  "kind_id": "20261126000366",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000366",
+  "metrics": {
+   "reasons": [
+    "장내매수(+)"
+   ],
+   "buy_amount": 2289250.0,
+   "shares_delta": 60.0,
+   "ratio_delta": 0.01,
+   "relation": "대표이사"
+  },
+  "direction": "buy",
+  "signal": true,
+  "summary": "장내매수(+) · +60주 · +0.01%p · 매수 약 0.0억",
+  "parsed": true
+ },
+ {
+  "id": "20261126800365",
+  "date": "2026-11-26",
+  "time": "14:59",
+  "market": "KOSPI",
+  "corp": "금비",
+  "title": "최대주주등소유주식변동신고서",
+  "filer": "금비",
+  "corp_code": "00168401",
+  "category": "stake",
+  "subtype": "최대주주변동",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126800365",
+  "kind_id": "20261126000365",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000365",
+  "metrics": {},
+  "direction": null,
+  "signal": false,
+  "summary": "본문 파싱 실패 - 원문 확인",
+  "parsed": false
+ },
+ {
+  "id": "20261126000450",
+  "date": "2026-11-26",
+  "time": "14:51",
+  "market": "KOSDAQ",
+  "corp": "위메이드",
+  "title": "주식등의대량보유상황보고서(일반)",
+  "filer": "박관호",
+  "corp_code": "00444329",
+  "category": "stake",
+  "subtype": "대량보유(5%)",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000450",
+  "kind_id": "20261126000355",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000355",
+  "metrics": {},
+  "direction": null,
+  "signal": false,
+  "summary": "본문 파싱 실패 - 원문 확인",
+  "parsed": false
+ },
+ {
+  "id": "20261126000444",
+  "date": "2026-11-26",
+  "time": "14:50",
+  "market": "KOSPI",
+  "corp": "한국철강",
+  "title": "주식등의대량보유상황보고서(일반)",
+  "filer": "KISCO홀딩스",
+  "corp_code": "00687711",
+  "category": "stake",
+  "subtype": "대량보유(5%)",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000444",
+  "kind_id": "20261126000353",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000353",
+  "metrics": {
+   "reasons": [],
+   "ratio_prev": 78.34,
+   "ratio_cur": 78.34,
+   "ratio_delta": 0.0,
+   "relation": "최대주주",
+   "reason_text": "최대주주 보유주식 추가 담보 제공",
+   "simple": false
+  },
+  "direction": "flat",
+  "signal": false,
+  "summary": "+0.00%p · → 78.34%",
+  "parsed": true
+ },
+ {
+  "id": "20261126000432",
+  "date": "2026-11-26",
+  "time": "14:49",
+  "market": "KOSDAQ",
+  "corp": "동성화인텍",
+  "title": "주요사항보고서(자기주식취득신탁계약체결결정)",
+  "filer": "동성화인텍",
+  "corp_code": "00231105",
+  "category": "stake",
+  "subtype": "자사주신탁",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000432",
+  "kind_id": "20261126000346",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000346",
+  "metrics": {},
+  "direction": null,
+  "signal": false,
+  "summary": "본문 파싱 실패 - 원문 확인",
+  "parsed": false
+ },
+ {
+  "id": "20261126000418",
+  "date": "2026-11-26",
+  "time": "14:39",
+  "market": "KOSDAQ",
+  "corp": "JYP Ent.",
+  "title": "주식등의대량보유상황보고서(약식)",
+  "filer": "MiriCapitalManagementLLC",
+  "corp_code": "00258689",
+  "category": "stake",
+  "subtype": "대량보유(5%)",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000418",
+  "kind_id": "20261126000342",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000342",
+  "metrics": {},
+  "direction": null,
+  "signal": false,
+  "summary": "본문 파싱 실패 - 원문 확인",
+  "parsed": false
+ },
+ {
+  "id": "20261126000406",
+  "date": "2026-11-26",
+  "time": "14:39",
+  "market": "KOSPI",
+  "corp": "삼성출판사",
+  "title": "주요사항보고서(자기주식취득신탁계약체결결정)",
+  "filer": "삼성출판사",
+  "corp_code": "00423690",
+  "category": "stake",
+  "subtype": "자사주신탁",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000406",
+  "kind_id": "20261126000334",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000334",
+  "metrics": {},
+  "direction": null,
+  "signal": false,
+  "summary": "본문 파싱 실패 - 원문 확인",
+  "parsed": false
+ },
+ {
+  "id": "20261126900319",
+  "date": "2026-11-26",
+  "time": "14:26",
+  "market": "KOSDAQ",
+  "corp": "에코앤드림",
+  "title": "단일판매ㆍ공급계약체결",
+  "filer": "에코앤드림",
+  "corp_code": "00619640",
+  "category": "capex",
+  "subtype": "공급계약",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126900319",
+  "kind_id": "20261126000319",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000319",
+  "metrics": {
+   "name": "하이니켈 NCM 전구체 공급 PO",
+   "counterparty": "Umicore SA",
+   "start": "2026-11-26",
+   "end": "2027-03-06",
+   "amount": 24364907000.0,
+   "ratio": 17.16,
+   "ratio_base": "매출액"
+  },
+  "direction": "up",
+  "signal": true,
+  "summary": "244억 (매출액 대비 17.2%) · Umicore SA",
+  "parsed": true
+ },
+ {
+  "id": "20261126000380",
+  "date": "2026-11-26",
+  "time": "14:25",
+  "market": "KOSDAQ",
+  "corp": "엑셈",
+  "title": "주식등의대량보유상황보고서(일반)",
+  "filer": "조종암",
+  "corp_code": "01042085",
+  "category": "stake",
+  "subtype": "대량보유(5%)",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000380",
+  "kind_id": "20261126000322",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000322",
+  "metrics": {
+   "reasons": [
+    "장내매수(+)"
+   ],
+   "buy_amount": 125990000.0,
+   "ratio_prev": 39.75,
+   "ratio_cur": 39.94,
+   "ratio_delta": 0.18999999999999773,
+   "relation": "최대주주",
+   "reason_text": "보고자의 주식담보계약 만기 연장 및 이자율 변경,담보주식 추가 제공,장내매수 (이전 면제사유로 인한 미신고분 보고)",
+   "simple": false
+  },
+  "direction": "buy",
+  "signal": true,
+  "summary": "장내매수(+) · +0.19%p · → 39.94% · 매수 약 1.3억",
+  "parsed": true
+ },
+ {
+  "id": "20261126900312",
+  "date": "2026-11-26",
+  "time": "14:24",
+  "market": "KOSDAQ",
+  "corp": "큐라티스",
+  "title": "단일판매ㆍ공급계약체결",
+  "filer": "큐라티스",
+  "corp_code": "01357765",
+  "category": "capex",
+  "subtype": "공급계약",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126900312",
+  "kind_id": "20261126000312",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000312",
+  "metrics": {
+   "name": "임상 의약품 공급계약",
+   "counterparty": "University of North Carolina",
+   "start": "2026-11-16",
+   "end": "2027-05-31",
+   "amount": 533480000.0,
+   "ratio": 21.71,
+   "ratio_base": "매출액"
+  },
+  "direction": "up",
+  "signal": true,
+  "summary": "5.3억 (매출액 대비 21.7%) · University of North Carolina",
+  "parsed": true
+ },
+ {
+  "id": "20261126000377",
+  "date": "2026-11-26",
+  "time": "14:23",
+  "market": "KOSDAQ",
+  "corp": "나노",
+  "title": "주식등의대량보유상황보고서(일반)",
+  "filer": "신동우",
+  "corp_code": "00994994",
+  "category": "stake",
+  "subtype": "대량보유(5%)",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000377",
+  "kind_id": "20261126000320",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000320",
+  "metrics": {
+   "reasons": [
+    "장내매수(+)"
+   ],
+   "buy_amount": 104841515.0,
+   "ratio_prev": 10.5,
+   "ratio_cur": 10.73,
+   "ratio_delta": 0.23000000000000043,
+   "relation": "최대주주",
+   "reason_text": "보고자 및 특별관계자 장내매수에 따른 보유비율 변동",
+   "simple": false
+  },
+  "direction": "buy",
+  "signal": true,
+  "summary": "장내매수(+) · +0.23%p · → 10.73% · 매수 약 1.0억",
+  "parsed": true
+ },
+ {
+  "id": "20261126900293",
+  "date": "2026-11-26",
+  "time": "14:21",
+  "market": "KOSDAQ",
+  "corp": "에이치브이엠",
+  "title": "단일판매ㆍ공급계약체결",
+  "filer": "에이치브이엠",
+  "corp_code": "01011368",
+  "category": "capex",
+  "subtype": "공급계약",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126900293",
+  "kind_id": "20261126000293",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000293",
+  "metrics": {
+   "name": "슈퍼 알로이(Super Alloy) 공급 계약",
+   "counterparty": "우주항공 금속 유통회사",
+   "start": "2026-11-25",
+   "end": "2027-12-31",
+   "amount": 10988234088.0,
+   "ratio": 16.52,
+   "ratio_base": "매출액"
+  },
+  "direction": "up",
+  "signal": true,
+  "summary": "110억 (매출액 대비 16.5%) · 우주항공 금속 유통회사",
+  "parsed": true
+ },
+ {
+  "id": "20261126000368",
+  "date": "2026-11-26",
+  "time": "14:20",
+  "market": "KOSDAQ",
+  "corp": "나노",
+  "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "신동우",
+  "corp_code": "00994994",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000368",
+  "kind_id": "20261126000317",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000317",
+  "metrics": {
+   "reasons": [
+    "장내매수(+)"
+   ],
+   "shares_delta": 33703.0,
+   "ratio_delta": 0.0,
+   "relation": "대표이사"
+  },
+  "direction": "buy",
+  "signal": true,
+  "summary": "장내매수(+) · +33,703주 · +0.00%p",
+  "parsed": true
+ },
+ {
+  "id": "20261126000362",
+  "date": "2026-11-26",
+  "time": "14:17",
+  "market": "KOSDAQ",
+  "corp": "플레이위드",
+  "title": "주식등의대량보유상황보고서(일반)",
+  "filer": "드림아크코리아",
+  "corp_code": "00138367",
+  "category": "stake",
+  "subtype": "대량보유(5%)",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000362",
+  "kind_id": "20261126000315",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000315",
+  "metrics": {
+   "reasons": [
+    "장내매수(+)"
+   ],
+   "buy_amount": 262076025.0,
+   "ratio_prev": 39.33,
+   "ratio_cur": 40.66,
+   "ratio_delta": 1.3299999999999983,
+   "relation": "최대주주",
+   "reason_text": "특별관계자 추가 및 특별관계자의 추가취득",
+   "simple": false
+  },
+  "direction": "buy",
+  "signal": true,
+  "summary": "장내매수(+) · +1.33%p · → 40.66% · 매수 약 2.6억",
+  "parsed": true
+ },
+ {
+  "id": "20261126000355",
+  "date": "2026-11-26",
+  "time": "14:14",
+  "market": "KOSDAQ",
+  "corp": "에스씨디",
+  "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "최병삼",
+  "corp_code": "00171867",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000355",
+  "kind_id": "20261126000308",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000308",
+  "metrics": {
+   "reasons": [
+    "장내매수(+)"
+   ],
+   "buy_amount": 2850200.0,
+   "shares_delta": 2900.0,
+   "ratio_delta": 0.01,
+   "relation": "이사"
+  },
+  "direction": "buy",
+  "signal": true,
+  "summary": "장내매수(+) · +2,900주 · +0.01%p · 매수 약 0.0억",
+  "parsed": true
+ },
+ {
+  "id": "20261126000352",
+  "date": "2026-11-26",
+  "time": "14:12",
+  "market": "KOSPI",
+  "corp": "화승인더스트리",
+  "title": "주식등의대량보유상황보고서(일반)",
+  "filer": "원스카이",
+  "corp_code": "00166227",
+  "category": "stake",
+  "subtype": "대량보유(5%)",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000352",
+  "kind_id": "20261126000304",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000304",
+  "metrics": {
+   "reasons": [],
+   "ratio_prev": 33.59,
+   "ratio_cur": 33.59,
+   "ratio_delta": 0.0,
+   "relation": "최대주주",
+   "reason_text": "최대주주 (주)원스카이 주식담보계약 변경",
+   "simple": false
+  },
+  "direction": "flat",
+  "signal": false,
+  "summary": "+0.00%p · → 33.59%",
+  "parsed": true
+ },
+ {
+  "id": "20261126900301",
+  "date": "2026-11-26",
+  "time": "14:11",
+  "market": "KOSDAQ",
+  "corp": "덕산테코피아",
+  "title": "[기재정정]신규시설투자등",
+  "filer": "덕산테코피아",
+  "corp_code": "01021666",
+  "category": "capex",
+  "subtype": "신규시설투자",
+  "amended": true,
+  "amend_tag": "기재정정",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126900301",
+  "kind_id": "20261126000301",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000301",
+  "metrics": {
+   "kind": "신규시설투자",
+   "purpose": "의약품 중간체 사업확장에 따른 GMP 공장 신축",
+   "start": "2025-06-30",
+   "end": "2026-11-30",
+   "amount": 25656500000.0,
+   "ratio": 12.47,
+   "ratio_base": "자기자본"
+  },
+  "direction": "up",
+  "signal": true,
+  "summary": "257억 (자기자본 대비 12.5%)",
+  "parsed": true
+ },
+ {
+  "id": "20261126000347",
+  "date": "2026-11-26",
+  "time": "14:10",
+  "market": "KOSDAQ",
+  "corp": "에스씨디",
+  "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "최병홍",
+  "corp_code": "00171867",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000347",
+  "kind_id": "20261126000300",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000300",
+  "metrics": {},
+  "direction": null,
+  "signal": false,
+  "summary": "본문 파싱 실패 - 원문 확인",
+  "parsed": false
+ },
+ {
+  "id": "20261126000340",
+  "date": "2026-11-26",
+  "time": "14:06",
+  "market": "KOSDAQ",
+  "corp": "에스바이오메딕스",
+  "title": "주식등의대량보유상황보고서(일반)",
+  "filer": "KANG SAEIL",
+  "corp_code": "01258020",
+  "category": "stake",
+  "subtype": "대량보유(5%)",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000340",
+  "kind_id": "20261126000298",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000298",
+  "metrics": {
+   "reasons": [
+    "장외매도(-)",
+    "전환등(-)",
+    "신주인수권증권의권리행사(+)",
+    "특별관계해소(-)"
+   ],
+   "buy_amount": 1100000000.0,
+   "ratio_prev": 21.21,
+   "ratio_cur": 20.9,
+   "ratio_delta": -0.3100000000000023,
+   "relation": "최대주주",
+   "reason_text": "주식 담보 계약 변경(추가 담보 제공, 만기 연장 및 이자율 변경)",
+   "simple": false
+  },
+  "direction": "sell",
+  "signal": false,
+  "summary": "장외매도(-), 전환등(-) · -0.31%p · → 20.90% · 매수 약 11억",
+  "parsed": true
+ },
+ {
+  "id": "20261126000336",
+  "date": "2026-11-26",
+  "time": "14:04",
+  "market": "KOSPI",
+  "corp": "롯데이노베이트",
+  "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "이환희",
+  "corp_code": "01262032",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000336",
+  "kind_id": "20261126000294",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000294",
+  "metrics": {
+   "reasons": [
+    "신규선임(+)"
+   ],
+   "shares_delta": 649.0,
+   "ratio_delta": 0.0,
+   "relation": "상무보"
+  },
+  "direction": "buy",
+  "signal": false,
+  "summary": "신규선임(+) · +649주 · +0.00%p",
+  "parsed": true
+ },
+ {
+  "id": "20261126900276",
+  "date": "2026-11-26",
+  "time": "14:03",
+  "market": "KOSDAQ",
+  "corp": "파두",
+  "title": "단일판매ㆍ공급계약체결",
+  "filer": "파두",
+  "corp_code": "01292291",
+  "category": "capex",
+  "subtype": "공급계약",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126900276",
+  "kind_id": "20261126000276",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000276",
+  "metrics": {
+   "name": "기업용 SSD 컨트롤러 공급",
+   "counterparty": "해외 Nand Flash Memory 제조사",
+   "start": "2026-11-25",
+   "end": "2027-05-25",
+   "amount": 20422720000.0,
+   "ratio": 22.1,
+   "ratio_base": "매출액"
+  },
+  "direction": "up",
+  "signal": true,
+  "summary": "204억 (매출액 대비 22.1%) · 해외 Nand Flash Memory 제조사",
+  "parsed": true
+ },
+ {
+  "id": "20261126000323",
+  "date": "2026-11-26",
+  "time": "13:57",
+  "market": "KOSPI",
+  "corp": "오뚜기",
+  "title": "주식등의대량보유상황보고서(일반)",
+  "filer": "함영준",
+  "corp_code": "00141529",
+  "category": "stake",
+  "subtype": "대량보유(5%)",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000323",
+  "kind_id": "20261126000286",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000286",
+  "metrics": {
+   "reasons": [
+    "장내매도(-)"
+   ],
+   "ratio_prev": 49.9,
+   "ratio_cur": 49.87,
+   "ratio_delta": -0.030000000000001137,
+   "relation": "최대주주",
+   "reason_text": "담보(공탁) 계약 해지, 장내매도에 따른 주식수 변동",
+   "simple": false
+  },
+  "direction": "sell",
+  "signal": false,
+  "summary": "장내매도(-) · -0.03%p · → 49.87%",
+  "parsed": true
+ },
+ {
+  "id": "20261126000319",
+  "date": "2026-11-26",
+  "time": "13:54",
+  "market": "KOSPI",
+  "corp": "삼성SDI",
+  "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "유희은",
+  "corp_code": "00126362",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000319",
+  "kind_id": "20261126000281",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000281",
+  "metrics": {
+   "reasons": [
+    "기타(+)"
+   ],
+   "shares_delta": 1161.0,
+   "ratio_delta": 0.0,
+   "relation": "상무"
+  },
+  "direction": "buy",
+  "signal": false,
+  "summary": "기타(+) · +1,161주 · +0.00%p",
+  "parsed": true
+ },
+ {
+  "id": "20261126000308",
+  "date": "2026-11-26",
+  "time": "13:46",
+  "market": "KOSDAQ",
+  "corp": "네패스아크",
+  "title": "주식등의대량보유상황보고서(약식)",
+  "filer": "J.P.MORGANSECURITIESPLC",
+  "corp_code": "01368354",
+  "category": "stake",
+  "subtype": "대량보유(5%)",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000308",
+  "kind_id": "20261126000275",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000275",
+  "metrics": {
+   "reasons": [
+    "장내매도(-)",
+    "장내매수(+)",
+    "기타(-)",
+    "기타(+)"
+   ],
+   "buy_amount": 72555050.0,
+   "ratio_prev": 5.21,
+   "ratio_cur": 5.07,
+   "ratio_delta": -0.13999999999999968,
+   "relation": "기타",
+   "reason_text": "특별관계자 변동",
+   "simple": true
+  },
+  "direction": "sell",
+  "signal": false,
+  "summary": "장내매도(-), 장내매수(+) · -0.14%p · → 5.07% · 매수 약 0.7억",
+  "parsed": true
+ },
+ {
+  "id": "20261126000283",
+  "date": "2026-11-26",
+  "time": "13:45",
+  "market": "KOSDAQ",
+  "corp": "테스",
+  "title": "주요사항보고서(자기주식취득신탁계약체결결정)",
+  "filer": "테스",
+  "corp_code": "00524421",
+  "category": "stake",
+  "subtype": "자사주신탁",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000283",
+  "kind_id": "20261126000262",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000262",
+  "metrics": {
+   "amount": 16000000000.0,
+   "purpose": "주가 안정 및 주주가치 제고"
+  },
+  "direction": "buy",
+  "signal": true,
+  "summary": "자사주 160억 · 주가 안정 및 주주가치 제고",
+  "parsed": true
+ },
+ {
+  "id": "20261126000297",
+  "date": "2026-11-26",
+  "time": "13:41",
+  "market": "KOSDAQ",
+  "corp": "엠아이텍",
+  "title": "주요사항보고서(자기주식취득신탁계약체결결정)",
+  "filer": "엠아이텍",
+  "corp_code": "00531829",
+  "category": "stake",
+  "subtype": "자사주신탁",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000297",
+  "kind_id": "20261126000269",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000269",
+  "metrics": {},
+  "direction": null,
+  "signal": false,
+  "summary": "본문 파싱 실패 - 원문 확인",
+  "parsed": false
+ },
+ {
+  "id": "20261126000288",
+  "date": "2026-11-26",
+  "time": "13:27",
+  "market": "KOSDAQ",
+  "corp": "피스피스스튜디오",
+  "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "서승완",
+  "corp_code": "01755259",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000288",
+  "kind_id": "20261126000266",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000266",
+  "metrics": {
+   "reasons": [
+    "장내매수(+)"
+   ],
+   "buy_amount": 29480618.0,
+   "shares_delta": 7712.0,
+   "ratio_delta": 0.5,
+   "relation": "대표이사"
+  },
+  "direction": "buy",
+  "signal": true,
+  "summary": "장내매수(+) · +7,712주 · +0.50%p · 매수 약 0.3억",
+  "parsed": true
+ },
+ {
+  "id": "20261126000282",
+  "date": "2026-11-26",
+  "time": "13:22",
+  "market": "KOSDAQ",
+  "corp": "제이앤티씨",
+  "title": "주식등의대량보유상황보고서(일반)",
+  "filer": "진우엔지니어링",
+  "corp_code": "00447575",
+  "category": "stake",
+  "subtype": "대량보유(5%)",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000282",
+  "kind_id": "20261126000260",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000260",
+  "metrics": {
+   "reasons": [],
+   "ratio_prev": 65.18,
+   "ratio_cur": 65.18,
+   "ratio_delta": 0.0,
+   "relation": "최대주주",
+   "reason_text": "무기명식 무보증 이권부 사모 교환사채 발행",
+   "simple": false
+  },
+  "direction": "flat",
+  "signal": false,
+  "summary": "+0.00%p · → 65.18%",
+  "parsed": true
+ },
+ {
+  "id": "20261126000259",
+  "date": "2026-11-26",
+  "time": "12:56",
+  "market": "KOSDAQ",
+  "corp": "삼익제약",
+  "title": "주식등의대량보유상황보고서(일반)",
+  "filer": "이충환",
+  "corp_code": "00127875",
+  "category": "stake",
+  "subtype": "대량보유(5%)",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000259",
+  "kind_id": "20261126000239",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000239",
+  "metrics": {
+   "reasons": [
+    "장내매도(-)",
+    "장내매수(+)"
+   ],
+   "buy_amount": 431310.0,
+   "ratio_prev": 59.44,
+   "ratio_cur": 59.17,
+   "ratio_delta": -0.269999999999996,
+   "relation": "최대주주",
+   "reason_text": "특별관계자의 주식매수/매도, 주식매수선택권 행사에 따른 변동과 주식 보유수량 및 비율 변경",
+   "simple": false
+  },
+  "direction": "sell",
+  "signal": false,
+  "summary": "장내매도(-), 장내매수(+) · -0.27%p · → 59.17% · 매수 약 0.0억",
+  "parsed": true
+ },
+ {
+  "id": "20261126000257",
+  "date": "2026-11-26",
+  "time": "12:34",
+  "market": "KOSDAQ",
+  "corp": "삼익제약",
+  "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "권영이",
+  "corp_code": "00127875",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000257",
+  "kind_id": "20261126000237",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000237",
+  "metrics": {},
+  "direction": null,
+  "signal": false,
+  "summary": "본문 파싱 실패 - 원문 확인",
+  "parsed": false
+ },
+ {
+  "id": "20261126000250",
+  "date": "2026-11-26",
+  "time": "12:06",
+  "market": "KOSPI",
+  "corp": "삼성전자",
+  "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "최수민",
+  "corp_code": "00126380",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000250",
+  "kind_id": "20261126000233",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000233",
+  "metrics": {
+   "reasons": [
+    "신규보고(+)",
+    "( - )"
+   ],
+   "shares_delta": 1156.0,
+   "ratio_delta": 0.0,
+   "relation": "상무"
+  },
+  "direction": "buy",
+  "signal": false,
+  "summary": "신규보고(+), (-) · +1,156주 · +0.00%p",
+  "parsed": true
+ },
+ {
+  "id": "20261126900227",
+  "date": "2026-11-26",
+  "time": "11:51",
+  "market": "KOSDAQ",
+  "corp": "엑시콘",
+  "title": "단일판매ㆍ공급계약체결",
+  "filer": "엑시콘",
+  "corp_code": "00611736",
+  "category": "capex",
+  "subtype": "공급계약",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126900227",
+  "kind_id": "20261126000227",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000227",
+  "metrics": {
+   "name": "CLT Interface Board",
+   "counterparty": "삼성전자",
+   "start": "2026-11-25",
+   "end": "2027-02-28",
+   "amount": 8037400000.0,
+   "ratio": 12.2,
+   "ratio_base": "매출액"
+  },
+  "direction": "up",
+  "signal": true,
+  "summary": "80억 (매출액 대비 12.2%) · 삼성전자",
+  "parsed": true
+ },
+ {
+  "id": "20261126000244",
+  "date": "2026-11-26",
+  "time": "11:50",
+  "market": "KOSDAQ",
+  "corp": "오킨스전자",
+  "title": "주식등의대량보유상황보고서(약식)",
+  "filer": "J.P.MORGANSECURITIESPLC",
+  "corp_code": "00543107",
+  "category": "stake",
+  "subtype": "대량보유(5%)",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000244",
+  "kind_id": "20261126000229",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000229",
+  "metrics": {
+   "reasons": [
+    "장내매도(-)",
+    "기타(+)",
+    "차입(+)",
+    "기타(-)",
+    "장내매수(+)"
+   ],
+   "buy_amount": 9208802620.0,
+   "ratio_prev": 5.02,
+   "ratio_cur": 6.08,
+   "ratio_delta": 1.0600000000000005,
+   "relation": "기타",
+   "reason_text": "보유비율 변동",
+   "simple": true
+  },
+  "direction": "buy",
+  "signal": true,
+  "summary": "장내매도(-), 기타(+) · +1.06%p · → 6.08% · 매수 약 92억",
+  "parsed": true
+ },
+ {
+  "id": "20261126000234",
+  "date": "2026-11-26",
+  "time": "11:35",
+  "market": "KOSPI",
+  "corp": "SIMPAC",
+  "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "최민찬",
+  "corp_code": "00138260",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000234",
+  "kind_id": "20261126000225",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000225",
+  "metrics": {
+   "reasons": [
+    "장내매수(+)"
+   ],
+   "buy_amount": 401717000.0,
+   "shares_delta": 77500.0,
+   "ratio_delta": 0.11,
+   "relation": "부사장"
+  },
+  "direction": "buy",
+  "signal": true,
+  "summary": "장내매수(+) · +77,500주 · +0.11%p · 매수 약 4.0억",
+  "parsed": true
+ },
+ {
+  "id": "20261126800200",
+  "date": "2026-11-26",
+  "time": "11:22",
+  "market": "KOSPI",
+  "corp": "HJ중공업",
+  "title": "단일판매ㆍ공급계약체결",
+  "filer": "HJ중공업",
+  "corp_code": "00633835",
+  "category": "capex",
+  "subtype": "공급계약",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126800200",
+  "kind_id": "20261126000200",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000200",
+  "metrics": {
+   "name": "부천 원종동 유림·신영·소망·명진 가로주택 정비사업",
+   "counterparty": "원종동 유림·신영·소망·명진 가로주택 정비사업조합",
+   "start": "2022-06-09",
+   "end": "",
+   "amount": 51812866780.0,
+   "ratio": 2.6,
+   "ratio_base": "매출액"
+  },
+  "direction": "up",
+  "signal": true,
+  "summary": "518억 (매출액 대비 2.6%) · 원종동 유림·신영·소망·명진 가로주택 정비사업조합",
+  "parsed": true
+ },
+ {
+  "id": "20261126900194",
+  "date": "2026-11-26",
+  "time": "11:13",
+  "market": "KOSDAQ",
+  "corp": "유바이오로직스",
+  "title": "[기재정정]단일판매ㆍ공급계약체결(자율공시)",
+  "filer": "유바이오로직스",
+  "corp_code": "00927558",
+  "category": "capex",
+  "subtype": "공급계약",
+  "amended": true,
+  "amend_tag": "기재정정",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126900194",
+  "kind_id": "20261126000194",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000194",
+  "metrics": {
+   "name": "경구용 콜레라 백신(유비콜-에스) 납품",
+   "counterparty": "UNICEF",
+   "start": "2026-07-13",
+   "end": "2027-04-30",
+   "amount": 10102165989.0,
+   "ratio": 6.77,
+   "ratio_base": "매출액"
+  },
+  "direction": "up",
+  "signal": true,
+  "summary": "101억 (매출액 대비 6.8%) · UNICEF",
+  "parsed": true
+ },
+ {
+  "id": "20261126900187",
+  "date": "2026-11-26",
+  "time": "11:05",
+  "market": "KOSDAQ",
+  "corp": "SGC E&C",
+  "title": "단일판매ㆍ공급계약체결(자율공시)",
+  "filer": "SGC E&C",
+  "corp_code": "00141246",
+  "category": "capex",
+  "subtype": "공급계약",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126900187",
+  "kind_id": "20261126000187",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000187",
+  "metrics": {
+   "name": "[PSK] 용인 CAMPUS 조성 공사",
+   "counterparty": "피에스케이㈜",
+   "start": "2026-11-25",
+   "end": "2028-05-25",
+   "amount": 117200000000.0,
+   "ratio": 8.73,
+   "ratio_base": "매출액"
+  },
+  "direction": "up",
+  "signal": true,
+  "summary": "1,172억 (매출액 대비 8.7%) · 피에스케이㈜",
+  "parsed": true
+ },
+ {
+  "id": "20261126000200",
+  "date": "2026-11-26",
+  "time": "11:00",
+  "market": "KOSDAQ",
+  "corp": "제이에스링크",
+  "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "박규석",
+  "corp_code": "00642541",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000200",
+  "kind_id": "20261126000198",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000198",
+  "metrics": {
+   "reasons": [
+    "장내매수(+)"
+   ],
+   "buy_amount": 64906800.0,
+   "shares_delta": 4200.0,
+   "ratio_delta": 0.01,
+   "relation": "독립이사"
+  },
+  "direction": "buy",
+  "signal": true,
+  "summary": "장내매수(+) · +4,200주 · +0.01%p · 매수 약 0.6억",
+  "parsed": true
+ },
+ {
+  "id": "20261126000191",
+  "date": "2026-11-26",
+  "time": "10:56",
+  "market": "KOSPI",
+  "corp": "한창제지",
+  "title": "주요사항보고서(자기주식취득결정)",
+  "filer": "한창제지",
+  "corp_code": "00163761",
+  "category": "stake",
+  "subtype": "자사주취득",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000191",
+  "kind_id": "20261126000189",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000189",
+  "metrics": {
+   "amount": 500000000.0,
+   "shares": 235849.0,
+   "purpose": "주가안정 및 주주가치 제고",
+   "method": "장내직접취득"
+  },
+  "direction": "buy",
+  "signal": true,
+  "summary": "자사주 5.0억 · 주가안정 및 주주가치 제고",
+  "parsed": true
+ },
+ {
+  "id": "20261126000193",
+  "date": "2026-11-26",
+  "time": "10:52",
+  "market": "KOSDAQ",
+  "corp": "유라클",
+  "title": "주식등의대량보유상황보고서(일반)",
+  "filer": "조준희",
+  "corp_code": "00407294",
+  "category": "stake",
+  "subtype": "대량보유(5%)",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000193",
+  "kind_id": "20261126000191",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000191",
+  "metrics": {},
+  "direction": null,
+  "signal": false,
+  "summary": "본문 파싱 실패 - 원문 확인",
+  "parsed": false
+ },
+ {
+  "id": "20261126000182",
+  "date": "2026-11-26",
+  "time": "10:42",
+  "market": "KOSPI",
+  "corp": "AJ네트웍스",
+  "title": "주요사항보고서(자기주식취득신탁계약체결결정)",
+  "filer": "AJ네트웍스",
+  "corp_code": "00365387",
+  "category": "stake",
+  "subtype": "자사주신탁",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000182",
+  "kind_id": "20261126000182",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000182",
+  "metrics": {},
+  "direction": null,
+  "signal": false,
+  "summary": "본문 파싱 실패 - 원문 확인",
+  "parsed": false
+ },
+ {
+  "id": "20261126900163",
+  "date": "2026-11-26",
+  "time": "10:41",
+  "market": "KOSDAQ",
+  "corp": "우원개발",
+  "title": "단일판매ㆍ공급계약체결",
+  "filer": "우원개발",
+  "corp_code": "00363246",
+  "category": "capex",
+  "subtype": "공급계약",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126900163",
+  "kind_id": "20261126000163",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000163",
+  "metrics": {
+   "name": "수도권광역급행철도C노선중『토공 및 구조물공1구간』",
+   "counterparty": "(주)한화",
+   "start": "2026-11-26",
+   "end": "2031-09-14",
+   "amount": 152780000003.0,
+   "ratio": 40.59,
+   "ratio_base": "매출액"
+  },
+  "direction": "up",
+  "signal": true,
+  "summary": "1,528억 (매출액 대비 40.6%) · (주)한화",
+  "parsed": true
+ },
+ {
+  "id": "20261126000180",
+  "date": "2026-11-26",
+  "time": "10:37",
+  "market": "KOSPI",
+  "corp": "삼성E&A",
+  "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "어성수",
+  "corp_code": "00126308",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000180",
+  "kind_id": "20261126000179",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000179",
+  "metrics": {
+   "reasons": [
+    "신규선임(+)"
+   ],
+   "shares_delta": 2359.0,
+   "ratio_delta": 0.0,
+   "relation": "상무"
+  },
+  "direction": "buy",
+  "signal": false,
+  "summary": "신규선임(+) · +2,359주 · +0.00%p",
+  "parsed": true
+ },
+ {
+  "id": "20261126000157",
+  "date": "2026-11-26",
+  "time": "10:23",
+  "market": "KOSDAQ",
+  "corp": "밸로프",
+  "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "신재명",
+  "corp_code": "01398151",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000157",
+  "kind_id": "20261126000162",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000162",
+  "metrics": {
+   "reasons": [
+    "장내매수(+)"
+   ],
+   "shares_delta": 3000.0,
+   "ratio_delta": 0.03,
+   "relation": "대표이사"
+  },
+  "direction": "buy",
+  "signal": true,
+  "summary": "장내매수(+) · +3,000주 · +0.03%p",
+  "parsed": true
+ },
+ {
+  "id": "20261126000148",
+  "date": "2026-11-26",
+  "time": "10:19",
+  "market": "KOSPI",
+  "corp": "HD현대중공업",
+  "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "최헌",
+  "corp_code": "01390344",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000148",
+  "kind_id": "20261126000158",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000158",
+  "metrics": {
+   "reasons": [
+    "장내매수(+)"
+   ],
+   "buy_amount": 148660280.0,
+   "shares_delta": 596.0,
+   "ratio_delta": 0.0,
+   "relation": "부사장"
+  },
+  "direction": "buy",
+  "signal": true,
+  "summary": "장내매수(+) · +596주 · +0.00%p · 매수 약 1.5억",
+  "parsed": true
+ },
+ {
+  "id": "20261126000110",
+  "date": "2026-11-26",
+  "time": "09:58",
+  "market": "KOSDAQ",
+  "corp": "나노",
+  "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "김태호",
+  "corp_code": "00994994",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000110",
+  "kind_id": "20261126000145",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000145",
+  "metrics": {
+   "reasons": [
+    "장내매수(+)"
+   ],
+   "shares_delta": 11494.0,
+   "ratio_delta": 0.04,
+   "relation": "부사장"
+  },
+  "direction": "buy",
+  "signal": true,
+  "summary": "장내매수(+) · +11,494주 · +0.04%p",
+  "parsed": true
+ },
+ {
+  "id": "20261126900132",
+  "date": "2026-11-26",
+  "time": "09:55",
+  "market": "KOSDAQ",
+  "corp": "유니테스트",
+  "title": "단일판매ㆍ공급계약체결",
+  "filer": "유니테스트",
+  "corp_code": "00540447",
+  "category": "capex",
+  "subtype": "공급계약",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126900132",
+  "kind_id": "20261126000132",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000132",
+  "metrics": {
+   "name": "반도체 검사장비 (GEN6 SSD TESTER)",
+   "counterparty": "Micron Semiconductor Technology India",
+   "start": "2026-11-25",
+   "end": "2027-03-20",
+   "amount": 12307107208.0,
+   "ratio": 11.17,
+   "ratio_base": "매출액"
+  },
+  "direction": "up",
+  "signal": true,
+  "summary": "123억 (매출액 대비 11.2%) · Micron Semiconductor Technology India",
+  "parsed": true
+ },
+ {
+  "id": "20261126000104",
+  "date": "2026-11-26",
+  "time": "09:55",
+  "market": "KOSDAQ",
+  "corp": "체리부로",
+  "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "김인식",
+  "corp_code": "00216434",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000104",
+  "kind_id": "20261126000143",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000143",
+  "metrics": {
+   "reasons": [
+    "( - )",
+    "증여(-)"
+   ],
+   "shares_delta": -4342100.0,
+   "ratio_delta": -3.76,
+   "relation": "사내이사(회장)"
+  },
+  "direction": "sell",
+  "signal": false,
+  "summary": "(-), 증여(-) · -4,342,100주 · -3.76%p",
+  "parsed": true
+ },
+ {
+  "id": "20261126000103",
+  "date": "2026-11-26",
+  "time": "09:55",
+  "market": "KOSDAQ",
+  "corp": "아나패스",
+  "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "황보인",
+  "corp_code": "00761952",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000103",
+  "kind_id": "20261126000142",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000142",
+  "metrics": {
+   "reasons": [
+    "장내매수(+)"
+   ],
+   "buy_amount": 9978000.0,
+   "shares_delta": 1000.0,
+   "ratio_delta": 0.0,
+   "relation": "이사"
+  },
+  "direction": "buy",
+  "signal": true,
+  "summary": "장내매수(+) · +1,000주 · +0.00%p · 매수 약 0.1억",
+  "parsed": true
+ },
+ {
+  "id": "20261126000095",
+  "date": "2026-11-26",
+  "time": "09:49",
+  "market": "KOSDAQ",
+  "corp": "디케이락",
+  "title": "주식등의대량보유상황보고서(일반)",
+  "filer": "노은식",
+  "corp_code": "00533003",
+  "category": "stake",
+  "subtype": "대량보유(5%)",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000095",
+  "kind_id": "20261126000138",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000138",
+  "metrics": {},
+  "direction": null,
+  "signal": false,
+  "summary": "본문 파싱 실패 - 원문 확인",
+  "parsed": false
+ },
+ {
+  "id": "20261126000084",
+  "date": "2026-11-26",
+  "time": "09:42",
+  "market": "KOSDAQ",
+  "corp": "에프에스티",
+  "title": "주식등의대량보유상황보고서(일반)",
+  "filer": "시엠테크놀로지",
+  "corp_code": "00223434",
+  "category": "stake",
+  "subtype": "대량보유(5%)",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000084",
+  "kind_id": "20261126000133",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000133",
+  "metrics": {},
+  "direction": null,
+  "signal": false,
+  "summary": "본문 파싱 실패 - 원문 확인",
+  "parsed": false
+ },
+ {
+  "id": "20261126000069",
+  "date": "2026-11-26",
+  "time": "09:31",
+  "market": "KOSPI",
+  "corp": "평화산업",
+  "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "김주영",
+  "corp_code": "00573579",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000069",
+  "kind_id": "20261126000126",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000126",
+  "metrics": {
+   "reasons": [
+    "장내매수(+)"
+   ],
+   "buy_amount": 49177100.0,
+   "shares_delta": 70253.0,
+   "ratio_delta": 0.13,
+   "relation": "사장"
+  },
+  "direction": "buy",
+  "signal": true,
+  "summary": "장내매수(+) · +70,253주 · +0.13%p · 매수 약 0.5억",
+  "parsed": true
+ },
+ {
+  "id": "20261126000065",
+  "date": "2026-11-26",
+  "time": "09:29",
+  "market": "KOSPI",
+  "corp": "평화산업",
+  "title": "주식등의대량보유상황보고서(일반)",
+  "filer": "평화홀딩스",
+  "corp_code": "00573579",
+  "category": "stake",
+  "subtype": "대량보유(5%)",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000065",
+  "kind_id": "20261126000122",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000122",
+  "metrics": {
+   "reasons": [
+    "장내매수(+)"
+   ],
+   "buy_amount": 49177100.0,
+   "ratio_prev": 63.88,
+   "ratio_cur": 64.01,
+   "ratio_delta": 0.13000000000000256,
+   "relation": "최대주주",
+   "reason_text": "장내매수",
+   "simple": false
+  },
+  "direction": "buy",
+  "signal": true,
+  "summary": "장내매수(+) · +0.13%p · → 64.01% · 매수 약 0.5억",
+  "parsed": true
+ },
+ {
+  "id": "20261126800120",
+  "date": "2026-11-26",
+  "time": "09:26",
+  "market": "KOSPI",
+  "corp": "평화산업",
+  "title": "최대주주등소유주식변동신고서",
+  "filer": "평화산업",
+  "corp_code": "00573579",
+  "category": "stake",
+  "subtype": "최대주주변동",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126800120",
+  "kind_id": "20261126000120",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000120",
+  "metrics": {
+   "reasons": [
+    "장내매수(+)"
+   ],
+   "shares_delta": 70253.0,
+   "ratio_delta": 0.13
+  },
+  "direction": "buy",
+  "signal": true,
+  "summary": "장내매수(+) · +70,253주 · +0.13%p",
+  "parsed": true
+ },
+ {
+  "id": "20261126000043",
+  "date": "2026-11-26",
+  "time": "09:11",
+  "market": "KOSDAQ",
+  "corp": "엔에프씨",
+  "title": "주식등의대량보유상황보고서(약식)",
+  "filer": "에셋플러스자산운용",
+  "corp_code": "01217829",
+  "category": "stake",
+  "subtype": "대량보유(5%)",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000043",
+  "kind_id": "20261126000107",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000107",
+  "metrics": {
+   "reasons": [
+    "장내매수(+)"
+   ],
+   "buy_amount": 1520617165.0,
+   "ratio_prev": 0.0,
+   "ratio_cur": 6.35,
+   "ratio_delta": 6.35,
+   "relation": "주주",
+   "reason_text": "5% 이상 지분 보유 신규보고",
+   "simple": true
+  },
+  "direction": "buy",
+  "signal": true,
+  "summary": "장내매수(+) · +6.35%p · → 6.35% · 매수 약 15억",
+  "parsed": true
+ },
+ {
+  "id": "20261126000032",
+  "date": "2026-11-26",
+  "time": "09:03",
+  "market": "KOSDAQ",
+  "corp": "SDN",
+  "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "최기혁",
+  "corp_code": "00574611",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000032",
+  "kind_id": "20261126000102",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000102",
+  "metrics": {
+   "reasons": [
+    "장내매수(+)"
+   ],
+   "buy_amount": 201140260.0,
+   "shares_delta": 46606.0,
+   "ratio_delta": 0.74,
+   "relation": "사내이사"
+  },
+  "direction": "buy",
+  "signal": true,
+  "summary": "장내매수(+) · +46,606주 · +0.74%p · 매수 약 2.0억",
+  "parsed": true
+ },
+ {
+  "id": "20261126000030",
+  "date": "2026-11-26",
+  "time": "09:02",
+  "market": "KOSDAQ",
+  "corp": "SDN",
+  "title": "주식등의대량보유상황보고서(일반)",
+  "filer": "최기혁",
+  "corp_code": "00574611",
+  "category": "stake",
+  "subtype": "대량보유(5%)",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000030",
+  "kind_id": "20261126000100",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000100",
+  "metrics": {
+   "reasons": [
+    "장내매수(+)"
+   ],
+   "buy_amount": 201140260.0,
+   "ratio_prev": 13.81,
+   "ratio_cur": 14.55,
+   "ratio_delta": 0.7400000000000002,
+   "relation": "최대주주",
+   "reason_text": "최대주주의 장내매수",
+   "simple": false
+  },
+  "direction": "buy",
+  "signal": true,
+  "summary": "장내매수(+) · +0.74%p · → 14.55% · 매수 약 2.0억",
+  "parsed": true
+ },
+ {
+  "id": "20261126000001",
+  "date": "2026-11-26",
+  "time": "08:00",
+  "market": "KOSPI",
+  "corp": "HD현대중공업",
+  "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "이용화",
+  "corp_code": "01390344",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261126000001",
+  "kind_id": "20261126000014",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000014",
+  "metrics": {
+   "reasons": [
+    "장내매수(+)"
+   ],
+   "buy_amount": 50800000.0,
+   "shares_delta": 200.0,
+   "ratio_delta": 0.0,
+   "relation": "상무"
+  },
+  "direction": "buy",
+  "signal": true,
+  "summary": "장내매수(+) · +200주 · +0.00%p · 매수 약 0.5억",
+  "parsed": true
+ },
+ {
+  "id": "20261125000792",
+  "date": "2026-11-26",
+  "time": "07:30",
+  "market": "KOSDAQ",
+  "corp": "나우로보틱스",
+  "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+  "filer": "정태우",
+  "corp_code": "01594791",
+  "category": "stake",
+  "subtype": "임원·주요주주",
+  "amended": false,
+  "amend_tag": "",
+  "subsidiary": false,
+  "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261125000792",
+  "kind_id": "20261125000787",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000787",
+  "metrics": {
+   "reasons": [
+    "주식매수선택권(+)"
+   ],
+   "buy_amount": 68000000.0,
+   "shares_delta": 20000.0,
+   "ratio_delta": 0.15,
+   "relation": "상무"
+  },
+  "direction": "buy",
+  "signal": true,
+  "summary": "주식매수선택권(+) · +20,000주 · +0.15%p · 매수 약 0.7억",
+  "parsed": true
+ },
+ {
   "id": "20261125000785",
   "date": "2026-11-25",
   "time": "17:58",
@@ -26,7 +4396,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +5,000주 · +0.03%p · 매수 약 1.4억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000776",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000776"
  },
  {
   "id": "20261125000769",
@@ -52,7 +4424,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "자사주 n/a · 상환전환우선주 상환청구에 따른 자기주식 취득",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000758",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000758"
  },
  {
   "id": "20261125900755",
@@ -81,7 +4455,9 @@
   "direction": "up",
   "signal": true,
   "summary": "246억 (매출액 대비 19.7%)",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000755",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000755"
  },
  {
   "id": "20261125000765",
@@ -115,7 +4491,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "신규상장(+), 장내매도(-) · +9.32%p · → 9.32% · 매수 약 7.3억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000753",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000753"
  },
  {
   "id": "20261125000763",
@@ -147,7 +4525,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +0.50%p · → 48.17% · 매수 약 1.4억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000750",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000750"
  },
  {
   "id": "20261125000761",
@@ -176,7 +4556,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +400주 · +0.00%p · 매수 약 0.0억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000744",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000744"
  },
  {
   "id": "20261125800726",
@@ -205,7 +4587,9 @@
   "direction": "up",
   "signal": true,
   "summary": "814억 (매출액 대비 22.5%) · 현대건설(주)",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000726",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000726"
  },
  {
   "id": "20261125000758",
@@ -234,7 +4618,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +597주 · +0.00%p · 매수 약 0.0억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000739",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000739"
  },
  {
   "id": "20261125000753",
@@ -268,7 +4654,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+), 장외매도(-) · +0.43%p · → 56.55% · 매수 약 67억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000734",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000734"
  },
  {
   "id": "20261125800733",
@@ -295,7 +4683,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +10,500주 · +0.01%p",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000733",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000733"
  },
  {
   "id": "20261125000749",
@@ -327,7 +4717,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +0.01%p · → 35.51% · 매수 약 0.4억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000730",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000730"
  },
  {
   "id": "20261125000746",
@@ -356,7 +4748,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +6,000주 · +0.02%p · 매수 약 0.5억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000725",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000725"
  },
  {
   "id": "20261125000741",
@@ -385,7 +4779,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +50,000주 · +0.18%p · 매수 약 4.6억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000722",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000722"
  },
  {
   "id": "20261125000725",
@@ -413,7 +4809,9 @@
   "direction": "buy",
   "signal": false,
   "summary": "신규선임(+) · +500주 · +0.00%p",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000709",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000709"
  },
  {
   "id": "20261125800644",
@@ -442,7 +4840,9 @@
   "direction": "up",
   "signal": true,
   "summary": "1,375억 (매출액 대비 17.4%) · New Times Shipbuilding Co.,Ltd",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000644",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000644"
  },
  {
   "id": "20261125000721",
@@ -475,7 +4875,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+), 신규선임(무상취득)(+) · +0.47%p · → 48.80% · 매수 약 1.7억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000698",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000698"
  },
  {
   "id": "20261125000720",
@@ -504,7 +4906,9 @@
   "direction": "flat",
   "signal": false,
   "summary": "+0.00%p · → 13.53%",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000697",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000697"
  },
  {
   "id": "20261125000717",
@@ -533,7 +4937,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "주식매수선택권(+) · +4,000주 · +0.01%p · 매수 약 0.8억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000690",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000690"
  },
  {
   "id": "20261125900662",
@@ -562,7 +4968,9 @@
   "direction": "up",
   "signal": true,
   "summary": "264억 (매출액 대비 13.2%) · 삼성이앤에이(주)",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000662",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000662"
  },
  {
   "id": "20261125900659",
@@ -591,7 +4999,9 @@
   "direction": "up",
   "signal": true,
   "summary": "178억 (매출액 대비 11.4%) · 삼성이앤에이(주)",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000659",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000659"
  },
  {
   "id": "20261125000709",
@@ -619,7 +5029,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +2,000주 · +0.01%p",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000680",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000680"
  },
  {
   "id": "20261125000708",
@@ -647,7 +5059,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +7,431주 · +0.02%p",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000678",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000678"
  },
  {
   "id": "20261125000707",
@@ -676,7 +5090,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "주식매수선택권(+) · +1,000주 · +0.00%p · 매수 약 0.2억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000677",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000677"
  },
  {
   "id": "20261125000705",
@@ -707,7 +5123,9 @@
   "direction": "buy",
   "signal": false,
   "summary": "신규상장(+) · +5.20%p · → 5.20%",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000675",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000675"
  },
  {
   "id": "20261125000699",
@@ -740,7 +5158,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+), 장내매도(-) · +1.30%p · → 12.46% · 매수 약 83억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000672",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000672"
  },
  {
   "id": "20261125000695",
@@ -769,7 +5189,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +26,528주 · +0.20%p · 매수 약 1.2억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000668",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000668"
  },
  {
   "id": "20261125000692",
@@ -798,7 +5220,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "주식매수선택권(+) · +21,450주 · +0.04%p · 매수 약 4.4억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000664",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000664"
  },
  {
   "id": "20261125000691",
@@ -829,7 +5253,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+), 장내매도(-) · +2,310주 · +0.00%p · 매수 약 0.4억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000663",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000663"
  },
  {
   "id": "20261125000690",
@@ -858,7 +5284,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +11,000주 · +0.08%p · 매수 약 0.5억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000657",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000657"
  },
  {
   "id": "20261125000687",
@@ -886,7 +5314,9 @@
   "direction": "sell",
   "signal": false,
   "summary": "장내매도(-) · -273주 · +0.00%p",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000653",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000653"
  },
  {
   "id": "20261125000685",
@@ -919,7 +5349,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+), 장내매도(-) · +1.30%p · → 12.46% · 매수 약 83억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000652",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000652"
  },
  {
   "id": "20261125000684",
@@ -948,7 +5380,9 @@
   "direction": "flat",
   "signal": false,
   "summary": "+0.00%p · → 33.42%",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000651",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000651"
  },
  {
   "id": "20261125000683",
@@ -976,7 +5410,9 @@
   "direction": "buy",
   "signal": false,
   "summary": "신규선임(+) · +2,500주 · +0.02%p",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000650",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000650"
  },
  {
   "id": "20261125000678",
@@ -1005,7 +5441,9 @@
   "direction": "flat",
   "signal": false,
   "summary": "+0.00%p · → 52.23%",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000648",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000648"
  },
  {
   "id": "20261125000667",
@@ -1037,7 +5475,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +0.19%p · → 42.75% · 매수 약 5.1억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000639",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000639"
  },
  {
   "id": "20261125000663",
@@ -1066,7 +5506,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +32,969주 · +0.03%p · 매수 약 0.7억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000630",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000630"
  },
  {
   "id": "20261125000662",
@@ -1095,7 +5537,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +1,000주 · +0.01%p · 매수 약 1.1억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000629",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000629"
  },
  {
   "id": "20261125000655",
@@ -1124,7 +5568,9 @@
   "direction": "buy",
   "signal": false,
   "summary": "신규상장(+), 장내매도(-) · +1,350,238주 · +11.19%p",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000605",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000605"
  },
  {
   "id": "20261125800602",
@@ -1152,7 +5598,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+), 특별관계해소(-) · +410주 · +0.00%p",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000602",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000602"
  },
  {
   "id": "20261125900570",
@@ -1181,7 +5629,9 @@
   "direction": "up",
   "signal": true,
   "summary": "101억 (매출액 대비 76.4%) · 한국수자원공사",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000570",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000570"
  },
  {
   "id": "20261125000641",
@@ -1215,7 +5665,9 @@
   "direction": "sell",
   "signal": false,
   "summary": "장내매수(+), 기타(+) · -0.02%p · → 5.35% · 매수 약 1.5억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000596",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000596"
  },
  {
   "id": "20261125000638",
@@ -1244,7 +5696,9 @@
   "direction": "flat",
   "signal": false,
   "summary": "+0.00%p · → 56.66%",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000593",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000593"
  },
  {
   "id": "20261125000633",
@@ -1273,7 +5727,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +88,200주 · +0.84%p · 매수 약 2.5억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000590",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000590"
  },
  {
   "id": "20261125000625",
@@ -1302,7 +5758,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +10,000주 · +0.03%p · 매수 약 0.1억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000586",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000586"
  },
  {
   "id": "20261125000617",
@@ -1331,7 +5789,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +530주 · +0.00%p · 매수 약 0.6억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000578",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000578"
  },
  {
   "id": "20261125000614",
@@ -1360,7 +5820,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +10,000주 · +0.05%p · 매수 약 1.0억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000576",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000576"
  },
  {
   "id": "20261125000612",
@@ -1392,7 +5854,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +0.04%p · → 37.82% · 매수 약 0.1억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000572",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000572"
  },
  {
   "id": "20261125000600",
@@ -1421,7 +5885,9 @@
   "direction": "sell",
   "signal": false,
   "summary": "-2.84%p · → 3.79%",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000556",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000556"
  },
  {
   "id": "20261125000595",
@@ -1450,7 +5916,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +14,000주 · +0.09%p · 매수 약 0.2억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000546",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000546"
  },
  {
   "id": "20261125000592",
@@ -1479,7 +5947,9 @@
   "direction": "flat",
   "signal": false,
   "summary": "+0.00%p · → 18.28%",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000542",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000542"
  },
  {
   "id": "20261125000590",
@@ -1512,7 +5982,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "무상신주취득(+), 장내매수(+) · +0.01%p · → 52.42% · 매수 약 0.0억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000541",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000541"
  },
  {
   "id": "20261125000563",
@@ -1536,7 +6008,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "자사주 15억 · 주가안정 및 주주가치 제고",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000518",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000518"
  },
  {
   "id": "20261125000589",
@@ -1567,7 +6041,9 @@
   "direction": "sell",
   "signal": false,
   "summary": "(-) · +0.00%p · → 47.25%",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000540",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000540"
  },
  {
   "id": "20261125000582",
@@ -1600,7 +6076,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+), 장내매도(-) · +1.30%p · → 12.46% · 매수 약 83억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000537",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000537"
  },
  {
   "id": "20261125000579",
@@ -1629,7 +6107,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +21,148주 · +0.01%p · 매수 약 0.2억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000534",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000534"
  },
  {
   "id": "20261125000576",
@@ -1658,7 +6138,9 @@
   "direction": "flat",
   "signal": false,
   "summary": "+0.00%p · → 56.77%",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000531",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000531"
  },
  {
   "id": "20261125000543",
@@ -1682,7 +6164,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "자사주 50억 · 주가 안정과 주주가치 제고 및 임직원 주식상여 재원 마",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000494",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000494"
  },
  {
   "id": "20261125000572",
@@ -1713,7 +6197,9 @@
   "direction": "sell",
   "signal": false,
   "summary": "전환등(-) · -1.90%p · → 41.11%",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000526",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000526"
  },
  {
   "id": "20261125000571",
@@ -1741,7 +6227,9 @@
   "direction": "sell",
   "signal": false,
   "summary": "전환등(-) · -274,358주 · -2.29%p",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000524",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000524"
  },
  {
   "id": "20261125000564",
@@ -1770,7 +6258,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +21,170주 · +0.11%p · 매수 약 3.2억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000519",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000519"
  },
  {
   "id": "20261125800505",
@@ -1797,7 +6287,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +40,000주 · +0.08%p",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000505",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000505"
  },
  {
   "id": "20261125000556",
@@ -1826,7 +6318,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +10,000주 · +0.05%p · 매수 약 0.3억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000501",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000501"
  },
  {
   "id": "20261125000551",
@@ -1858,7 +6352,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +0.09%p · → 24.57% · 매수 약 0.2억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000498",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000498"
  },
  {
   "id": "20261125000539",
@@ -1890,7 +6386,9 @@
   "direction": "buy",
   "signal": false,
   "summary": "신규상장(+), 장내매도(-) · +11.19%p · → 11.19%",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000492",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000492"
  },
  {
   "id": "20261125000532",
@@ -1926,7 +6424,9 @@
   "direction": "sell",
   "signal": false,
   "summary": "주식매수선택권행사(+), 주식매수선택권행사(-) · -1.79%p · → 19.41% · 매수 약 1.0억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000482",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000482"
  },
  {
   "id": "20261125000530",
@@ -1955,7 +6455,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +1,000주 · +0.00%p · 매수 약 1.1억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000481",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000481"
  },
  {
   "id": "20261125000528",
@@ -1984,7 +6486,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +110,000주 · +0.84%p · 매수 약 1.6억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000480",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000480"
  },
  {
   "id": "20261125000525",
@@ -2016,7 +6520,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +3.03%p · → 34.42% · 매수 약 5.9억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000473",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000473"
  },
  {
   "id": "20261125000521",
@@ -2045,7 +6551,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +700주 · +0.00%p · 매수 약 0.8억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000464",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000464"
  },
  {
   "id": "20261125000515",
@@ -2077,7 +6585,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +1.26%p · → 21.92% · 매수 약 2.6억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000459",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000459"
  },
  {
   "id": "20261125000514",
@@ -2108,7 +6618,9 @@
   "direction": "sell",
   "signal": false,
   "summary": "장외매도(-) · -10.58%p · → 0.00%",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000456",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000456"
  },
  {
   "id": "20261125000508",
@@ -2136,7 +6648,9 @@
   "direction": "sell",
   "signal": false,
   "summary": "장내매도(-) · -322,380주 · -2.83%p",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000448",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000448"
  },
  {
   "id": "20261125000507",
@@ -2165,7 +6679,9 @@
   "direction": "flat",
   "signal": false,
   "summary": "+0.00%p · → 35.36%",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000446",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000446"
  },
  {
   "id": "20261125000506",
@@ -2196,7 +6712,9 @@
   "direction": "sell",
   "signal": false,
   "summary": "장내매도(-) · -2.84%p · → 13.25%",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000445",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000445"
  },
  {
   "id": "20261125000421",
@@ -2220,7 +6738,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "자사주 7.0억 · 주가 안정 및 주주가치 제고",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000354",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000354"
  },
  {
   "id": "20261125000501",
@@ -2249,7 +6769,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +272,386주 · -3.57%p · 매수 약 2.6억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000442",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000442"
  },
  {
   "id": "20261125000500",
@@ -2281,7 +6803,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +0.74%p · → 30.70% · 매수 약 2.6억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000440",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000440"
  },
  {
   "id": "20261125000491",
@@ -2313,7 +6837,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +0.97%p · → 65.24% · 매수 약 3.8억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000437",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000437"
  },
  {
   "id": "20261125000489",
@@ -2342,7 +6868,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +2,000주 · +0.00%p · 매수 약 0.0억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000435",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000435"
  },
  {
   "id": "20261125000479",
@@ -2371,7 +6899,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +1,750주 · +0.00%p · 매수 약 0.0억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000422",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000422"
  },
  {
   "id": "20261125000476",
@@ -2400,7 +6930,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +29,346주 · +0.21%p · 매수 약 0.8억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000419",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000419"
  },
  {
   "id": "20261125000474",
@@ -2429,7 +6961,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +23,914주 · +0.44%p · 매수 약 1.6억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000416",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000416"
  },
  {
   "id": "20261125000472",
@@ -2458,7 +6992,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +31,646주 · +0.16%p · 매수 약 0.5억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000414",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000414"
  },
  {
   "id": "20261125000471",
@@ -2487,7 +7023,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +2,000주 · +0.00%p · 매수 약 0.1억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000412",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000412"
  },
  {
   "id": "20261125800388",
@@ -2516,7 +7054,9 @@
   "direction": "up",
   "signal": true,
   "summary": "1,619억 (매출액 대비 5.4%) · 아틀라스 에어 테크니칼 서비스(유)",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000388",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000388"
  },
  {
   "id": "20261125000459",
@@ -2544,7 +7084,9 @@
   "direction": "sell",
   "signal": false,
   "summary": "증여(-) · -29,473주 · -0.10%p",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000392",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000392"
  },
  {
   "id": "20261125000455",
@@ -2572,7 +7114,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +40,713주 · +0.21%p",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000387",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000387"
  },
  {
   "id": "20261125000442",
@@ -2598,7 +7142,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "자사주 10억 · 임직원 성과보상 재원 마련",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000377",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000377"
  },
  {
   "id": "20261125000440",
@@ -2627,7 +7173,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +5,000주 · +0.01%p · 매수 약 0.2억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000375",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000375"
  },
  {
   "id": "20261125800360",
@@ -2655,7 +7203,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "공개매수(+), 공개매수청약(-) · +4,436,191주 · +12.17%p",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000360",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000360"
  },
  {
   "id": "20261125000420",
@@ -2687,7 +7237,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +0.01%p · → 49.00% · 매수 약 0.2억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000352",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000352"
  },
  {
   "id": "20261125000416",
@@ -2720,7 +7272,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "공개매수(+), 공개매수청약(-) · +12.17%p · → 78.34% · 매수 약 853억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000351",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000351"
  },
  {
   "id": "20261125800330",
@@ -2746,7 +7300,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "자사주 n/a · 상환우선주 상환 및 소각",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000330",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000330"
  },
  {
   "id": "20261125000388",
@@ -2774,7 +7330,9 @@
   "direction": "sell",
   "signal": false,
   "summary": "장외매도(-) · -75,906주 · -1.01%p",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000332",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000332"
  },
  {
   "id": "20261125800307",
@@ -2803,7 +7361,9 @@
   "direction": "up",
   "signal": true,
   "summary": "8,826억 (매출액 대비 2.8%) · 케이비부동산신탁주식회사",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000307",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000307"
  },
  {
   "id": "20261125000384",
@@ -2832,7 +7392,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "공개매수(+) · +6,560,716주 · +30.58%p · 매수 약 853억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000331",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000331"
  },
  {
   "id": "20261125800316",
@@ -2859,7 +7421,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +31,000주 · +0.05%p",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000316",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000316"
  },
  {
   "id": "20261125000361",
@@ -2888,7 +7452,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +2,600주 · +0.01%p · 매수 약 0.0억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000317",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000317"
  },
  {
   "id": "20261125000358",
@@ -2917,7 +7483,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +551주 · +0.00%p · 매수 약 1.0억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000313",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000313"
  },
  {
   "id": "20261125800293",
@@ -2944,7 +7512,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +7,499주 · +0.04%p",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000293",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000293"
  },
  {
   "id": "20261125900284",
@@ -2973,7 +7543,9 @@
   "direction": "up",
   "signal": true,
   "summary": "38억 (매출액 대비 20.7%) · ASUX(Aptiv Adv. Safety & User Experience) Components India P",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000284",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000284"
  },
  {
   "id": "20261125000326",
@@ -3005,7 +7577,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +0.06%p · → 56.09% · 매수 약 0.9억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000285",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000285"
  },
  {
   "id": "20261125900268",
@@ -3034,7 +7608,9 @@
   "direction": "up",
   "signal": true,
   "summary": "65억 (매출액 대비 10.1%) · 삼성전자",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000268",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000268"
  },
  {
   "id": "20261125000323",
@@ -3063,7 +7639,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +5,000주 · +0.03%p · 매수 약 0.2억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000283",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000283"
  },
  {
   "id": "20261125800279",
@@ -3090,7 +7668,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +200주 · +0.00%p",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000279",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000279"
  },
  {
   "id": "20261125800277",
@@ -3117,7 +7697,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +24,750주 · +0.05%p",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000277",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000277"
  },
  {
   "id": "20261125000303",
@@ -3145,7 +7727,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +9,720주 · -0.16%p",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000263",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000263"
  },
  {
   "id": "20261125000293",
@@ -3174,7 +7758,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +19,000주 · +0.03%p · 매수 약 0.6억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000256",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000256"
  },
  {
   "id": "20261125000283",
@@ -3206,7 +7792,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +0.05%p · → 56.39% · 매수 약 0.9억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000251",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000251"
  },
  {
   "id": "20261125000281",
@@ -3235,7 +7823,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +200주 · +0.00%p · 매수 약 0.5억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000248",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000248"
  },
  {
   "id": "20261125000280",
@@ -3264,7 +7854,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +2,350주 · +0.02%p · 매수 약 0.1억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000247",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000247"
  },
  {
   "id": "20261125000264",
@@ -3293,7 +7885,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +1,000주 · +0.00%p · 매수 약 0.1억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000237",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000237"
  },
  {
   "id": "20261125000261",
@@ -3322,7 +7916,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +1,033주 · +0.00%p · 매수 약 0.1억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000235",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000235"
  },
  {
   "id": "20261125000255",
@@ -3350,7 +7946,9 @@
   "direction": "sell",
   "signal": false,
   "summary": "장내매도(-) · -1,846주 · -0.01%p",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000233",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000233"
  },
  {
   "id": "20261125000247",
@@ -3381,7 +7979,9 @@
   "direction": "sell",
   "signal": false,
   "summary": "장내매도(-) · -1.01%p · → 9.86%",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000225",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000225"
  },
  {
   "id": "20261125800208",
@@ -3410,7 +8010,9 @@
   "direction": "up",
   "signal": true,
   "summary": "362억 (매출액 대비 52.4%) · 케이앤제이피엠㈜",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000208",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000208"
  },
  {
   "id": "20261125800198",
@@ -3439,7 +8041,9 @@
   "direction": "up",
   "signal": true,
   "summary": "1.02조 (매출액 대비 39.0%) · 삼성전자 주식회사",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000198",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000198"
  },
  {
   "id": "20261125000231",
@@ -3468,7 +8072,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +500주 · +0.00%p · 매수 약 1.3억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000205",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000205"
  },
  {
   "id": "20261125900186",
@@ -3497,7 +8103,9 @@
   "direction": "up",
   "signal": true,
   "summary": "1,656억 (매출액 대비 15.5%) · Bloom Energy Corporation",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000186",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000186"
  },
  {
   "id": "20261125000222",
@@ -3521,7 +8129,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "자사주 50억 · 주가안정을 통한 주주가치 제고",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000199",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000199"
  },
  {
   "id": "20261125000224",
@@ -3549,7 +8159,9 @@
   "direction": "sell",
   "signal": false,
   "summary": "기타(-) · -9,250주 · +0.09%p",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000201",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000201"
  },
  {
   "id": "20261125800196",
@@ -3577,7 +8189,9 @@
   "direction": "sell",
   "signal": false,
   "summary": "장내매도(-), 기타(-) · -15,440주 · -0.17%p",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000196",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000196"
  },
  {
   "id": "20261125800178",
@@ -3606,7 +8220,9 @@
   "direction": "up",
   "signal": true,
   "summary": "1.02조 (매출액 대비 39.0%) · 삼성전자 주식회사",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000178",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000178"
  },
  {
   "id": "20261125900184",
@@ -3635,7 +8251,9 @@
   "direction": "up",
   "signal": true,
   "summary": "394억 (매출액 대비 15.0%) · 디엘이엔씨(주)",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000184",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000184"
  },
  {
   "id": "20261125900156",
@@ -3664,7 +8282,9 @@
   "direction": "up",
   "signal": true,
   "summary": "225억 (매출액 대비 23.6%) · JIANGSU HANCHUANG MACHINERY CO., LTD",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000156",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000156"
  },
  {
   "id": "20261125000190",
@@ -3693,7 +8313,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +300주 · +0.00%p · 매수 약 0.2억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000175",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000175"
  },
  {
   "id": "20261125000175",
@@ -3722,7 +8344,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +1,000주 · +0.00%p · 매수 약 0.2억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000163",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000163"
  },
  {
   "id": "20261125000145",
@@ -3751,7 +8375,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +792주 · +0.01%p · 매수 약 0.0억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000153",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000153"
  },
  {
   "id": "20261125000144",
@@ -3783,7 +8409,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +0.20%p · → 33.48% · 매수 약 0.4억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000151",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000151"
  },
  {
   "id": "20261125000126",
@@ -3812,7 +8440,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +1,350주 · +0.02%p · 매수 약 0.1억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000138",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000138"
  },
  {
   "id": "20261125000119",
@@ -3841,7 +8471,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +250주 · +0.00%p · 매수 약 0.1억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000136",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000136"
  },
  {
   "id": "20261125000103",
@@ -3873,7 +8505,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +0.03%p · → 29.88% · 매수 약 0.1억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000126",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000126"
  },
  {
   "id": "20261125000074",
@@ -3902,7 +8536,9 @@
   "direction": "sell",
   "signal": false,
   "summary": "기타(-), 기타(+) · -1,144주 · -0.01%p",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000105",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000105"
  },
  {
   "id": "20261125000050",
@@ -3931,7 +8567,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +7,000주 · +0.08%p · 매수 약 0.3억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000090",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000090"
  },
  {
   "id": "20261125800084",
@@ -3958,7 +8596,9 @@
   "direction": "buy",
   "signal": false,
   "summary": "신규선임(+) · +250주 · +0.00%p",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000084",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000084"
  },
  {
   "id": "20261125000035",
@@ -3991,7 +8631,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+), 장내매도(-) · +1.67%p · → 17.92% · 매수 약 69억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000082",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000082"
  },
  {
   "id": "20261125000007",
@@ -4020,7 +8662,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장내매수(+) · +190주 · +0.00%p · 매수 약 0.1억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261125000043",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000043"
  },
  {
   "id": "20261124000552",
@@ -4052,7 +8696,9 @@
   "direction": "buy",
   "signal": true,
   "summary": "장외매수(+) · +27.83%p · → 27.83% · 매수 약 150억",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261124000999",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261124000999"
  },
  {
   "id": "20261124000551",
@@ -4083,7 +8729,9 @@
   "direction": "buy",
   "signal": false,
   "summary": "신규상장(+) · +7.04%p · → 7.04%",
-  "parsed": true
+  "parsed": true,
+  "kind_id": "20261124000995",
+  "kind_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261124000995"
  },
  {
   "id": "20261124000546",
